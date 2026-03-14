@@ -1,0 +1,11 @@
+﻿Id,是否完成,Type,Note,Name,Name_en,Name_zh-Hant,Name_ja,Description,Description_zh-Hant,Description_en,Description_ja,
+唯一标识,FALSE,类型,备注,名称,Name,,,描述,,Description,,
+chaos_orb,TRUE,技能牌,,混沌,Chaos,混沌,カオス,生成1个随机充能球。,生成1個隨機充能球。,Create 1 random charged orb.,ランダムなチャージオーブを1つ生成する。,
+*defect_discharge,TRUE,消耗技能牌,,充能释放,Discharge,充能釋放,ディスチャージ,触发所有充能球效果。冷却：1回合。,觸發所有充能球效果。冷卻：1回合。,Trigger all charged orb effects. Cooldown: 1 turn.,すべてのチャージオーブ効果を発動する。クールダウン：1ターン。,
+aggregate,TRUE,技能牌,,汇集,Aggregate,彙集,アグリゲート,你的抽牌堆中每有4张牌，获得1点魔能。,你的抽牌堆中每有4張牌，獲得1點魔能。,Gain 1 Energy for every 4 cards in your draw pile.,山札のカード4枚ごとに1エナジーを得る。,
+all_for_one,TRUE,攻击牌,,万物一心,All For One,萬物一心,オール・フォー・ワン,造成10点伤害。将弃牌堆中所有0耗能的牌放入你的手牌。,造成10點傷害。將棄牌堆中所有0耗能的牌放入你的手牌。,Deal 10 damage. Put all 0-cost cards from your discard pile into your hand.,10ダメージを与える。捨て札の0コストカードをすべて手札に戻す。,
+auto_shields,TRUE,技能牌,,自动护盾,Auto Shields,自動護盾,オートシールド,如果你没有格挡，获得11点格挡。,如果你沒有格擋，獲得11點格擋。,If you have no Block, gain 11 Block.,ブロックがない場合、11ブロックを得る。
+ball_lightning,TRUE,攻击牌,,球状闪电,Ball Lightning,球狀閃電,ボールライトニング,造成7点伤害。生成1个闪电充能球。,造成7點傷害。生成1個閃電充能球。,Deal 7 damage. Create 1 Lightning charged orb.,7ダメージを与える。ライトニングチャージオーブを1つ生成する。,
+barrage,TRUE,攻击牌,,弹幕齐射,Barrage,彈幕齊射,バラージ,你每拥有一个充能球，造成4点伤害。,你每擁有一個充能球，造成4點傷害。,Deal 4 damage for each charged orb you have.,所持しているチャージオーブ1つにつき4ダメージを与える。,
+beam_cell,TRUE,攻击牌,,光束射线,Beam Cell,光束射線,ビームセル,造成3点伤害。给予1层易伤。,造成3點傷害。給予1層易傷。,Deal 3 damage. Apply 1 Vulnerable.,3ダメージを与える。脆弱を1付与する。,
+biased_cognition,TRUE,技能牌,,偏差认知,Biased Cognition,偏差認知,バイアスド・コグニション,获得4点集中。在每回合开始时，失去1点集中。集中会加强充能球的效果。,獲得4點集中。在每回合開始時，失去1點集中。集中會加強充能球的效果。,Gain 4 Focus. At the start of each turn, lose 1 Focus. Focus strengthens charged orb effects.,集中を4得る。各ターン開始時に集中を1失う。集中はチャージオーブ効果を強化する。

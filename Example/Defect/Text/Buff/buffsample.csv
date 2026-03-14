@@ -1,0 +1,8 @@
+Id,Note,Name,Name_zh-Hant,Name_en,Name_ja,Description,Description_zh-Hant,Description_ja,Description_en
+唯一标识,备注,名称,,,,描述,描述,説明,Description
+slaughter_desire,,杀戮欲望,殺戮慾望,Slaughter Desire,殺戮の欲望,每次造成伤害时恢复1点生命。,每次造成傷害時恢復1點生命。,ダメージを与えるたびにHPを1回復する。,Restore 1 HP whenever you deal damage.
+electric_orb,,闪电,閃電,Electric Orb,電球,充能球：回合结束时，对1名随机敌人造成3点伤害。每层额外触发1次。,充能球：回合結束時，對1名隨機敵人造成3點傷害。每層額外觸發1次。,ターン終了時、ランダムな敵1体に3ダメージ。スタックごとに追加で1回発動。,At end of turn, deal 3 damage to 1 random enemy. Triggers once more per stack.
+ice_orb,,冰霜,冰霜,Ice Orb,氷球,充能球：回合结束时，获得2点格挡。每层额外触发1次。,充能球：回合結束時，獲得2點格擋。每層額外觸發1次。,ターン終了時、2ブロックを得る。スタックごとに追加で1回発動。,At end of turn, gain 2 Block. Triggers once more per stack.
+plasma_orb,,等离子,等離子,Plasma Orb,プラズマ球,充能球：每回合开始时，获得1点能量。每层额外触发1次。,充能球：每回合開始時，獲得1點能量。每層額外觸發1次。,各ターン開始時、1エナジーを得る。スタックごとに追加で1回発動。,At the start of each turn, gain 1 Energy. Triggers once more per stack.
+focus,,集中,集中,Focus,集中,充能球：提升充能球效果强度。,充能球：提升充能球效果強度。,チャージオーブの効果を強化する。,Increase charged orb effect strength.
+biased_decay,,认知偏差,認知偏差,Biased Cognition,偏向認知,每回合开始时，失去1点集中。,每回合開始時，失去1點集中。,各ターン開始時、集中を1失う。,Lose 1 Focus at the start of each turn.

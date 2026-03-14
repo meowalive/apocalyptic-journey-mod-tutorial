@@ -1,0 +1,3 @@
+Id,Note,Name,Name_en,Name_ja,Title,Title_en,Title_ja,Description,Description_en,Description_ja,Action1,Action1_en,Action1_ja,Action2,Action2_en,Action2_ja,Passive1,Passive1_en,Passive1_ja,Passive2,Passive2_en,Passive2_ja
+唯一标识,备注,称号,,,称号,,,描述,,,主动1描述,,,主动2,,,被动1,,,被动2,,
+defect_robot,,故障机器人,Defect,欠陥ロボット,故障机器人,Defect,欠陥ロボット,以充能球驱动战斗，每层充能球都会额外触发效果。,Fights with charged orbs. Each stack triggers its effect one additional time.,チャージオーブで戦う。スタックごとに効果の発動回数が増える。,<name>充能释放</name><des>触发所有充能球。冷却：1回合。</des>,<name>Discharge</name><des>Trigger all charged orbs. Cooldown: 1 turn.</des>,<name>ディスチャージ</name><des>すべてのチャージオーブを発動する。クールダウン：1ターン。</des>,,,,,,,,,

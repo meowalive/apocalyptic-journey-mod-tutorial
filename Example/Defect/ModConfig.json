@@ -1,0 +1,9 @@
+{
+  "ModName": "Defect",
+  "ModVersion": "0.1",
+  "ModAuthor": "DLSINNOCENCE",
+  "ModDescription": "新增职业-故障机器人。开发中，仅作参考。",
+  "IconPath": "Icon.png",
+  "Enabled": true,
+  "Dependencies": null
+}
