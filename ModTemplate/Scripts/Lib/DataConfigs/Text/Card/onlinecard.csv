@@ -1,0 +1,7 @@
+﻿Id,Type,Note,Name,Name_en,Name_zh-Hant,Name_ja,Description,Description_zh-Hant,Description_en,Description_ja
+唯一的标识（不能重复）,类型,备注,名称,Name,,,描述,,Description,
+*1,消耗技能牌,联机,治愈之星,Healing Star,治癒之星,癒しの星,为友方全体回复{0}生命值，若对方血量低于50%，该效果翻倍。注能1：回复量翻倍。,友方全體回覆{0}生命值，若對方血量低於50%，此效果翻倍。注能1：回復量翻倍。,"Restores {0} health for all allies, and doubles the effect if the opponent's HP is below 50%. Note 1: Double the amount of recover.",味方全体のHPを{0}回復する。対象のHPが50%未満の場合、この効果は2倍になる。注魔1：回復量が2倍になる。
+*2,消耗技能牌,联机,连携,Synergies,連攜,連携,获得{0}层的连携。,獲得{0}層{buff_synergies}。,Gain {0} stacks of {buff_synergies}.,{buff_synergies}を{0}スタック獲得する。
+*3,消耗技能牌,联机,复苏术,Resuscitation,復甦術,蘇生術,对一名友方角色使用，若其为死亡状态，则将其以10生命值的状态复活。,對一名友方角色使用，若其為死亡狀態，則以10生命值的狀態復活。,Use on a friendly character who is dead and revive them at 10 health.,味方キャラクター1体に使用する。対象が死亡状態の場合、HP10で復活させる。
+*4,消耗技能牌,联机,协助,Assistance,協助,アシスト,从手牌中选一张牌焚毁，并在指定队友手牌中加一张同名卡牌。,從手牌中選一張牌燃燼，並在指定隊友牌中加一張同名卡牌。,Burn a card from your hand and add a card of the same name to your designated teammate's hand.,手札からカードを1枚選択して燃焼し、指定した味方の手札に同名のカードを1枚加える。
+*5,消耗技能牌,联机,生命链接,Health Link,生命連結,生命リンク,你与一名友方获得同心。,你與一名友方獲得{buff_lifelink}。,You and an ally gain 1 layer of {buff_lifelink}.,あなたと味方1体が{buff_lifelink}を1スタック獲得する。

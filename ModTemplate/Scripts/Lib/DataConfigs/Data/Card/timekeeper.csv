@@ -1,0 +1,132 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,花费,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效路径,动作
+1,1,1,Instant,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""9"");AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_burn,""2"");Damage(""9"");",,Icon/Card/瞬念,斩击,
+*2,2,0,"Froze, Burnout","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Power"", ""2"");",,"var pow=PlayerInfo.Power;SetPower(pow>2?pow.ToString():""2"");",,Icon/Card/重返,,
+3,2,1,"Froze, Ascension","Vars[""BaseScript""]=""CommonCardItem"";
+    if (PlayerInfo.SpecialVars!=null)
+    {
+        if (!PlayerInfo.SpecialVars.ContainsKey(DataId.timekeeper_3)) PlayerInfo.SpecialVars[DataId.timekeeper_3] =""0"";
+AddDescription(""1"", ""Defence"", PlayerInfo.SpecialVars[DataId.timekeeper_3]);
+    }
+    else
+    {
+        AddDescription(""1"", ""Defence"", ""0"");
+    }","
+ var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+ buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));","SetStatus(""Self"");
+ ChangeDefence(PlayerInfo.SpecialVars[DataId.timekeeper_3]);
+PlayerInfo.SpecialVars[DataId.timekeeper_3]= (int.Parse(PlayerInfo.SpecialVars[DataId.timekeeper_3])+1).ToString();var buff = Self.GetBuff(DataId.buff_timelock);",,Icon/Card/暂滞,,
+4,1,2,"Froze, Burnout","Vars[""BaseScript""]=""CommonCardItem"";Vars[""DesVal1""]=""2"";",,"
+ var buff = Self.GetBuff(DataId.buff_timelock);
+ if (buff == null)
+ {
+ return;
+ }
+ for (int i = 0; i < 2; i++)
+ {
+ var list = buff.effectList.ToList();
+ while (list.Count > 0)
+ {
+ list[0].action();
+ list.RemoveAt(0);
+ }
+ }
+ buff.ClearBuff();",,Icon/Card/钟声,,Skill
+5,1,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Defence"", ""8"");AddDescription(""2"", ""Power"", ""1"");",,"SetStatus(""Self"");
+ChangeDefence(""8"");
+var buff = Self.GetBuff(DataId.buff_timelock);
+if (buff == null) return;
+var list = buff.effectList.Reverse().ToList();
+while (buff.effectList.Count > 0)
+{
+buff.effectList.RemoveAt(0);
+}
+        foreach (var item in list)
+        {
+            buff.effectList.Add(item);
+        }
+        ChangePower(""1"");",,Icon/Card/倒置,,
+6,2,0,"Burnout, Froze","Vars[""BaseScript""]=""CommonCardItem"";",," var buff = Self.GetBuff(DataId.buff_timelock);
+ if (buff == null)
+ {
+ return;
+ }
+ var list = buff.effectList.ToList();
+ while (list.Count > 0)
+ {
+ if (CheckDice.Roll().Value <=50)
+{
+ list[0].action();
+}
+ list.RemoveAt(0);
+ }",,Icon/Card/乱数触发,,Skill
+7,2,2,Froze,"Vars[""BaseScript""]=""CommonCardItem"";",," var buff = Self.GetBuff(DataId.buff_timelock);
+ if (buff == null)
+ {
+ return;
+ }
+ var list = buff.effectList.ToList();
+ while (list.Count > 0)
+ {
+ list[0].action();
+ list.RemoveAt(0);
+ }",,Icon/Card/遍历触发,,Skill
+8,1,0,"Burnout, Froze","Vars[""BaseScript""]=""CommonCardItem"";Vars[""DesVal1""]=""1"";",," var buff = Self.GetBuff(DataId.buff_timelock);
+ buff?.effectList.First().action();
+ buff?.effectList.First().action();",,Icon/Card/孪生,,Skill
+9,3,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""6"");","var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));","for(int i=0;i<3;i++){SetStatus(""AllRandomTarget1"");Damage(""6"");}",,Icon/Card/空间斩,斩击,
+10,3,1,"Froze, Unusable","Vars[""BaseScript""]=""CommonCardItem"";","
+ var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+ buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));ChangePower(""1"");","DrawCount(""1"");","
+ var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+ buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));",Icon/Card/时序悖论,,
+11,2,0,Instant,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Power"", ""2"");",,"SetStatus(""Self"");
+        ChangePower(""2"");",,Icon/Card/时之魔能,,
+12,3,1,Froze,"Vars[""BaseScript""]=""CommonCardItem"";",,"
+ var cards = HandCard
+ .Where(card => card != null&&!card.Tags.Contains(""Froze""))
+ .ToList();
+ if (!cards.Any()) return;
+ var buff = Self.GetBuff(DataId.buff_timelock) ?? Self.AddBuff(DataId.buff_timelock,1).GetBuff(DataId.buff_timelock);
+ int i = 1;
+ foreach (var card in cards)
+ {
+    var tempCard = card;
+ buff.effectList.Add((tempCard.dataConfig, () => { tempCard.dataConfig.scriptExecutor.RunScript(""UseScript""); }));
+ Self.AddBuff(DataId.buff_timelock, 1);
+ card.Burning(0.2f * i);
+ i++;
+ }
+        DrawCount(i.ToString());",,Icon/Card/封装,,
+13,1,1,Froze,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Defence"", ""5"");",,"SetStatus(""Self"");
+ ChangeDefence(""5"");
+ var buff = Self.GetBuff(DataId.buff_timelock);
+ buff?.effectList.Last().action();
+ buff?.effectList.Last().action();",,Icon/Card/残响,,
+14,2,1,Instant,"Vars[""BaseScript""]=""CommonCardItem"";","var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));","
+ var buff = Self.GetBuff(DataId.buff_timelock);
+ if (buff != null)
+ {
+ SetStatus(""Self"");
+ ChangeDefence(buff.buffConfig.Level.ToString());
+ }",,Icon/Card/时之盾,,
+15,1,0,Froze,"Vars[""BaseScript""]=""CommonCardItem"";",,"SetStatus(""Self"");AddCardByCardList(""3"",""Instant"");",,Icon/Card/零时之瞬,,
+16,2,1,Froze,"Vars[""BaseScript""]=""CommonCardItem"";",,"AddCardByUsedCardList(""3"",""Froze"");",,Icon/Card/零时之墓,,
+17,2,1,Instant,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""2"");","
+ var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+ buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));
+ SetStatus(""AllTarget"");Damage(""2"");","
+ var buff = Self.GetBuff(DataId.buff_timelock);
+ if (buff != null)
+ {
+ SetStatus(""AllTarget"");
+ Damage(buff.buffConfig.Level.ToString());
+ }","
+ var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+ buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));
+ SetStatus(""AllTarget"");Damage(""2"");",Icon/Card/时能爆破,,
+18,3,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";","
+ var buff = Self.AddBuff(DataId.buff_timelock, 1).GetBuff(DataId.buff_timelock);
+ buff.effectList.Add((dataConfig, () => { RunScript(""UseScript""); }));","SetStatus(""Self"");AddCardByCardList(""2"",""all"");",,Icon/Card/赝造神选,,

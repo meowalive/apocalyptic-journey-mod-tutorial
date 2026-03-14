@@ -1,0 +1,84 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,消耗的费用,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效,动作
+*1,3,0,,"Vars[""BaseScript""] = ""CommonCardItem""; Vars[""DesVal1""] = PlayerInfo.SkillTime.ContainsKey(DataId.careercard_1) ? PlayerInfo.SkillTime[DataId.careercard_1].ToString() : ""0"";",,"SetStatus(""Self"");
+        if (PlayerInfo.CardCount==0)
+        {
+            PlayerInfo.ShowCaption(""Your draw pile is empty"");
+            return;
+        }
+        if (HandCard.Count==PlayerInfo.CardTopCount)
+        {
+            PlayerInfo.ShowCaption(""你的卡牌数量已达上限"");
+            return;
+        }
+       AddCardByCardList(""1"",""all""); if (!PlayerInfo.SkillTime.ContainsKey(DataId.careercard_1))
+        {
+            PlayerInfo.SkillTime[DataId.careercard_1] = 0;
+        }
+  PlayerInfo.SkillTime[DataId.careercard_1] += 1;  ",,Icon/Card/赝造神选,强化,
+*2,3,0,,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""5"");Vars[""DesVal2""] = PlayerInfo.SkillTime.ContainsKey(DataId.careercard_2) ? PlayerInfo.SkillTime[DataId.careercard_2].ToString() : ""0"";",,"SetStatus(""Target"");
+        int count = 0;
+        foreach (var item in Object)
+        {
+                var buffs = item.GetBuffs();
+                Log(buffs.Length.ToString());
+                for (int i = 0; i < buffs.Length; i++)
+                {
+                    if (buffs[i] == null)
+                    {
+                        continue;
+                    }
+                    if (buffs[i].buffConfig.dataConfig.data[""Type""] == ""负面"")
+                    {
+                        count += Math.Min(Math.Max(1,
+                        int.Parse(buffs[i].buffConfig.dataConfig.data[""Rarity""])*buffs[i].buffConfig.Level/5),10);
+                    }
+                }
+        }
+      if (Object.Count>0&&Object[0]!=Self)
+      {
+        Damage(""5"");
+      }
+        RemoveAllBadBuff(""0"");
+        SetStatus(""Self"");
+        AddBuff(DataId.buff_DoomPower, count.ToString());
+        if (!PlayerInfo.SkillTime.ContainsKey(DataId.careercard_2))
+        {
+            PlayerInfo.SkillTime[DataId.careercard_2] = 0;
+        }
+        PlayerInfo.SkillTime[DataId.careercard_2] += 5;
+        ",,Icon/Card/赝造神选,斩击,
+*3,3,0,,"Vars[""BaseScript""]=""CommonCardItem"";Vars[""DesVal1""] = PlayerInfo.SkillTime.ContainsKey(DataId.careercard_3) ? PlayerInfo.SkillTime[DataId.careercard_3].ToString() : ""0"";",,"SetStatus(""Self"");
+        AddBuff(""SpecialBuff_CalamityIncarnates"",""1"");
+        if (!PlayerInfo.SkillTime.ContainsKey(DataId.careercard_3))
+        {
+            PlayerInfo.SkillTime[DataId.careercard_3] = 0;
+        }
+        PlayerInfo.SkillTime[DataId.careercard_3] += 2; 
+        ChangeCareer(DataId.career_4);",,Icon/Card/赝造神选,强化,Special
+*4,3,0,,"Vars[""BaseScript""]=""CommonCardItem"";Vars[""DesVal1""] = PlayerInfo.SkillTime.ContainsKey(DataId.careercard_4) ? PlayerInfo.SkillTime[DataId.careercard_4].ToString() : ""0"";",," if (!PlayerInfo.SkillTime.ContainsKey(DataId.careercard_4))
+        {
+            PlayerInfo.SkillTime[DataId.careercard_4] = 0;
+        }
+PlayerInfo.SkillTime[DataId.careercard_4] +=10;
+        RunImmediately(DataId.buff_obsidianSoldier,""StartRound"");
+        RunImmediately(DataId.buff_obsidianKnight,""StartRound"");
+        RunImmediately(DataId.buff_obsidianQueen,""StartRound"");",,Icon/Card/赝造神选,强化,
+*5,3,0,,"Vars[""BaseScript""]=""AttackCardItem""; Vars[""DesVal1""] = PlayerInfo.SkillTime.ContainsKey(DataId.careercard_5) ? PlayerInfo.SkillTime[DataId.careercard_5].ToString() : ""0"";",,"SetStatus(""Target"");
+        DrawCount(""5"");
+        AddBuff(DataId.buff_WailingWall,""1""); if (!PlayerInfo.SkillTime.ContainsKey(DataId.careercard_5))
+        {
+            PlayerInfo.SkillTime[DataId.careercard_5] = 0;
+        }
+PlayerInfo.SkillTime[DataId.careercard_5] +=3;",,Icon/Card/赝造神选,强化,
+*6,3,0,,"Vars[""BaseScript""]=""AttackCardItem""; Vars[""DesVal1""] = PlayerInfo.SkillTime.ContainsKey(DataId.careercard_6) ? PlayerInfo.SkillTime[DataId.careercard_6].ToString() : ""0"";",,"SetStatus(""Target"");
+       DesEnemyAction();if (!PlayerInfo.SkillTime.ContainsKey(DataId.careercard_6))
+        {
+            PlayerInfo.SkillTime[DataId.careercard_6] = 0;
+        }
+PlayerInfo.SkillTime[DataId.careercard_6] +=3;",,Icon/Card/赝造神选,,
+*7,3,0,,"Vars[""BaseScript""]=""CommonCardItem""; Vars[""DesVal1""] = PlayerInfo.SkillTime.ContainsKey(DataId.careercard_7) ? PlayerInfo.SkillTime[DataId.careercard_7].ToString() : ""0"";",,"PlayerInfo.EventTrigger(""RandomEffect""+Self.InstanceId); if (!PlayerInfo.SkillTime.ContainsKey(DataId.careercard_7))
+        {
+            PlayerInfo.SkillTime[DataId.careercard_7] = 0;
+        }
+PlayerInfo.SkillTime[DataId.careercard_7] +=2;",,Icon/Card/赝造神选,,

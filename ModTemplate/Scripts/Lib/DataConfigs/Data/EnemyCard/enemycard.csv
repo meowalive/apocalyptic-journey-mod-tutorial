@@ -1,0 +1,220 @@
+﻿Id,InitScript,TargetScript,UseScript,BackIcon,Icon,Tag,Effects,Action
+Id,卡牌初始化脚本（使用前执行）,卡牌出现时执行（设定目标）,卡牌使用后执行,行动底面,行动图标,唯一特性,特效,动作
+defence,"Vars[""CD""]=""0"";Vars[""priority""]=""1"";AddDescription(""1"", ""Defence"", def());","SetStatus(""Self"");",ChangeDefence(def());,Icon/ActionIcon/强化底,Icon/ActionIcon/防御,,,
+OrdinaryHit,"Vars[""CD""]=""0"";Vars[""priority""]=""1"";AddDescription(""1"", ""Damage"", atk());","SetStatus(""Target"");",Damage((int.Parse(atk())).ToString());,Icon/ActionIcon/攻击底,Icon/ActionIcon/攻击,,断脊,Attack
+QuadrupleHits,"AddDescription(""1"", ""MultiDamage"", atk().ToInt()/3+""*4"");Vars[""priority""]=""2"";Vars[""CD""]=""2"";","SetStatus(""Target"");",for (int i=0;i<4;i++) Damage((int.Parse(atk())/3).ToString());,Icon/ActionIcon/攻击底,Icon/ActionIcon/三连击,,破灭,Attack
+rejuvenation,"AddDescription(""1"", ""Damage"", (atk().ToInt() * 4 / 5).ToString());Vars[""priority""]=""1"";Vars[""CD""]=""1"";","SetStatus(""Self"");",ChangeHp((int.Parse(atk())*4/5).ToString());,Icon/ActionIcon/强化底,Icon/ActionIcon/治疗,,,
+charmed,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""1"");","SetStatus(""Target"");","AddBuff(DataId.buff_timestop,""1"");",Icon/ActionIcon/负面底,Icon/ActionIcon/锁,,时序魔法：停滞,Skill
+OverrunWorkouts,"Vars[""CD""]=""2"";Vars[""priority""]=""2"";AddDescription(""1"", ""Damage"", (atk().ToInt()/5).ToString());","SetStatus(""Self"");","AddBuff(DataId.buff_keenedge,(int.Parse(atk())/5).ToString());",Icon/ActionIcon/攻击底,Icon/ActionIcon/攻击强化,,,
+NerveReflexes,"Vars[""CD""]=""2"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""1"");","SetStatus(""Self"");","AddBuff(DataId.buff_frenzy,""1"");",Icon/ActionIcon/攻击底,Icon/ActionIcon/攻击强化,,,
+fearless,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""4"");","SetStatus(""Self"");","AddBuff(DataId.buff_vitality,""4"");",Icon/ActionIcon/攻击底,Icon/ActionIcon/强化,,,
+Witness,"Vars[""CD""]=""2"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""2"");","SetStatus(""Self"");","AddBuff(DataId.buff_impregnable,""2"");",Icon/ActionIcon/攻击底,Icon/ActionIcon/强化,,,
+Toxin1,"Vars[""CD""]=""1"";
+        if (int.Parse(PlayerInfo.GetGameVar(""Difficulty"")) > 3)
+        {
+           Vars[""CD""]=""0"";
+        }
+        Vars[""priority""]=""3"";AddDescription(""1"", ""Buff"", ""3"");","SetStatus(""Target"");","AddBuff(DataId.buff_toxin,""3"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,腐化之息,Skill
+Toxin2,"Vars[""CD""]=""1"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""3"");
+        if (int.Parse(PlayerInfo.GetTagDiff()) > 16)
+        {
+           AddDescription(""1"", ""Buff"", ""4"");
+        }","SetStatus(""Target"");","if (int.Parse(PlayerInfo.GetTagDiff()) > 16)
+        {
+           AddBuff(DataId.buff_toxin,""4"");
+        }
+        else
+        {
+            AddBuff(DataId.buff_toxin,""3"");
+        }",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,腐化之息,Skill
+Toxin3,"Vars[""CD""]=""1"";Vars[""priority""]=""1"";AddDescription(""1"", ""Buff"", ""5"");","SetStatus(""Target"");","AddBuff(DataId.buff_toxin,""5"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,腐化之息,Skill
+Toxin4,"Vars[""CD""]=""2"";Vars[""priority""]=""1"";AddDescription(""1"", ""Buff"", ""5"");","SetStatus(""Target"");","AddBuff(DataId.buff_toxin,""5"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,腐化之息,Skill
+foraging,"Vars[""CD""]=""1"";Vars[""priority""]=""3"";AddDescription(""1"", ""Damage"", (atk().ToInt()*4/5).ToString());","SetStatus(""Target"");",Damage((int.Parse(atk())*4/5).ToString());,Icon/ActionIcon/攻击底,Icon/ActionIcon/中等攻击,,断脊,Attack
+Licking,"Vars[""CD""]=""2"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""2"");","SetStatus(""Target"");","AddBuff(DataId.buff_rotten,""2"");",Icon/ActionIcon/负面底,Icon/ActionIcon/碎裂,,时序魔法：停滞,Skill
+NeverDead,"Vars[""CD""]=""2"";Vars[""priority""]=""1"";AddDescription(""1"", ""Buff"", ""5"");","SetStatus(""Self"");","AddBuff(DataId.buff_evergreen,""5"");",Icon/ActionIcon/攻击底,Icon/ActionIcon/治疗,,,
+SuperFireBall,"Vars[""CD""]=""2"";Vars[""priority""]=""2"";AddDescription(""1"", ""MultiDamage"", (atk().ToInt()*4/5).ToString()+""*2"");","SetStatus(""Target"");",for (int i=0;i<2;i++) Damage(atk());,Icon/ActionIcon/攻击底,Icon/ActionIcon/二连击,,破灭,Attack
+WeakLight,"Vars[""CD""]=""4"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""2"");","SetStatus(""Target"");","AddBuff(DataId.buff_weak,""2"");",Icon/ActionIcon/负面底,Icon/ActionIcon/特殊,,无力化,Skill
+OrdinaryFiveHit,"Vars[""CD""]=""1"";Vars[""priority""]=""3"";Vars[""atk""]=atk();AddDescription(""1"", ""MultiDamage"", (atk().ToInt()*3/10).ToString()+""*5"");","SetStatus(""Target"");","for (int i=0;i<5;i++) Damage((int.Parse(Vars[""atk""])*3/10).ToString());",Icon/ActionIcon/攻击底,Icon/ActionIcon/三连击,,蝶翼复切,Attack
+Weak,"Vars[""CD""]=""2"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", (atk().ToInt()/5).ToString());","SetStatus(""Self"");","AddBuff(DataId.buff_weak,((int.Parse(atk()))/5).ToString());",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,无力化,Skill
+thief,"Vars[""CD""]=""2"";Vars[""priority""]=""5"";Vars[""DesVal1""]=""10"";","SetStatus(""Target"");","ChangeMoney(""-10"");",Icon/ActionIcon/负面底,Icon/ActionIcon/锁,,无力化,Skill
+Thieves,"Vars[""CD""]=""2"";Vars[""priority""]=""5"";Vars[""DesVal1""]=""15"";","SetStatus(""Target"");","ChangeMoney(""-15"");",Icon/ActionIcon/负面底,Icon/ActionIcon/锁,,无力化,Skill
+Charge1," Vars[""CD""]=""2"";Vars[""priority""]=""10"";  if (int.Parse(PlayerInfo.GetTagDiff()) > 20)
+        {
+            Vars[""CD""] = ""3"";
+        }","SetStatus(""Self"");",,Icon/ActionIcon/负面底,Icon/ActionIcon/蓄力,,,
+Charge2,"Vars[""CD""]=""3"";Vars[""priority""]=""11"";","SetStatus(""Self"");",,Icon/ActionIcon/负面底,Icon/ActionIcon/蓄力,,,
+burn,"Vars[""CD""]=""1"";
+        AddDescription(""1"", ""Buff"", ""3"");
+         if (int.Parse(PlayerInfo.GetTagDiff()) > 20)
+        {
+           AddDescription(""1"", ""Buff"", ""4"");
+        }
+        Vars[""priority""]=""3"";","SetStatus(""Target"");","if (int.Parse(PlayerInfo.GetTagDiff()) > 20)
+        {
+            SetStatus(""Target"");AddBuff(DataId.buff_burn,""4"");
+        }
+        else
+        {
+            SetStatus(""Target"");AddBuff(DataId.buff_burn,""3"");
+        }",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,蹈火之域,Skill
+burn1,"Vars[""CD""]=""2"";Vars[""priority""]=""4"";AddDescription(""1"", ""Buff"", ""4"");","SetStatus(""Target"");","SetStatus(""Target"");AddBuff(DataId.buff_burn,""3"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,蹈火之域,Skill
+burn2,"Vars[""CD""]=""2"";Vars[""priority""]=""3"";AddDescription(""1"", ""Buff"", ""6"");","SetStatus(""Target"");","SetStatus(""Target"");AddBuff(DataId.buff_burn,""6"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,蹈火之域,Skill
+specialAttack,"Vars[""CD""]=""2"";Vars[""priority""]=""3"";AddDescription(""1"", ""Damage"", atk()); AddDescription(""2"", ""Defence"", def());","SetStatus(""Target"");","SetStatus(""Self"");ChangeDefence(def());SetStatus(""Target"");Damage(atk());",Icon/ActionIcon/攻击底,Icon/ActionIcon/剑盾,,,Attack
+MakeIneffectiveRays1,"Vars[""CD""]=""3"";Vars[""priority""]=""3"";AddDescription(""1"", ""Defence"", def());AddDescription(""2"", ""Buff"", ""2"");","SetStatus(""Self"");","SetStatus(""Self"");ChangeDefence(def());AddBuff(DataId.buff_impregnable,""2"");",Icon/ActionIcon/强化底,Icon/ActionIcon/防御,,,
+PlugCards1,"Vars[""CD""]=""4"";Vars[""priority""]=""3"";Vars[""DesVal1""] =""3"";","SetStatus(""Target"");","for (int i = 0; i < 3; i++)
+        {
+            RandomAddCard(DataId.card_2);
+        }",Icon/ActionIcon/负面底,Icon/ActionIcon/塞卡,,时序魔法：停滞,Skill
+PlugCards2,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";Vars[""DesVal1""] =""1"";Vars[""DesVal2""] =""1"";","SetStatus(""Target"");","RandomAddCard(DataId.cursecard_2);
+RandomAddCard(DataId.card_1);",Icon/ActionIcon/负面底,Icon/ActionIcon/塞卡,,时序魔法：停滞,Skill
+WhereverYouGo,"Vars[""CD""]=""13"";Vars[""priority""]=""12"";","SetStatus(""Target"");","foreach (var item in Object)
+{
+    foreach (var temp in item.dynamicVariables)
+    {
+        Self.dynamicVariables[temp.Key]=temp.Value;
+    }
+ 
+}
+Self.dynamicVariables[""liveCount""]=0f;",Icon/ActionIcon/负面底,Icon/ActionIcon/塞卡,,时序魔法：停滞,Skill
+PlugCards3,"Vars[""CD""]=""3"";Vars[""priority""]=""5"";Vars[""DesVal1""] =""3"";","SetStatus(""Target"");","for (int i = 0; i < 3; i++)
+        {
+            RandomAddCard(DataId.card_2);
+        }",Icon/ActionIcon/负面底,Icon/ActionIcon/塞卡,,时序魔法：停滞,Skill
+vulnerabilityLight,"Vars[""CD""]=""2"";Vars[""priority""]=""5"";AddDescription(""1"", ""Buff"", ""3"");","SetStatus(""Target"");","AddBuff(DataId.buff_vulnerability,""3"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,时序魔法：停滞,Skill
+MakeIneffectiveRays2,"Vars[""CD""]=""0"";Vars[""priority""]=""3"";AddDescription(""1"", ""Defence"", def());AddDescription(""2"", ""Buff"", ""1"");","SetStatus(""Self"");","ChangeDefence(def());AddBuff(DataId.buff_impregnable,""1"");",Icon/ActionIcon/强化底,Icon/ActionIcon/防御,,,
+SpreadWings,"Vars[""CD""]=""0"";Vars[""priority""]=""2"";AddDescription(""1"", ""Damage"", atk());AddDescription(""2"", ""Buff"", ""5"");","SetStatus(""AllTarget"");","Damage(atk()); AddBuff(DataId.buff_burn,""1"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,蹈火之域,Skill
+HighFly,"Vars[""CD""]=""0"";Vars[""priority""]=""2"";AddDescription(""1"", ""Defence"", def());","SetStatus(""Self"");"," Self.Defend += int.Parse(def());
+        int count=0;
+                var buff = Self.GetBuff(DataId.buff_burn);
+                if (buff != null)
+                {
+                    count += buff.buffConfig.Level;
+                } 
+           
+        ChangeDefence((int.Parse(def())+count).ToString());",Icon/ActionIcon/强化底,Icon/ActionIcon/防御,,,
+Come,"Vars[""CD""]=""2"";
+        if (PlayerInfo.enemyCount>2)
+        {
+            Vars[""priority""]=""0"";
+        }
+        else
+        {
+            Vars[""priority""]=""4"";
+        }","SetStatus(""Self"");","Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (int.Parse(Vars[""ThisCount""]) <= 2)
+        {
+            AddEnemy(DataId.enemy_10023);
+        }
+        else
+        {
+            ChangeHp((Self.MaxHp*15/100*-1).ToString());
+        }",Icon/ActionIcon/负面底,Icon/ActionIcon/特殊,,,
+Dragon'sMajesty,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";Vars[""ThisCount""]=""0"";int k = int.Parse(PlayerInfo.GetGameVar(""Difficulty"")) > 3 ? 3 : 2;
+        Vars[""DesVal1""]=k.ToString(); if (int.Parse(Vars[""ThisCount""]) >= 2)
+        {
+            Vars[""CD""] = ""9999"";
+        }","SetStatus(""AllTarget"");","        int k = int.Parse(PlayerInfo.GetGameVar(""Difficulty"")) > 3 ? 3 : 2;
+        for (int i = 0; i < k; i++)
+        {
+            AddCard(DataId.cursecard_3);
+        }
+        Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();",Icon/ActionIcon/负面底,Icon/ActionIcon/塞卡,,,
+FallenDragon,"Vars[""CD""]=""3"";Vars[""priority""]=""4"";AddDescription(""1"", ""Buff"", ""20"");","SetStatus(""AllFriends"");"," SetStatus(""AllFriends"");
+   AddBuff(DataId.buff_extraordinary,  ""20"");",Icon/ActionIcon/强化底,Icon/ActionIcon/攻击强化,,,
+LimePowder,"Vars[""CD""]=""3"";Vars[""priority""]=""3"";AddDescription(""1"", ""Buff"", ""1"");","SetStatus(""Target"");","AddBuff(DataId.buff_oblivion,""1"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,,
+PoisonThrowing,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""3"");","SetStatus(""Target"");","AddBuff(DataId.buff_oblivion,""1"");
+AddBuff(DataId.buff_toxin,""3"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,,
+Observe,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""2"");","SetStatus(""Target"");","AddBuff(DataId.buff_degrade,""2"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,,
+EvilCurse,"Vars[""CD""]=""0"";Vars[""priority""]=""2"";Vars[""DesVal1""] =""1"";","SetStatus(""Target"");","string a = (DefaultDice.Roll().Value/10+1).ToString();
+RandomAddCard(""cursecard_""+a);",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,时序魔法：停滞,Skill
+IceShield,"Vars[""CD""]=""4"";Vars[""priority""]=""5"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""3"");","SetStatus(""Target"");","AddBuff(DataId.buff_cripple,""1"");
+AddBuff(""buff_slow"",""3"");",Icon/ActionIcon/负面底,Icon/ActionIcon/给予异常,,,
+GiantClawStrike,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";AddDescription(""1"",""Damage"",(int.Parse(atk())*2).ToString());
+AddDescription(""2"", ""Buff"", ""2"");","SetStatus(""Target"");","Damage((int.Parse(atk())*2).ToString());
+        AddBuff(DataId.buff_bleeding,""2"");",Icon/ActionIcon/攻击底,Icon/ActionIcon/攻击,,,Attack
+PowerlessCurse,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";Vars[""DesVal1""] =""1"";","SetStatus(""Target"");",RandomAddCard(DataId.cursecard_3);,Icon/ActionIcon/负面底,Icon/ActionIcon/塞卡,,时序魔法：停滞,Skill
+MT1,"Vars[""CD""]=""3"";
+        if (Self.CurHp<Self.MaxHp*4/5)
+        {
+            Vars[""priority""] = ""9"";
+        }
+        else
+        {
+            Vars[""priority""] = ""1"";
+        }AddDescription(""2"", ""Buff"", ""2"");","SetStatus(""AllFriends"");","AddBuff(DataId.buff_lifelink,""2"");",Icon/ActionIcon/强化底,Icon/ActionIcon/攻击强化,,,
+MT2,"Vars[""CD""]=""3"";Vars[""priority""]=""2"";AddDescription(""1"", ""Buff"", ""10"");if (int.Parse(Vars[""ThisCount""]) >= 2)
+        {
+            Vars[""CD""] = ""9999"";
+        }","SetStatus(""AllFriendExSelf"");","AddBuff(DataId.buff_extraordinary,""10"");
+AddAction(""1"");
+Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();",Icon/ActionIcon/强化底,Icon/ActionIcon/攻击强化,,,
+Wake,"Vars[""CD""]=""999"";Vars[""priority""]=""2"";","SetStatus(""AllFriendExSelf"");","foreach (var item in Object)
+        {
+                var buffs = item.GetBuff(DataId.SpecialBuff_GiantDollBear);
+                if (buffs!=null)
+                {
+                    buffs.scriptExecutor.Vars[""ThisCount""] = ""1"";
+                }
+        }",Icon/ActionIcon/强化底,Icon/ActionIcon/攻击强化,,,
+FullSupport,"Vars[""CD""]=""1"";AddDescription(""1"", ""Defence"", (def().ToInt() /2 * 3).ToString());Vars[""priority""]=""1"";","SetStatus(""AllFriends"");",ChangeDefence((int.Parse(def())*2/3).ToString());,Icon/ActionIcon/强化底,Icon/ActionIcon/防御,,,
+VenomSpray,"Vars[""CD""]=""3"";AddDescription(""1"",""Damage"",(int.Parse(atk())*2/3).ToString());
+        if (int.Parse(PlayerInfo.GetTagDiff())>20)
+        {
+            Vars[""priority""]=""4"";
+        }
+        else
+        {
+            Vars[""priority""]=""0"";
+        }","SetStatus(""Target"");","Damage((int.Parse(atk())*2/3).ToString());
+        AddCard(DataId.cursecard_12);",Icon/ActionIcon/攻击底,Icon/ActionIcon/攻击,,腐化之息,Attack
+psychologicalShock,"Vars[""CD""]=""3"";AddDescription(""1"", ""Damage"", (int.Parse(atk())*2/3).ToString());
+        if (int.Parse(PlayerInfo.GetTagDiff())>30)
+        {
+            Vars[""priority""]=""4"";
+        }
+        else
+        {
+            Vars[""priority""]=""0"";
+        }","SetStatus(""Target"");","Damage((int.Parse(atk())*2/3).ToString());
+        AddCard(DataId.cursecard_6);",Icon/ActionIcon/攻击底,Icon/ActionIcon/攻击,,,Attack
+obtainMoney,"Vars[""CD""]=""2"";AddDescription(""1"", ""Damage"", atk());
+        if (int.Parse(PlayerInfo.GetTagDiff())>30)
+        {
+            Vars[""priority""]=""4"";
+        }
+        else
+        {
+            Vars[""priority""]=""0"";
+        }","SetStatus(""Target"");","Damage(atk());
+        ChangeMoney(""-15"");
+        AddEvent(""Win"",()=>{ChangeMoney(""15"");});",Icon/ActionIcon/攻击底,Icon/ActionIcon/攻击,,断脊,Attack
+FiveHit,"Vars[""CD""]=""2"";Vars[""priority""]=""3"";
+       AddDescription(""1"",""MultiDamage"",(int.Parse(atk())/5).ToString()+""*5"");","SetStatus(""Target"");","SetStatus(""Target"");
+        for (int i = 0; i < 5; i++)
+        {
+           Damage((int.Parse(atk())/5).ToString()); 
+        }",Icon/ActionIcon/攻击底,Icon/ActionIcon/三连击,,破灭,Attack
+OriginalSinCard,"Vars[""CD""]=""1"";Vars[""DesVal1""]=""2"";
+        if (Self.CurHp<=Self.MaxHp*0.65f)
+        {
+            Vars[""priority""]=""5"";
+        }
+        else
+        {
+            Vars[""priority""]=""0"";
+        }","SetStatus(""Target"");","for (int i = 0; i < 3; i++)
+        {
+            RandomAddCard(DataId.cursecard_13);
+        }",Icon/ActionIcon/负面底,Icon/ActionIcon/塞卡,,时序魔法：停滞,Skill
+Despair,"Vars[""CD""]=""1"";AddDescription(""1"", ""Damage"", (int.Parse(atk())*4/5).ToString());
+        if (Self.CurHp<=Self.MaxHp*0.65f&&Self.CurHp>Self.MaxHp*0.3f)
+        {
+            Vars[""priority""]=""5"";
+        }
+        else
+        {
+            Vars[""priority""]=""0"";
+        }","SetStatus(""Target"");","SetStatus(""AllTarget"");
+       Damage((int.Parse(atk())*4/5).ToString());
+       AddBuff(""buff_toxin"", ""3"");",Icon/ActionIcon/攻击底,Icon/ActionIcon/强化攻击,,,
+RoyalBarrier,"Vars[""CD""]=""1"";Vars[""priority""]=""2"";AddDescription(""1"", ""Defence"", (int.Parse(def()))*2);","SetStatus(""Self"");",ChangeDefence((int.Parse(def())*2).ToString());,Icon/ActionIcon/强化底,Icon/ActionIcon/防御,,,

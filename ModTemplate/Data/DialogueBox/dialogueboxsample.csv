@@ -1,0 +1,2 @@
+﻿Id,RoleId,StartScript,EndScript,EventName
+唯一标识,说话者唯一标识,对话开始时执行,对话结束时执行,何时执行对话（事件名）

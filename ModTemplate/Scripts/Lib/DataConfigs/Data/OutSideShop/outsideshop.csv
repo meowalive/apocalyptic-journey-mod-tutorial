@@ -1,0 +1,30 @@
+﻿Id,Price,Icon,Type,Toid,BuyScript,BuyCount
+这里唯一id,真理价格,图标,种类,对应类的id,购买后生效的脚本,购买次数
+1,50,Icon/Item/奈奈,career,career_*2,,1
+2,999,Icon/Item/门,relic,relic_*24," PlayerInfo.AddItem(""relic_24"",""relic"");",999
+3,20,Icon/Item/强健体魄,,,"PlayerInfo.Getsave().Gain[""exMaxHp""] += 5;",5
+4,20,Icon/Item/谈判技巧,,,"PlayerInfo.Getsave().Gain[""flushmoneychange""] -= 5;",5
+5,20,Icon/Item/冒险津贴,,,"PlayerInfo.Getsave().Gain[""firstMoney""] += 10;",5
+6,20,Icon/Item/魔力涌动,,,"PlayerInfo.Getsave().Gain[""Strength""]+=1;",5
+7,20,Icon/Item/精神稳固,,,"PlayerInfo.Getsave().Gain[""Wisdom""]+=1;",5
+8,20,Icon/Item/幸运增幅,,,"PlayerInfo.Getsave().Gain[""Lucky""]+=1;",5
+9,20,Icon/Item/感知强化,,,"PlayerInfo.Getsave().Gain[""Perceive""]+=1;",5
+10,999,Icon/Item/重生保险,,,,1
+11,100,Icon/Item/盾,card,blood_*12;timekeeper_*2;perceivecard_*3;luckycard_*2,"PlayerInfo.AddItem(""blood_12"",""card"");
+        PlayerInfo.AddItem(""timekeeper_2"", ""card"");
+        PlayerInfo.AddItem(""perceivecard_3"", ""card"");
+        PlayerInfo.AddItem(""luckycard_2"", ""card"");",1
+12,100,Icon/Item/永世勇者的法则,card,universalcard_*19;universalcard_*18;card_*12;card_*13,"PlayerInfo.AddItem(""universalcard_17"",""card"");
+        PlayerInfo.AddItem(""universalcard_18"",""card"");
+        PlayerInfo.AddItem(""card_12"",""card"");
+        PlayerInfo.AddItem(""card_13"",""card"");",1
+13,100,Icon/Item/永世勇者的法则,relic,relic_*53;relic_*19;relic_*12;relic_*21,"PlayerInfo.AddItem(""relic_53"",""relic"");
+        PlayerInfo.AddItem(""relic_19"",""relic"");
+        PlayerInfo.AddItem(""relic_12"",""relic"");
+        PlayerInfo.AddItem(""relic_21"",""relic"");",1
+14,150,Icon/Item/永世勇者的法则,relic,relic_*76;relic_*65;relic_*27;relic_*38,"PlayerInfo.AddItem(""relic_76"",""relic"");
+        PlayerInfo.AddItem(""relic_65"",""relic"");
+        PlayerInfo.AddItem(""relic_27"",""relic"");
+        PlayerInfo.AddItem(""relic_38"",""relic"");",1
+15,300,Icon/Item/永世勇者的法则,editorBuff,buff_*immortal;buff_*unyielding,,1
+16,100,Icon/Item/永世勇者的法则,,Hard_*19;Hard_*18,,1

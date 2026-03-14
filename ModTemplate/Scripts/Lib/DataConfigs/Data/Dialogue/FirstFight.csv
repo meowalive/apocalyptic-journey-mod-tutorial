@@ -1,0 +1,16 @@
+﻿Id,BaseScript,EndScript,Roles,EventName,ChoiceCount,ChoiceScript1,ChoiceScript2
+对话Id,初始脚本,对话结束时执行,"出现的角色Id，说话者用<>包括，用,分割",何时执行对话（事件名）,选项数量,选项脚本,
+1,,,role_amelia,FirstFight,0,,
+2,,,role_amelia,,0,,
+3,,,role_amelia,,0,,
+4,,,role_Krisna,,0,,
+5,,,role_amelia,,0,,
+6,,,role_amelia,,0,,
+7,,,role_Krisna,,0,,
+8,,,role_amelia,,0,,
+9,,,role_narrator,,0,,
+10,,,role_Krisna,,0,,
+11,,,role_amelia,,0,,
+12,,,role_amelia,,2,"PlayerInfo.ShowDialogue(""FirstFight_13"");",WinTheFight();PlayerInfo.EndDialogue();
+13,,,role_amelia,FirstFight_13,0,,
+14,,PlayerInfo.EndDialogue();,role_amelia,,0,,

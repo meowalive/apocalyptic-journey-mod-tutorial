@@ -1,0 +1,2 @@
+﻿Id,InitScript,TargetScript,UseScript,BackIcon,Icon,Tag,Effects,Action
+唯一标识,更新显示信息用的,卡牌出现时执行（设定目标）,卡牌使用后执行,行动底面,行动图标,唯一特性,特效,动作

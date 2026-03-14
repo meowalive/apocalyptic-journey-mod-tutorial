@@ -1,0 +1,31 @@
+﻿Id,Type,是否完成,Note,Name,Name_zh-Hant,Name_en,Name_ja,Description,Description_zh-Hant,Description_en,Description_ja
+唯一的标识（不能重复）,类型,FALSE,备注,名称,,Name,,描述,,Description,
+1,消耗技能牌,TRUE,,黄金时代,黃金時代,Golden Age,黄金時代,获得{0}点护盾，结束你的回合。获得{1}金币。,獲得{0}點護盾，結束你的回合。獲得{1}金幣。,Gain {0} shield and end your turn. Gain {1} gold(s).,{0}のシールドを獲得し、ターンを終了する。{1}ゴールドを獲得する。
+*2,消耗技能牌,TRUE,,统合之约,統合之約,Unity Pact,統合の契約,"焚毁你的所有手牌，每张获得一点超魔，45金币。
+超魔4：获得2～5点魔能，抽2～5张牌。","燃燼你的所有手卡，每張獲得一點超魔，45金幣。
+超魔4：獲得2～5點能量，抽2～5張牌。","Burnout all cards in your hand to gain 1 Super Magic for each card, and 45 golds.
+Metamagic 4: Gain 2-5 energy and draw 2-5cards.","手札を全て燃焼し、カード1枚につきスーパーマジックを1と45ゴールドを獲得。
+スーパーマジック4：2～5マナを獲得し、2～5枚カードを引く。
+"
+3,攻击牌,TRUE,,乾坤一掷,乾坤一擲,All or Nothing,乾坤一擲,"每有50点金币，获得一点超魔。
+超魔X：消耗25金币，对全体敌人造成{0}点伤害。最多20次","每有50點金幣，獲得一點超魔。
+超魔X：消耗25金幣，對全體敵人造成5點傷害。 最多20次","Gain 1 Super Magic for every 50 gold you have.
+Metamagic X: Consume 25gold coins to deal 5 damage to all enemies.Up to 20 times","50ゴールドごとに、スーパーマジックを1獲得する。
+スーパーマジックX：25ゴールドを消費し、敵全体に{0}ダメージを与える。最大20回"
+4,技能牌,TRUE,,诅咒炼金,詛咒煉金,Cursed Alchemy,呪いの錬金術,"这张卡每使用一次，获得一点超魔。
+超魔{0}：50%概率增加15%金币，反之失去10%金币, 受到15%最大生命值的真实伤害，重复{0}次。","這張卡每使用一次，獲得一點超魔。
+超魔{0}：50%機率增加15%金幣，反之失去10%金幣, 受到15%最大生命值的真實傷害，重複{0}次","Each time this card is used, gain 1 Metamagic.
+Metamagic {0}: 50% chance to gain 15% gold coins; otherwise lose 10% gold coins and take 15% of your maximum Health as true damage. Repeat {0} times.","このカードを使用するたび、スーパーマジックを1獲得する。
+スーパーマジック{0}：15%の確率でゴールドが20%増加、そうでなければゴールドが10%減少し、最大HPの15%分の貫通ダメージを受ける。{0}回繰り返す。"
+5,技能牌,TRUE,,灵光一闪,靈光一閃,Flash of Inspiration,霊光一閃,"焚毁两张手牌,
+将三张稀有度不低于二的随机卡牌加入牌堆顶部。并抽取{0}张卡牌。","燃燼兩張手牌,
+將三張稀有度不低於二的隨機卡牌加入牌堆頂部。並抽取{0}張卡牌。 ","Burn two cards from your hand.
+Add three random cards with rarity **3 or higher** to the top of your deck and draw {0} cards.","手札を2枚燃焼する。
+レアリティが2以上のランダムなカードを3枚、山札の一番上に加える。そしてカードを{0}枚引く。"
+6,消耗技能牌,TRUE,,幻想酊剂,幻想酊劑,Fantasy Elixir,幻想チンキ剤,获得{0}层空想。,獲得{0}層{buff_reverie}。,Gain {0} layer(s) of {buff_reverie}.,{buff_reverie}を{0}スタック獲得する。
+7,技能牌,TRUE,,不稳定思绪,不穩定思緒,Unstable Thoughts,不安定な思考,每次抽到时，这张卡的打出效果变成一张稀有度在3的技能牌（费用不变）。,每次抽到時，這張卡的打出效果變成一張稀有度在3的技能牌（費用不變）。,"Each time this card is drawn, its effect becomes that of a random skill card with rarity 3-5 (cost unchanged).",このカードを引くたび、その使用効果はレアリティ3のランダムなスキルカードの効果に変わる（コストは不変）。
+*8,技能牌,TRUE,,奖励骰,獎勵骰,Bonus Dice,ボーナスダイス,下次数字骰额外投掷一次，结果为两者之和。,下次數字骰額外投擲一次，結果為兩者之和。,"The next dice roll will be rolled twice, and the results will be added together.",次の数字ダイスの判定時、追加でもう一度振り、結果はその合計値となる。
+*9,技能牌,TRUE,,惩罚骰,懲罰骰,Penalty Dice,ペナルティダイス,下次检定骰的结果变为两次取低。,下次檢定骰的結果變成兩次取低。,"The next dice roll will be rolled twice, and the lower result will be used.",次の判定ダイスの結果は、2回振ったうちの低い方の値となる。
+10,技能牌,TRUE,,雷鸣加护,雷鳴加護,Thunder's Blessing,雷鳴の加護,获得{0}层天罚。,獲得{0}層{buff_fate}。,Gain {0} layers of {buff_fate}.,{buff_fate}を{0}スタック獲得する。
+11,技能牌,TRUE,,不稳定屏障,不穩定屏障,Unstable Barrier,不安定な障壁,获得{0}到{1}点护盾。,得到{0}到{1}點護盾。,Gain {0} to {1} shield.,{0}～{1}のシールドを獲得する。
+12,消耗技能牌,TRUE,,帝国堡垒,帝國堡壘,Imperial Fortress,帝国の要塞,每有一百金币，获得一点强韧。,每有100金幣，獲得1層{buff_resilient}。,"For every 100 gold, gain 1 layer of {buff_resilient}.",100ゴールドごとに{buff_resilient}を1スタック獲得する。

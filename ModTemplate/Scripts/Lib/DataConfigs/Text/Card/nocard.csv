@@ -1,0 +1,6 @@
+﻿Id,Note,Name,Name_zh-Hant,Name_en,Name_ja,Type,Description,Description_zh-Hant,Description_en,Description_ja
+唯一的标识（不能重复）,,名称,,Name,,卡牌类型,描述,,Description,
+*1,2,智慧之证1,智慧之證1,Proof of Wisdom I,知恵の証I,消耗技能牌,增加1层智慧之证。,增加1層智慧之證,Add 1 stack of Proof of Wisdom,知恵の証を1スタック追加する。
+*2,0,智慧之证2,智慧之證2,Proof of Wisdom II,知恵の証II,消耗技能牌,"若打出时手牌大于等于8,增加1层智慧之证。","若打出時手牌大於等於8,增加1層智慧之證","If you have 8 or more cards in hand when played, add 1 stack of Proof of Wisdom",使用時に手札が8枚以上の場合、知恵の証を1スタック追加する。
+*3,1,智慧之证3,智慧之證3,Proof of Wisdom III,知恵の証III,技能牌,50%概率为自身增加1层智慧之证，失败时往抽牌堆塞入一张虚无并洗牌。,50%機率為自身增加1層智慧之證，失敗時往抽牌堆塞入一張虛無並洗牌。,"50% chance to add 1 stack of Proof of Wisdom to yourself; on failure, shuffle a Void into your draw pile.",50%の確率で自身に知恵の証を1スタック追加する。失敗した場合、山札に「虚無」を1枚加えてシャッフルする。
+*4,0,智慧之证4,智慧之證4,Proof of Wisdom IV,知恵の証IV,消耗技能牌,"若打出时魔能大于3,增加一层智慧之证。","若打出時能量大於3,增加一層智慧之證","If your energy is greater than 3 when played, add 1 stack of Proof of Wisdom",使用時にマナが3より大きい場合、知恵の証を1スタック追加する。

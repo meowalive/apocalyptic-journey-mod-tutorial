@@ -1,0 +1,4 @@
+﻿Id,Hp,Attack,Defend,ActionCount,InitScript,DollIcon,Model,Animation,Bless
+Id,血量,攻击力,防御盾,行动次数,初始buff,玩偶图标,怪物的模型路径,,给与的祝福
+10001,45,6,5,2,,Icon/Pattern/乌鸦,Icon/Pattern/乌鸦,AnimationLib/乌鸦,blessing_38
+10002,40,7,2,2,,Icon/Pattern/黑猫,Icon/Pattern/黑猫,AnimationLib/黑猫,blessing_39

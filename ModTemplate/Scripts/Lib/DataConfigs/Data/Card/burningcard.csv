@@ -1,0 +1,8 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,消耗的费用,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效,动作
+1,1,1,,"Vars[""BaseScript""] = ""CommonCardItem"";
+        AddDescription(""1"",""Damage"",""4"");
+        AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_burn,""2"");Damage(""4"");",,Icon/Card/火雨术,slash,Skill
+2,1,1,Burnout,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""6"");AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""Target"");AddBuff(DataId.buff_burn,""2"");Damage(""6"");",,Icon/Card/炽焰新星,slash,Skill
+3,2,1,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""4"");",,"SetStatus(""Target"");AddBuff(DataId.buff_burn,""4"");",,Icon/Card/烈阳,slash,Skill
+4,2,2,,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""13"");AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""AllTarget"");Damage(""13"");AddBuff(DataId.buff_burn,""2"");",,Icon/Card/腐化黑星,slash,Skill

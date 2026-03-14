@@ -1,0 +1,10 @@
+﻿Id,Note,Name,Name_en,Name_ja,Description,Description_en,Description_ja
+唯一标识,备注,名称,,,描述,,
+attack,,普通攻击,Basic Attack,通常攻撃,造成{0}伤害。,Deal {0} damage.,{0}のダメージを与える。
+defence,,防御,Defense,防御,增加<color=yellow>{0}</color>护盾。,Gain <color=yellow>{0}</color> Shield.,<color=yellow>{0}</color>のシールドを獲得する。
+QuadrupleHits,,绝命二连击,Lethal Quadruple Strike,絶命二連撃,造成<color=red>{0}</color>伤害。,Deal <color=red>{0}</color> damage.,<color=red>{0}</color>のダメージを与える。
+Hah,,哈气,Breath,息吹,给与敌人3层易伤,Apply 3 layers of {buff_vulnerability} to enemies.,敵に脆弱を3スタック付与する。
+AswiftBlow,,迅猛一击,Swift Strike,迅速な一撃,"对全体敌人造成{0}伤害。每有一个敌人有易伤,对全体敌人再造成一次.","Deal {0} damage to all enemies. For each enemy with {buff_vulnerability}, deal this damage to all enemies again.",全ての敵に{0}のダメージを与える。脆弱状態の敵1体につき、全ての敵にもう一度このダメージを与える。
+Combing,,梳毛,Grooming,毛づくろい,获得{0}点防御，魔女的幸运在本场战斗中临时加3点.,Gain {0} defense. The Witch's Luck is temporarily increased by 3 for this battle.,{0}の防御を獲得し、この戦闘中、魔女の幸運が一時的に3増加する。
+FuneralBell,,丧钟,Funeral bell,葬鐘,给与敌人3层易伤,Apply 3 layers of {buff_vulnerability} to enemies.,敵に脆弱を3スタック付与する。
+DeepGrows,,渊默生长,Deep silence grows,成長,造成{0}真实伤害，给与4层流血,Deals {0} true damage and applies 4 stacks of {buff_bleeding},{0}の真のダメージを与え、4層の{buff_bleeding}を付与する

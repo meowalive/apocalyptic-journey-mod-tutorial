@@ -1,0 +1,7 @@
+﻿Id,BaseScript,EndScript,Roles,EventName,ChoiceCount,ChoiceScript1
+对话Id,,对话结束时执行,"出现的角色Id，说话者用<>包括，用,分割",何时执行对话（事件名）,选项数量,选项脚本
+1,,,role_amelia,Winlevel_*0,0,
+2,,,role_amelia,,0,
+3,,,role_amelia,,0,
+4,,,role_amelia,,0,
+5,,"PlayerInfo.StartLevel(""build"",""break"");PlayerInfo.EndDialogue();",role_amelia,,0,

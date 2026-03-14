@@ -1,0 +1,84 @@
+﻿Id,Note,Name,Name_en,Name_ja,Description,Description_en,Description_ja,Tag1,Tag1_en,Tag1_ja,Tag2,Tag2_en,Tag2_ja,Tag3,Tag3_en,Tag3_ja,Tag4,Tag4_en,Tag4_ja
+Id（唯一标识）,备注,名字,,,描述,,,显示的tag,,,,,,,,,,,
+1,,厄运化身,Avatar of Misfortune,厄災の化身,解锁见习魔女-维洛莉丝,Unlock Apprentice Witch - Veloris,見習い魔女「ヴェロリス」を解放,,,,,,,,,,,,
+2,,破损表盘,Broken Dial,壊れた文字盤,解锁遗物：破损表盘,Unlock Relic: Broken Dial,遺物「壊れた文字盤」を解放,"<main>破损表盘</main>
+<des>出牌时获得1点魔能</des>","<main>Broken Dial</main>
+<des>Gain 1 power when playing cards</des>","<main>壊れた文字盤</main>
+<des>カードを使用する時、パワーを1獲得</des>",,,,,,,,,
+3,,强健体魄,Robust Physique,強健な肉体,初始最大生命值+5,Starting maximum health +5,初期最大HP+5,,,,,,,,,,,,
+4,,谈判技巧,Negotiation Skills,交渉術,商店每次刷新费用-5,Shop refresh cost -5,ショップのリフレッシュ費用-5,,,,,,,,,,,,
+5,,冒险津贴,Adventure Allowance,冒険手当,初始金币+10,Starting gold +10,初期ゴールド+10,,,,,,,,,,,,
+6,,魔力涌动,Surging Magic,魔力増幅,初始魔力+1,Starting Magic +1,初期魔力+1,,,,,,,,,,,,
+7,,精神稳固,Mental Fortitude,精神安定,初始精神+1,Starting Spirit +1,初期精神+1,,,,,,,,,,,,
+8,,幸运增幅,Lucky Enhancement,幸運増幅,初始幸运+1,Starting Luck +1,初期幸運+1,,,,,,,,,,,,
+9,,感知强化,Perception Enhancement,感知強化,初始感知+1,Starting Perception +1,初期感知+1,,,,,,,,,,,,
+10,,重生保险,Rebirth Insurance,再生の保険,每场冒险仅限一次，非最终领主战斗死亡时脱离,"Once per adventure only, escape when dying in non-final boss battles",冒険ごとに1回のみ、最終ボス以外の戦闘で死亡時に離脱する,,,,,,,,,,,,
+11,,盟约盛典卡包,Covenant Festival Card Pack,盟約の祝祭カードパック,包含卡牌：盛宴、重返、重现、统合之约,"Contains cards: Feast, Return, Recurrence, Unity Pact",カード「饗宴」「帰還」「再現」「統合の契約」を含む,"<main>盛宴</main>
+<des>花费0魔能:全体敌人获得1层血海。</des>","<main>Feast</main>
+<des>Cost 0 mana: All enemies gain 1 layer of {buff_bloodsea}.</des>","<main>饗宴</main>
+<des>コスト0マナ：全ての敵が{buff_bloodsea}を1スタック獲得。</des>","<main>重返</main>
+<des>回溯2。</des>","<main>Return</main>
+<des>Rewind 2.</des>","<main>帰還</main>
+<des>巻き戻し2。</des>","<main>重现</main>
+<des>花费1魔能:下张牌再打出一次。</des>","<main>Recurrence</main>
+<des>Cost 1 mana: Play the next card again.</des>","<main>再現</main>
+<des>コスト1マナ：次のカードをもう一度使用する。</des>","<main>统合之约</main>
+<des>花费1魔能：焚毁你的所有手卡，每张获得一点超魔，30金币。
+超魔2： 对敌人造成8点伤害。
+超魔4：获得1～3点魔能，抽1～4张牌。
+超魔6：以上效果额外触发一次。</des>","<main>Unity Pact</main>
+<des>Cost 1 mana: Burn all cards in your hand to gain 1 Super Magic per card and 30 gold coins.
+Super Magic 2: Deal 8 damage to an enemy.
+Super Magic 4: Gain 1-3 energy and draw 1-4 cards.
+Super Magic 6: Trigger the above effects once more.</des>","<main>統合の契約</main>
+<des>コスト1マナ：手札を全て燃焼し、カード1枚につきスーパーマジックを1と30ゴールドを獲得。
+スーパーマジック2：敵1体に8ダメージを与える。
+スーパーマジック4：1～3エナジーを獲得し、1～4枚カードを引く。
+スーパーマジック6：上記の効果をもう一度発動する。</des>"
+12,,天选者权能卡包,Chosen One's Power Card Pack,選ばれし者の権能カードパック,包含卡牌：源蜕、星芒、瓶装救赎、天界护佑,"Contains cards: Source Molt, Starlight, Bottled Redemption, Celestial Protection",カード「源化」「星芒」「瓶詰めの救済」「天界の加護」を含む,"<main>源蜕</main>
+<des>获得1层源蜕。</des>","<main>Source Molt</main>
+<des>Gain 1 layer of {buff_sourcecast}.</des>","<main>源化</main>
+<des>{buff_sourcecast}を1スタック獲得。</des>","<main>星芒</main>
+<des>花费2魔能：造成6点伤害三次,获得14点护盾。</des>","<main>Starlight</main>
+<des>Cost 2 mana: Deal 6 damage 3 times and gain 14 shield.</des>","<main>星芒</main>
+<des>コスト2マナ：6ダメージを3回与え、14シールドを獲得。</des>","<main>瓶装救赎</main>
+<des>净化2个随机负面状态。</des>","<main>Bottled Redemption</main>
+<des>Remove 2 random debuffs.</des>","<main>瓶詰めの救済</main>
+<des>ランダムなデバフを2つ解除する。</des>","<main>天界护佑</main>
+<des>净化自身全部负面状态,对所有敌人造成13点伤害。</des>","<main>Celestial Protection</main>
+<des>Remove all debuffs from yourself and deal 13 damage to all enemies.</des>","<main>天界の加護</main>
+<des>自身の全てのデバフを解除し、全ての敵に13ダメージを与える。</des>"
+13,,深渊先遣者的遗产,Legacy of the Abyss Vanguard,深淵の先遣者の遺産,包含遗物：历战微记：先登、《深渊求生守则》、毒苹果、染血硬币,"Contains relics: Battle Badge: First Assault, ""Abyss Survival Guide"", Poison Apple, Bloodstained Coin",遺物「歴戦の証：先駆け」「深淵生存マニュアル」「毒リンゴ」「血塗れの硬貨」を含む,"<main>历战微记：先登</main>
+<des>每有一个敌人在第1回合死亡，魔女获得1层士官""棋子的祝福。</des>""","<main>Battle Badge: First Assault</main>
+<des>For each enemy that dies in the 1st turn, the witch gains 1 layer of 'Sergeant' piece blessing.</des>","<main>歴戦の証：先駆け</main>
+<des>1ターン目に敵が1体死亡するたび、魔女は「軍曹」の駒の祝福を1スタック獲得する。</des>","<main>《深渊求生守则》</main>
+<des>回合开始时获得1点护盾；你每携带此遗物走过1层,该护盾+1</des>","<main>Abyss Survival Guide</main>
+<des>Gain 1 shield at turn start; for each floor passed while carrying this relic, shield +1</des>","<main>深淵生存マニュアル</main>
+<des>ターン開始時、シールドを1獲得。この遺物を持ってフロアを1つ進むたび、このシールド+1。</des>","<main>毒苹果</main>
+<des>战斗开始时获得鬼化,敏锐*3,受到当前生命值1/6的真实伤害</des>","<main>Poison Apple</main>
+<des>Gain {buff_oniblood} and 3 layers of {buff_fast} at combat start, take True Damage equal to 1/6 of current health</des>","<main>毒リンゴ</main>
+<des>戦闘開始時、{buff_oniblood}と{buff_fast}を3スタック獲得し、現在HPの1/6の貫通ダメージを受ける。</des>","<main>染血硬币</main>
+<des>损失生命时,获得8枚金币</des>","<main>Bloodstained Coin</main>
+<des>When losing health, gain 8 gold coins</des>","<main>血塗れの硬貨</main>
+<des>HPを失った時、8ゴールドを獲得。</des>"
+14,,零号魔女的遗产,Legacy of Witch Zero,ゼロ号魔女の遺産,包含遗物：纸牌塔：黑、咒怨石像、虚影、补给凭证,"Contains relics: Card Tower: Black, Cursed Statue, Phantom, Supply Voucher",遺物「カードタワー：黒」「呪怨の石像」「虚像」「補給証」を含む,"<main>纸牌塔：黑</main>
+<des>回合结束时，若抽牌堆数大于手牌数，获得相当于抽牌堆牌数的护盾。</des>","<main>Card Tower: Black</main>
+<des>At turn end, if draw pile size exceeds hand size, gain Shield equal to draw pile size.</des>","<main>カードタワー：黒</main>
+<des>ターン終了時、山札の枚数が手札の枚数より多い場合、山札の枚数に等しいシールドを獲得。</des>","<main>咒怨石像</main>
+<des>每当敌人在其自己的回合中死亡时，你获得一层萨满""的祝福。</des>""","<main>Cursed Statue</main>
+<des>Whenever an enemy dies during their own turn, you gain 1 layer of 'Shaman' blessing.</des>","<main>呪怨の石像</main>
+<des>敵が自身のターン中に死亡するたび、「シャーマン」の祝福を1スタック獲得する。</des>","<main>虚影</main>
+<des>回合开始时,第一张牌额外打出一次</des>","<main>Phantom</main>
+<des>At turn start, play the first card an additional time</des>","<main>虚像</main>
+<des>ターン開始時、最初のカードを追加で1回使用する。</des>","<main>补给凭证</main>
+<des>战斗结算时的奖励+1</des>","<main>Supply Voucher</main>
+<des>Battle settlement rewards +1</des>","<main>補給証</main>
+<des>戦闘終了時の報酬+1。</des>"
+15,,永世勇者的法则,Eternal Hero's Code,永遠の勇者の法則,允许在自定义卡牌中，添加不屈与不朽,Allows adding Unyielding and Immortal to custom cards,カスタムカードに「不屈」と「不朽」を追加可能にする,"<main>不屈</main>
+<des>每受伤两次抽层数张牌。</des>","<main>Unyielding</main>
+<des>Draw cards equal to layers for every 2 times damaged.</des>","<main>不屈</main>
+<des>2回ダメージを受けるたび、スタック数に等しい枚数のカードを引く。</des>","<main>不朽</main>
+<des>受两次伤时获得层数点魔能。</des>","<main>Immortal</main>
+<des>Gain mana equal to layers after taking damage twice.</des>","<main>不朽</main>
+<des>2回ダメージを受けた時、スタック数に等しいマナを獲得する。</des>",,,,,,
+16,,传奇之路,The Road of Legends,伝説の道,在难度选择中，获取更多挑战选项,"In difficulty selection, get more challenge options",難易度選択で、より多くのチャレンジオプションを入手,,,,,,,,,,,,

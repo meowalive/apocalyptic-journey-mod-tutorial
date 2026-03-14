@@ -1,0 +1,2 @@
+﻿Id,SanMax,SkillScript,Animation,Vocal,Skill1,Skill2,DollIcon,Character,Avatar,CareerImage,ActionImage1,ActionImage2,Dialogue,EmojiPath
+唯一标识,最大san,被动技能&初始化,动画文件夹路径,配音文件夹路径,技能卡牌，后续要改,,玩偶路径,立绘路径,头像路径,职业图路径,主动技能图标1,,对话图路径，虽然其实用在statusui,表情包路径

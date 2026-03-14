@@ -1,0 +1,9 @@
+{
+  "ModName": "ModTemplate",
+  "ModVersion": "1.0",
+  "ModAuthor": "YOUR_NAME",
+  "ModDescription": "Description",
+  "IconPath": "Icon.png",
+  "Enabled": false,
+  "Dependencies": null
+}

@@ -1,0 +1,46 @@
+﻿Id,Note,Name,Name_zh-Hant,Name_en,Name_ja,Description,Description_zh-Hant,Description_en,Description_ja,Tips,Tips_en,Tips_ja
+唯一的标识（不能重复）,备注,名称,,Name,,描述,,Description,,剧情描述,Tips,
+1,魔力,士兵,士兵,Soldier,兵士,魔力+2,魔力+2,Magic +2,魔力+2,,,
+2,幸运,法师,法師,Mage,魔術師,精神+2,精神+2,Spirit +2,精神+2,,,
+3,精神,刺客,刺客,Assassin,暗殺者,感知+2,感知+2,Perception +2,感知+2,,,
+4,感知,羽兽,羽獸,Feathered Beast,羽獣,幸运+2,幸運+2,Luck +2,幸運+2,,,
+5,通用,皇后,皇后,Queen,女王,选择本源各+2,選擇道途各+2,Choose Path +2 each,各道筋のステータス+2,,,
+6,"通用,生存",牧师,牧師,Priest,聖職者,战斗开始时恢复2点生命,戰鬥開始時恢復2點生命,Restore 2 Health at combat start,戦闘開始時にHPを2回復する,,,
+7,"通用,生存",守卫,守衛,Guard,衛兵,最大生命值+5,最大生命值+5,Max Health +5,最大HP+5,,,
+8,"通用,生存",天使,天使,Angel,天使,战斗开始时获得1层自愈,戰鬥開始時獲得1層{buff_evergreen},Gain 1 Stack of {buff_evergreen} at combat start,戦闘開始時に{buff_evergreen}を1スタック獲得する,,,
+9,"通用,生存",盾卫,盾衛,Shield Guard,盾衛,战斗开始时你获得1层强韧,戰鬥開始時你獲得1層{buff_resilient},Gain 1 Stack of {buff_resilient} at combat start,戦闘開始時に{buff_resilient}を1スタック獲得する,,,
+10,"通用,生存",律法,律法,Law,律法,战斗开始时你获得3点护盾,戰鬥開始時你獲得3點護盾,Gain 3 Shield at combat start,戦闘開始時にシールドを3獲得する,,,
+11,"通用,过牌",工匠,工匠,Craftsman,工匠,战斗开始时你额外抽1张牌,戰鬥開始時你額外抽1張牌,Draw 1 extra Card at combat start,戦闘開始時に追加でカードを1枚引く,,,
+12,"过牌,通用",游侠,遊俠,Ranger,レンジャー,战斗开始时获得1层敏锐,戰鬥開始時獲得1層{buff_fast},Gain 1 Stack of {buff_fast} at combat start,戦闘開始時に{buff_fast}を1スタック獲得する,,,
+14,"精神,充能",命运之轮,命運之輪,Wheel of Fate,運命の輪,战斗开始时获得1层循环,戰鬥開始時獲得1層{buff_cycle},Gain 1 Stack of {buff_cycle} at combat start,戦闘開始時に{buff_cycle}を1スタック獲得する,,,
+15,"输出,生命",士官,士官,Sergeant,士官,战斗开始时你获得1层锋锐,戰鬥開始時你獲得1層{buff_keenedge},Gain 1 Stack of {buff_keenedge} at combat start,戦闘開始時に{buff_keenedge}を1スタック獲得する,,,
+19,高级,主教,主教,Bishop,司教,战斗开始时你获得4层元素,戰鬥開始時你獲得4層{buff_elements},Gain 4 Stacks of {buff_elements} at combat start,戦闘開始時に{buff_elements}を4スタック獲得する,,,
+20,"输出,负面",萨满,薩滿,Shaman,シャーマン,战斗开始时随机赋予敌人1层易伤,戰鬥開始時隨機賦予敵人1層{buff_vulnerability},Inflict 1 Stack of {buff_vulnerability} on a random enemy at combat start,戦闘開始時、ランダムな敵1体に{buff_vulnerability}を1スタック付与する,,,
+21,通用,国王,國王,King,国王,获得40金币,獲得40金幣,Gain 40 Gold,40ゴールドを獲得する,,,
+22,通用,教皇,教宗,Pope,教皇,你获得的金币额外增加10%,你獲得的金幣額外增加10%,Gold gained +10%,獲得するゴールドが10%増加する,,,
+23,高级,审判,審判,Judgement,審判,战斗开始时获得1层狂暴,戰鬥開始時獲得1層{buff_frenzy},Gain 1 Stack of {buff_frenzy} at combat start,戦闘開始時に{buff_frenzy}を1スタック獲得する,,,
+24,高级,血鬼,血鬼,Blood Demon,血鬼,战斗开始时你获得鬼化,戰鬥開始時你獲得{buff_oniblood},Gain 1 Stack of {buff_oniblood} at combat start,戦闘開始時に{buff_oniblood}を1スタック獲得する,,,
+*101,魔力,猜忌之口,超凡之始-力,Beginning of the Extraordinary - Strength,超越の始まり-力,"魔力大于等于10时,战斗开始时第一次伤害+6","魔力大於等於10時,戰鬥開始時第一次傷害+6","If Magic ≥10, first damage at combat start +6",魔力が10以上の場合、戦闘開始時の最初のダメージ+6,魔力开始在你指尖涌动。,Magic begins to flow from your fingertips.,魔力が指先から溢れ始める。
+*102,幸运,占卜词句,超凡之始-運,Beginning of the Extraordinary - Luck,超越の始まり-運,"幸运大于等于10时,战斗开始时额外抽1张牌","幸運大於等於10時,戰鬥開始時額外抽1張牌","If Luck ≥10, draw 1 extra Card at combat start",幸運が10以上の場合、戦闘開始時に追加でカードを1枚引く,你是人们口中的“幸运儿”。,"You are known as ""the lucky one.""",あなたは人々が言うところの「幸運の持ち主」だ。
+*103,精神,思考者,超凡之始-智,Beginning of the Extraordinary - Wisdom,超越の始まり-知,"精神大于等于10时,战斗开始时额外获得1点魔能","精神大於等於10時,戰鬥開始時額外獲得1點魔能","If Spirit ≥10, gain 1 Power at combat start",精神が10以上の場合、戦闘開始時に追加でマナを1獲得する,你的学识贯通古今。,Your knowledge spans the ages.,あなたの学識は古今を貫く。
+*104,感知,纽带村落,超凡之始-感,Beginning of the Extraordinary - Sensitivity,超越の始まり-感,"感知大于等于10时,战斗开始时获得6点防御","感知大於等於10時,戰鬥開始時獲得6點防禦","If Perception ≥10, gain 6 Block at combat start",感知が10以上の場合、戦闘開始時に防御を6獲得する,你的感官异常敏锐。,Your senses are exceptionally sharp.,あなたの感覚は異常に鋭い。
+*105,魔力,恐惧之眼,超魔湧動,Super Magic Surge,スーパーマジックの奔流,"魔力大于等于20时,战斗开始时获得3层锋锐","魔力大於等於20時,戰鬥開始時獲得3層{buff_keenedge}","If Magic ≥20, gain 3 Stacks of {buff_keenedge} at combat start",魔力が20以上の場合、戦闘開始時に{buff_keenedge}を3スタック獲得する,你的魔力水平异常之高，经常将照明施成火球术的效果。,Your magic is so powerful that you often cast fireballs for light.,あなたの魔力は異常に高く、照明魔法がしばしば火球術の効果を発揮する。
+*106,幸运,交易辞令,吉星高照,Lucky Star Blessing,吉星高照,"幸运大于等于20时,战斗开始时额外获得45点金币","幸運大於等於20時,戰鬥開始時額外獲得45點金幣","If Luck ≥20, gain 45 Gold at combat start",幸運が20以上の場合、戦闘開始時に追加で45ゴールドを獲得する,你总是创造着奇迹，幸运女神格外垂青。,You constantly perform miracles; Lady Luck favors you.,あなたは常に奇跡を起こし、幸運の女神に特に愛されている。
+*107,精神,探究者,萬法通明,Master of All Magics,万法通明,"精神大于等于20时,战斗开始时获得1层启示","精神大於等於20時,戰鬥開始時獲得1層{buff_epiphany}","If Spirit ≥20, gain 1 Stack of {buff_epiphany} at combat start",精神が20以上の場合、戦闘開始時に{buff_epiphany}を1スタック獲得する,无论多么晦涩的魔力回路，你都可以参透。,"No matter how obscure the magic circuit, you can unravel it.",どんなに難解な魔力回路でも、あなたは解読できる。
+*108,感知,统合城邦,我見眾生,Witness to All Beings,我、衆生を見る,"感知大于等于20时,战斗开始时获得2层坚毅","感知大於等於20時,戰鬥開始時獲得2層{buff_impregnable}","If Perception ≥20, gain 2 Stacks of {buff_impregnable} at combat start",感知が20以上の場合、戦闘開始時に{buff_impregnable}を2スタック獲得する,你已窥见众生百相，也坚定了心中的信念。,You have seen countless beings and strengthened your resolve.,あなたは衆生の百相を垣間見、心中の信念を固めた。
+*109,魔力,癫狂之手,撼天動地,Shake the Earth,天地を揺るがす,"魔力大于等于30时,你每次出牌额外造成6点伤害","魔力大於等於30時,你每次出牌有額外造成6點傷害","If Magic ≥30, deal +6 damage whenever you play a Card",魔力が30以上の場合、カードを使用するたびに追加で6ダメージを与える,你魔力的威能足以改天换地。,The power of your magic can reshape heaven and earth.,あなたの魔力の威力は天地を覆すに足る。
+*110,幸运,统治手谕,天降機緣,Opportunity from Heaven,天与の好機,"幸运大于等于30时,你的战斗奖励+1","幸運大於等於30時,你的戰鬥獎勵+1","If Luck ≥30, Combat Rewards +1",幸運が30以上の場合、戦闘報酬+1,奇迹总是主动降临到你身边。,Miracles come to you of their own accord.,奇跡は常にあなたのもとへ自ら舞い降りてくる。
+*111,精神,先知者,未來之主,Master of the Future,未来の主,"精神大于等于30时,战斗开始时你获得1层鬼化","精神大於等於30時,戰鬥開始時你獲得1層{buff_oniblood}","If Spirit ≥30, gain 1 Stack of {buff_oniblood} at combat start",精神が30以上の場合、戦闘開始時に{buff_oniblood}を1スタック獲得する,时间线对于凡人过于艰涩，而你早已穷尽一切可能。,The timeline is too complex for mortals; you have explored every possibility.,時間線は凡人にはあまりにも難解だが、あなたはとうに全ての可能性を究めている。
+*112,感知,守望国度,眸中萬象,Insight into Everything,瞳の中の万象,"感知大于等于30时,战斗开始你获得1层源蜕","感知大於等於30時,戰鬥開始你獲得1層源蛻","If Perception ≥30, gain 1 Stack of {buff_sourcecast} at combat start",感知が30以上の場合、戦闘開始時に源化を1スタック獲得する,你洞悉世间万物，也窥视到一丝不属于“此处”的真相。,You grasp all things and glimpse a truth beyond this place.,あなたは世の万物を洞察し、「ここ」に属さない真実の一端を垣間見た。
+*113,魔力,虚无之心,以力證道,Proving the Way with Power,力を以て道を証す,"魔力大于等于40时,战斗开始时获得500层超凡","魔力大於等於40時,戰鬥開始時獲得500層{buff_extraordinary}","If Magic ≥40, gain 500 Stacks of {buff_extraordinary} at combat start",魔力が40以上の場合、戦闘開始時に{buff_extraordinary}を500スタック獲得する,魔力开始自发涌动，铭刻着独属于你的回路。,"Magic flows spontaneously, carving circuits unique to you.",魔力が自発的に流れ始め、あなただけの回路を刻み込む。
+*114,幸运,规训律法,天命至高,The Supreme Destiny,天命至高,"幸运大于等于40时,你的所有检定骰降低10检定难度，所有数值骰额外加10检定","幸運大於等於40時,你的所有檢定骰降低10檢定難度，所有數值骰額外加10檢定","If Luck ≥40, all Check Dice Difficulty -10; all Value Dice +10",幸運が40以上の場合、全ての判定ダイスの難易度-10、全ての数値ダイスに+10の追加判定,并非天命加身，你即是天命。,It is not fate that chose you; you are fate itself.,天命があなたに宿ったのではない、あなたが天命そのものなのだ。
+*115,精神,觉悟者,虛之造物主,Creator of Nothingness,虚無の創造主,"精神大于等于40时,战斗开始时自身获得2层循环,2层污染给与所有敌人一层时停","精神大於等於40時,戰鬥開始時自身獲得2層循環,2層污染給與所有敵人一層時停","If Spirit ≥40, gain 2 Stacks of {buff_cycle} and 2 Stacks of {buff_contagion} at combat start; inflict 1 Stack of {buff_timestop} on all enemies",精神が40以上の場合、戦闘開始時に自身は循環を2スタック、汚染を2スタック獲得し、全ての敵に時間停止を1スタック付与する,你早已跳脱出时间，凡间的威胁再难伤你分毫。,You have transcended time; mortal threats can no longer harm you.,あなたはとうに時間を超越した。俗世の脅威があなたを傷つけることはもはやない。
+*116,感知,静滞世界,第一因,First Cause,第一原因,"感知大于等于40时,第1回合记录你的生命,之后每回合回溯到对应状态并获得1层坚毅","感知大於等於40時,第1回合記錄你的狀態,之後每回合回溯到對應狀態並獲得1層{buff_impregnable}","If Perception ≥40, record your status in Round 1; each round revert to it and gain 1 Stack of {buff_impregnable}",感知が40以上の場合、1ターン目にあなたの状態を記録し、以降の各ターンでその状態に戻り、堅毅を1スタック獲得する,万般因果加身，你成为世间第一因。,"Bound by countless causes and effects, you become the world's First Cause.",あらゆる因果をその身に受け、あなたは世界の第一原因となった。
+32,高级,星星,星星,Star,星,行动时，额外对随机敌人造成一次3点伤害,行動時，額外對隨機敵人造成一次3點傷害,"When you act, deal 3 extra damage to a random enemy",行動時、ランダムな敵1体に追加で3ダメージを与える,,Evil thoughts are more dangerous than the sharpest blades.,悪意は最も鋭い刃よりも危険だ。
+33,高级,月亮,月亮,Moon,月,战斗开始时，你获得2层污染,戰鬥開始時，你獲得2層污染,Gain 2 Stacks of {buff_contagion} at combat start,戦闘開始時、汚染を2スタック獲得する,,Evil thoughts are more dangerous than the sharpest blades.,悪意は最も鋭い刃よりも危険だ。
+34,高级,太阳,太陽,Sun,太陽,战斗开始时，你获得2层庇护,戰鬥開始時，你獲得2層庇護,Gain 2 Stacks of {buff_shelter} at combat start,戦闘開始時、庇護を2スタック獲得する,,Evil thoughts are more dangerous than the sharpest blades.,悪意は最も鋭い刃よりも危険だ。
+*35,高级,重生保险,重生保險,Rebirth Insurance,再生の保険,每场冒险仅限一次，非最终领主战斗死亡时脱离,每場冒險僅限一次，非最終領主戰鬥死亡時脫離,"Once per adventure, escape upon death in non-final boss battles",冒険ごとに1回のみ、最終ボス以外の戦闘で死亡時に離脱する,,,
+*36,诅咒,奇美拉之血,奇美拉之血,Blood of Chimera,キメラの血,战斗开始时最大生命值-4，三场战斗后销毁此祝福并获得3个萨满，3个牧师,戰鬥開始時最大生命值-4，三場戰鬥後銷毀此祝福並獲得3個薩滿，3個牧師,"Max Health -4 at combat start. After 3 battles, destroy this Blessing and gain 3 Shaman and 3 Priest",戦闘開始時の最大体力-4、3回の戦闘後にこの祝福を破棄し、「シャーマン」3つ、「プリースト」3つを得る,,,
+*37,入职培训,入职培训,入职培训,Beginner Tutorial,初心者向けチュートリアル,新手教程专用祝福,新手教程專用祝福,Beginner Tutorial exclusive Blessing,初心者向けチュートリアル用の祝福,,,
+*38,宠物,报丧偈羽,報喪偈羽,Poem Feather,告別の偈の羽,魔女造成伤害时，对全体敌方附带一次真实伤害,魔女造成傷害時，對全體敵方附帶一次真實傷害,"When the Witch deals damage, also deal True Damage once to all enemies",魔女がダメージを与えると、全ての敵に1回の真のダメージを追加で与える,,,
+*39,宠物,幸运黑猫,幸運黑貓,Black Cat,幸運の黒猫,魔女死亡时，为魔女恢复至满血,魔女死亡時，為魔女恢復至滿血,"When the Witch dies, restore her to full Health",魔女が死亡すると、体力を全回復する,,,

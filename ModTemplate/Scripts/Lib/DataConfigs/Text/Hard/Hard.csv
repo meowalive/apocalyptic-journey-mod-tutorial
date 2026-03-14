@@ -1,0 +1,21 @@
+﻿Id,Name,Name_en,Name_ja,Description,Description_en,Description_ja
+唯一id,前缀名,,,后缀描述,,
+1,收束命运,Fate Convergence,運命収束,命运牌数量减1,Destiny card count reduced by 1,運命カードの数が1枚減少する
+2,权能衰竭,Power Exhaustion,力の枯渇,额外一张命运牌已锁定,One additional destiny card is locked,追加で運命カードが1枚ロックされる
+3,机体扩张Ⅲ,Biomass Expansion III,バイオマス増殖 III,怪物生命额外加40%,Monster health increased by 40%,モンスターのHPが40%増加する
+4,锋锐杀意Ⅰ,Razor Intent I,鋭利な殺意 I,怪物攻击+10%,Monster attack increased by 10%,モンスターの攻撃力が10%増加する
+5,锋锐杀意Ⅱ,Razor Intent II,鋭利な殺意 II,怪物攻击+20%,Monster attack increased by 20%,モンスターの攻撃力が20%増加する
+6,锋锐杀意Ⅲ,Razor Intent III,鋭利な殺意 III,怪物攻击+30%,Monster attack increased by 30%,モンスターの攻撃力が30%増加する
+7,防御增加2,Defense Boost 2,防御ブースト 2,怪物韧性+2,Pet and monster toughness +1,ペットとモンスターの靭性が2増加する
+8,绝望深渊,Abyss of Despair,絶望の深淵,深渊环境+1,Abyss environment +1,深淵環境+1
+9,无人之地,Desolate Wasteland,荒涼たる荒野,深渊环境+2,Abyss environment +2,深淵環境+2
+10,灌铅骰子,Loaded Dice,イカサマダイス,一切投掷将偏向更加不利的方向,All dice rolls will favor unfavorable outcomes,全てのダイスロールがより不利な結果になりやすくなる
+11,卖方市场Ⅲ,Seller's Market III,売り手市場 III,商点售价提高30%,Shop prices increased by 20%,ショップの販売価格が30%上昇する
+12,腐化异变,Corrupted Mutation,汚染された突然変異,敌人战斗开始时获得随机增益buff,All enemies gain random beneficial buffs at combat start,全ての敵が戦闘開始時にランダムな強化バフを獲得する
+13,深度演进,Deep Evolution,深層進化,精英或领主额外获得一种高级特性,Enemies gain an additional advanced random trait during elite or boss battles,エリート戦またはボス戦時、敵が追加で高度な特性を1つ獲得する
+14,活性深渊Ⅰ,Active Abyss I,活性化した深淵 I,提高怪物牌权重，降低事件牌权重,"Increase monster card weight, decrease event card weight",モンスターカードの出現率が上昇し、イベントカードの出現率が低下する
+15,活性深渊Ⅱ,Active Abyss II,活性化した深淵 II,提高精英牌权重，降低建筑牌权重,"Increase elite card weight, decrease building card weight",エリートカードの出現率が上昇し、建造物カードの出現率が低下する
+16,有限货物,Limited Stock,在庫限定,每个商店最多刷新3次,Each shop can be refreshed a maximum of 3 times,各ショップは最大3回までリフレッシュ可能
+17,有限静滞,Limite Time,時間制限,每个玩家回合最多1分钟,Each player round is up to 1 minute,各プレイヤーのターンは最大1分間
+*18,元素潮汐,Elemental Tides,エレメント潮汐,当进行精英战，所有敌人获得元素身躯,"During elite battles, all enemies gain {buff_elementalBody}.",エリート戦時、全ての敵が{buff_elementalBody}を獲得する。
+*19,最终防线,The Final Line of Defense,最後の防衛線,战斗开始时，所有怪物获得20点护盾，每过12层，效果提升5倍,"At the start of the battle, all monsters gain 20 points of shield, and the effect increases fivefold every 12 levels.",戦闘開始時、すべてのモンスターは20のシールドを獲得し、12階ごとに効果が5倍になります

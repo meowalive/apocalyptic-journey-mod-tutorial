@@ -1,0 +1,14 @@
+﻿Id,BaseScript,EndScript,Roles,EventName,ChoiceCount,ChoiceScript1,ChoiceScript2
+对话Id,初始脚本,对话结束时执行,"出现的角色Id，说话者用<>包括，用,分割",何时执行对话（事件名）,选项数量,选项脚本,
+1,,,role_Krisna,FirstTalk,2,"PlayerInfo.EventTrigger(""FirstTalk_*2"");","PlayerInfo.EventTrigger(""FirstTalk_*3"");"
+*2,,"PlayerInfo.EventTrigger(""FirstTalk_4"");",role_Krisna,FirstTalk_*2,0,,
+*3,,"PlayerInfo.EventTrigger(""FirstTalk_4"");",role_Krisna,FirstTalk_*3,0,,
+4,,,role_Krisna,FirstTalk_4,0,,
+5,,,role_Krisna,,0,,
+6,,,role_Krisna,,2,"PlayerInfo.EventTrigger(""FirstTalk_*7"");","PlayerInfo.EventTrigger(""FirstTalk_*8"");"
+*7,,"PlayerInfo.EventTrigger(""FirstTalk_9"");",role_Krisna,FirstTalk_*7,0,,
+*8,,"PlayerInfo.EventTrigger(""FirstTalk_9"");",role_Krisna,FirstTalk_*8,0,,
+9,,,role_Krisna,FirstTalk_9,0,,
+10,,,role_Krisna,,0,,
+11,,,role_Krisna,,0,,
+12,,,role_Krisna,,0,,

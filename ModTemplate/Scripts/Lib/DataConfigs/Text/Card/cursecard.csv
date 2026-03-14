@@ -1,0 +1,15 @@
+﻿Id,Type,已完成,Note,Name,Name_zh-Hant,Name_en,Name_ja,Description,Description_zh-Hant,Description_en,Description_ja
+唯一的标识（不能重复）,类型,TRUE,备注,名称,,Name,,描述,,Description,
+1,诅咒,TRUE,,脆弱感,脆弱感,Fragility,脆弱感,抽到时自身获得{0}层的易伤。,"保留,不可打出,抽到時獲得{0}層{buff_vulnerability}。","Keep, cannot be played. When drawn, gain {0} layers of {buff_vulnerability}.",保持、使用不可。引いた時、自身に{buff_vulnerability}を{0}スタック付与する。
+2,诅咒,TRUE,,思维紊乱,思維紊亂,Chaos,思考混乱,抽到时自身获得混乱。,抽到時獲得{buff_chaos}。,"When drawn, gain {0} layers of {buff_chaos}.",引いた時、自身に{buff_chaos}を{0}スタック付与する。
+3,诅咒,TRUE,,无力感,無力感,Weakness,無力感,抽到时自身获得{0}层无力。,抽到時獲得{0}層{buff_weak}。,"When drawn, gain {0} layers of {buff_weak}.",引いた時、自身に{buff_weak}を{0}スタック付与する。
+4,诅咒,TRUE,,腐化白石,腐化白石,Corrupted White Stone,腐敗した白石,丢弃时自身获得时停。,丟棄時獲得{buff_timestop}。,"When discarded, gain 1 layer of {buff_timestop}.",捨てた時、自身に{buff_timestop}を1スタック付与する。
+5,诅咒,TRUE,,腐朽,腐朽,Decay,腐朽,抽到后自身获得{0}层腐朽。,抽到後獲得{0}層{buff_rotten}。,"When drawn, gain {0} layers of {buff_rotten}.",引いた時、自身に{buff_rotten}を{0}スタック付与する。
+6,诅咒,TRUE,,遗忘,遺忘,Oblivion,忘却,打出时自身获得{0}层遗忘。,"保留,打出時獲得{0}層{buff_oblivion}。","Keep. When played, gain {0} layers of {buff_oblivion}.",保持。使用した時、自身に{buff_oblivion}を{0}スタック付与する。
+7,诅咒,TRUE,,隐疾,隱疾,Hidden Ailment,隠れた病,打出时自身获得{0}层毒素。,"保留,打出時獲得{0}層毒素。","Keep, gain {0} stacks of ‘{buff_toxin}’ when played.",保持。使用した時、自身に{buff_toxin}を{0}スタック付与する。
+8,诅咒,TRUE,,恐惧感,恐懼感,Fear,恐怖感,抽到时自身获得{0}层无力。,"保留,抽到時獲得{0}層{buff_weak}。","Keep, gain {0} stacks of ‘{buff_weak}’ for five turns when drawn.",保持。引いた時、自身に{buff_weak}を{0}スタック付与する。
+9,诅咒,TRUE,,湮灭,湮滅,Annihilation,湮滅,抽到时自身获得{0}层失能,抽到時獲得{0}層失能,Gain {0} stacks of ‘{buff_cripple}’ for five turns when drawn.,引いた時、自身に{buff_cripple}を{0}スタック付与する。
+10,诅咒,TRUE,,幻痛,幻痛,Phantom Pain,幻痛,抽到时自身获得{0}层的流血。,抽到時獲得{0}層{buff_bleeding}。,Gain {0} stacks of {buff_bleeding} when drawn.,引いた時、自身に{buff_bleeding}を{0}スタック付与する。
+11,诅咒,TRUE,,虚无感,虛無感,Emptiness,虚無感,毫无用处。,毫無用處。,Useless.,何の役にも立たない。
+12,诅咒,TRUE,,瘟疫,瘟疫,Plague,疫病,丢弃时自身获得{0}层毒素。,丟棄時獲得{0}層{buff_toxin}。,"When discarded, gain {0} layers of {buff_toxin}.",捨てた時、自身に{buff_toxin}を{0}スタック付与する。
+13,诅咒,FALSE,,原罪,原罪,Original sin,原罪,"丢弃时在抽牌堆加入一张此卡。打出时受到10点伤害,所有战斗属性临时-2。",丟棄時在抽牌堆加入一張此卡。打出時受到10點傷害，所有戰鬥屬性臨時-2。,"When discarded, add a copy of this card to the draw pile. When played, take 10 damage, and all combat attributes are temporarily reduced by 2.",廃棄する時、このカードを山札に1枚加える。プレイした時、10ダメージを受け、すべての戦闘属性が一時的に-2される。

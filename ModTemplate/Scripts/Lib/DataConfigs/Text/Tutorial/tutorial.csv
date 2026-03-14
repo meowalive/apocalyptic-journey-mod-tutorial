@@ -1,0 +1,134 @@
+﻿Id,Note,Image,Name,Description,Name_en,Description_en,Name_ja,Description_ja
+Id,备注,图片路径,标题,正文,Title,Description,,
+Test1,,Images/Tutorial/House/主页面,欢迎参与测试~！,《魔女：终末旅途》是一款卡牌肉鸽游戏，你可以出发冒险，使用卡牌进行战斗和游戏，获取真理之晶，利用真理之晶的资源解锁和升级魔女屋内的设施，提高属性或者解锁更多魔女，卡牌，遗物，也可以创建自定义卡牌加入游戏，来挑战更高的难度,Welcome to the Test~!,"Witch: The Final Journey is a card roguelike game. You can embark on adventures, use cards for combat and gameplay, obtain Crystals of Truth, and use them to unlock and upgrade facilities in the Witch's House. This allows you to improve attributes, unlock more witches, cards, and relics. You can also create custom cards to add to the game and challenge higher difficulties.",テストへようこそ～！,「魔女：終末の旅」はカードローグライクゲームです。冒険に出かけ、カードを使って戦闘やゲームを進め、真理の結晶を手に入れましょう。真理の結晶を使って魔女の家の施設を解放・アップグレードし、ステータスを向上させたり、より多くの魔女、カード、遺物を解放したりできます。また、カスタムカードを作成してゲームに加え、より高い難易度に挑戦することも可能です。
+Test2,,Images/Tutorial/House/主页面,欢迎参与测试~！,"游戏当前版本号为0.7.15.3
+受限于工期和制作组的产能，游戏目前仍有许多音画部分素材缺失，我们会以日为单位持续完善改进
+有任何问题，无论是关于游戏设计的，灵感想法，剧情，人设，音乐，美术，bug等等建议或者意见都可以在粉丝群艾特我们反馈，我们会认真对待每一位玩家的意见并积极改进！
+感谢您的耐心~",Welcome to the Test~!,"The current game version is 0.7.15.3.
+Due to production schedules and team capacity, many audio and visual assets are still missing. We will continue to improve and complete them on a daily basis.
+If you have any questions, ideas, or suggestions regarding game design, story, character design, music, art, bugs, etc., please feel free to contact us in the fan group. We take every player's feedback seriously and will actively make improvements!
+Thank you for your patience~",テストへようこそ～！,"現在のゲームバージョンは0.7.15.3です。
+制作期間と開発チームのリソースの都合上、現在も多くの音声やグラフィック素材が不足していますが、日々改善と実装を続けてまいります。
+ゲームデザイン、アイデア、ストーリー、キャラクターデザイン、音楽、アート、バグなど、ご質問やご意見がございましたら、ファンコミュニティでお気軽にご連絡ください。プレイヤーの皆様からのご意見を真摯に受け止め、積極的に改善に努めます！
+ご辛抱いただき、ありがとうございます～"
+Outside upgrades,,Images/Tutorial/House/升级,局外升级,"点击魔女屋中的克莉斯娜女神像可以打开魔女屋升级面板，在这里你可以提升魔女的基础属性，金币收益，或者解锁更多魔女以及其他拓展内容。
+
+魔女屋升级需要的真理之晶可以通过完成冒险来获得（即使冒险失败也会获得部分真理之晶）",Out-of-Game Upgrades,"Click the Krisna statue in the Witch's House to open the upgrade panel. Here, you can enhance the witch's base attributes, increase gold income, or unlock more witches and other content.
+
+The Crystals of Truth required for upgrades can be obtained by completing adventures (you will still get some even if you fail).",ゲーム外でのアップグレード,"魔女の家のクリスナ女神像をクリックすると、アップグレード画面が開きます。ここでは、魔女の基本ステータスを向上させたり、ゴールドの獲得量を増やしたり、新しい魔女やその他のコンテンツを解放したりできます。
+
+アップグレードに必要な真理の結晶は、冒険を完了することで獲得できます（冒険に失敗しても一部獲得可能です）。"
+Difficulty selection,,Images/Tutorial/House/难度选择,难度选择,"点击魔女屋中的鬼神像可以打开难度面板，选择合适的词条可以提高游戏的难度和真理之晶的获取倍率，15级难度会达到真理之晶获取倍率的上限
+您也可以继续提高难度挑战自身",Difficulty Selection,"Click the demon statue in the Witch's House to open the difficulty panel. Selecting appropriate modifiers can increase the game's difficulty and the multiplier for obtaining Crystals of Truth. The maximum multiplier is reached at difficulty level 15.
+You can continue to increase the difficulty to challenge yourself.",難易度選択,"魔女の家の鬼神像をクリックすると、難易度パネルが開きます。適切な項目を選択することで、ゲームの難易度と真理の結晶の獲得倍率を上げることができます。難易度15で獲得倍率の上限に達しますが、
+さらに難易度を上げて自分自身に挑戦することも可能です。"
+SafeBox,,Images/Tutorial/Adventure/保险箱,保险箱,保险箱内可以储存金币，遗物，卡牌等资源，在游戏开局时，保险箱内的物品可以带入游戏内，通关游戏，或者在游戏中遇到保险箱也可以将游戏内的道具带回魔女屋,Safe Box,"The safe box can be used to store resources like gold, relics, and cards. At the beginning of a run, items from the safe box can be brought into the game. After clearing a run, or by encountering a safe box during a run, you can also bring in-game items back to the Witch's House.",金庫,金庫にはゴールド、遺物、カードなどのリソースを保管できます。ゲーム開始時、金庫内のアイテムをゲームに持ち込むことができます。ゲームをクリアしたり、ゲーム中に金庫を見つけたりすると、ゲーム内のアイテムを魔女の家に持ち帰ることもできます。
+Illustrated book,,Images/Tutorial/House/图鉴,图鉴,点击魔女屋中的书架可以打开图鉴，用于查阅已发现的卡牌，遗物等,Codex,"Click the bookshelf in the Witch's House to open the Codex, where you can view discovered cards, relics, and other items.",図鑑,魔女の家の本棚をクリックすると図鑑が開きます。発見したカードや遺物などを確認できます。
+Announcement,,Images/Tutorial/House/主页面,公告,点击魔女屋中的小黑板可以查看游戏公告，查询游戏最新更新的内容，游戏的变化，或者历史更新记录，游戏的公告是游戏内的数据，需要更新游戏才会刷新，不是网游的实时公告,Announcements,"Click the small blackboard in the Witch's House to view game announcements, check the latest update content, game changes, or historical update records. The announcements are in-game data and will only refresh when the game is updated; they are not real-time online announcements like in an online game.",お知らせ,魔女の家の小さな黒板をクリックすると、ゲームのお知らせを確認できます。最新のアップデート内容、ゲームの変更点、過去の更新履歴などを閲覧できます。これらのお知らせはゲーム内データであり、ゲームのアップデート時に更新されるもので、オンラインゲームのようなリアルタイムのお知らせではありません。
+CardEditor,,Images/Tutorial/House/自定义卡牌,自定义卡牌,消耗真理之晶可以编辑卡牌，编辑好的卡牌需要替换掉默认的卡牌池才会生效,Custom Cards,You can spend Crystals of Truth to edit cards. Edited cards will only take effect after replacing cards in the default card pool.,カスタムカード,真理の結晶を消費してカードを編集できます。編集したカードは、デフォルトのカードプールと入れ替えることで効果を発揮します。
+DesChoice,,Images/Tutorial/MapSelect/命运选择,命运选择,"游戏地图遭遇的大部分情景都可以自由选择
+在游戏开始时，会给玩家分发一组命运牌手牌
+玩家需要将手牌填入画框节点内，直到所有节点填满，然后点击下一天开始游戏
+游戏会按照命运牌的顺序依次执行，全部执行后进入下一天，重新分发手牌
+需要注意的是有一些节点会在一开始就锁定，无法替换",Destiny Selection,"Most scenarios encountered on the game map can be freely chosen.
+At the start of the game, a hand of Destiny Cards is dealt to the player.
+The player must place these cards into the frame nodes until all nodes are filled, then click ""Next Day"" to start.
+The game will proceed in the order of the Destiny Cards. After all are executed, the next day begins, and a new hand is dealt.
+Note that some nodes are locked from the start and cannot be replaced.",運命選択,"ゲームマップで遭遇するほとんどの状況は自由に選択できます。
+ゲーム開始時、プレイヤーには一組の運命カードが配られます。
+プレイヤーは全てのノードが埋まるまで、これらのカードを絵画のノードに配置し、「次の日へ」をクリックしてゲームを開始します。
+ゲームは運命カードの順に進行し、全て実行されると次の日になり、新しい手札が配られます。
+一部のノードは最初からロックされており、交換できない点にご注意ください。"
+DesType,,Images/Tutorial/MapSelect/命运选择,命运牌类型,命运牌具有不同类型，大体分为场景，事件，灾厄三种，通过不同的卡牌边框来区分,Destiny Card Types,"Destiny Cards come in different types, broadly categorized into Scene, Event, and Calamity, distinguished by their card borders.",運命カードの種類,運命カードには異なる種類があり、大きく分けて「風景」「イベント」「災厄」の3つに分類され、カードの枠によって区別されます。
+Break,,Images/Tutorial/MapSelect/休息点,休息点,休息点可以恢复生命，存放或者取出魔女屋的道具，离开本局游戏（直接结算）,Rest Stop,"At a rest stop, you can restore health, store or retrieve items from the Witch's House, and leave the current game (settle results immediately).",休憩所,休憩所では、HPの回復、魔女の家のアイテムの保管や取り出し、現在のゲームの終了（即時精算）ができます。
+Shop,,Images/Tutorial/MapSelect/商店,商店,商店可以购买或者售出物品，祝福只会在命运之树出售,Shop,"In the shop, you can buy or sell items. Blessings are only sold at the Tree of Destiny.",ショップ,ショップではアイテムの購入や売却ができます。祝福は運命の樹でのみ販売されます。
+Event,,Images/Tutorial/MapSelect/事件,事件,随机事件，通过选择不同的选项获得各种奇遇,Event,Random events where you can gain various encounters by making different choices.,イベント,ランダムイベント。様々な選択肢を選ぶことで、色々な出来事に遭遇します。
+Disaster,,Images/Tutorial/MapSelect/灾厄,灾厄,敌人，战胜敌人可以获得金币，卡牌，祝福,Calamity,"Enemies. Defeating them can reward you with gold, cards, and blessings.",災厄,敵。敵を倒すと、ゴールド、カード、祝福を獲得できます。
+Function bar,,Images/Tutorial/Adventure/功能栏,功能栏,"右上角为游戏的功能栏，从左到右依次为：
+
+角色状态：用于查看角色当前的详细状态面板
+图鉴：用于查阅已解锁的卡牌，遗物等信息
+返回主界面：返回魔女屋（可以从魔女屋再返回游戏）
+设置：调整游戏的音画表现",Function Bar,"The top-right corner is the function bar. From left to right:
+
+Character Status: View the detailed character panel.
+Codex: View unlocked cards, relics, etc.
+Return to Main Menu: Return to the Witch's House (from where you can return to the game).
+Settings: Adjust game audio and visuals.",機能バー,"右上は機能バーです。左から順に：
+
+キャラクターステータス：キャラクターの詳細パネルを表示。
+図鑑：解放済みのカードや遺物などの情報を確認。
+メインメニューへ戻る：魔女の家に戻る（そこからゲームに復帰可能）。
+設定：ゲームの音声やグラフィックを調整。"
+Round,,Images/Tutorial/Fight/战斗,战斗简述,"本游戏采用回合制战斗。战斗结束条件为到所有怪物或者魔女阵亡结束
+当自己的回合行动完毕时，可以点击右下角的按钮结束回合
+在自己的回合长按右下角的旋转箭头按钮，可以重新开始这一回合（战斗内随机数不发生变化）",Combat Overview,"This game uses turn-based combat. A battle ends when all monsters or all witches are defeated.
+When your turn is over, you can click the button in the bottom-right corner to end your turn.
+By long-pressing the rotating arrow button in the bottom-right corner during your turn, you can restart the current turn (in-battle random numbers will not change).",戦闘概要,"本ゲームはターン制の戦闘を採用しています。戦闘は、全てのモンスターまたは全ての魔女が倒されると終了します。
+自分のターンが終了したら、右下のボタンをクリックしてターンを終了できます。
+自分のターン中に右下の回転矢印ボタンを長押しすると、現在のターンをやり直すことができます（戦闘中の乱数は変化しません）。"
+Action card,,Images/Tutorial/Fight/战斗,行动牌,"当轮到我方的回合时，玩家需要打出手中的行动牌来产生各种各样的效果以取得胜利
+行动牌分为两大类，黑色的“焚毁行动牌”和白色的“普通行动牌”
+带有焚毁词条的行动牌使用后会从本次战斗中彻底消失，无法再使用，在战斗结束后恢复
+而普通行动牌则会进入弃牌堆，待抽牌堆的卡牌全部抽完之后将弃牌堆的卡牌洗入抽牌堆重新抽取",Action Cards,"During your turn, you need to play action cards from your hand to produce various effects to achieve victory.
+Action cards are divided into two main categories: black ""Burnout Action Cards"" and white ""Normal Action Cards"".
+Cards with the Burnout keyword will be permanently removed from the current battle after use and cannot be used again until the battle ends.
+Normal action cards will go to the discard pile. After all cards in the draw pile are drawn, the discard pile is shuffled back into the draw pile.",アクションカード,"自分のターンでは、手札のアクションカードを使用して様々な効果を発動させ、勝利を目指します。
+アクションカードは大きく分けて、黒い「燃焼アクションカード」と白い「通常アクションカード」の2種類があります。
+「燃焼」特性を持つカードは使用後、その戦闘から完全に取り除かれ、戦闘が終了するまで再使用できません。
+通常のアクションカードは捨て札置き場に行き、山札がなくなると、捨て札がシャッフルされて新たな山札になります。"
+Piles/fold piles,,Images/Tutorial/Fight/牌堆,牌堆/弃牌堆,"点击左下角的卡背，可以查看目前抽牌堆中的卡牌
+点击右下角的卡牌按钮，可以查看目前弃牌堆中的卡牌",Draw Pile / Discard Pile,"Click the card back in the bottom-left corner to view the cards currently in your draw pile.
+Click the card button in the bottom-right corner to view the cards currently in your discard pile.",山札/捨て札,"左下のカードの裏面をクリックすると、現在の山札の中身を確認できます。
+右下のカードボタンをクリックすると、現在の捨て札の中身を確認できます。"
+Magic power,,Images/Tutorial/Fight/魔能,魔能,"大部分行动牌都需要消耗魔能，魔能会在回合开始时自然恢复。回合开始的基础恢复值为3。
+魔能具有6点的最大上限。",Mana,"Most action cards require Mana to be played. Mana regenerates naturally at the start of your turn. The base recovery value is 3.
+The maximum Mana capacity is 6.",マナ,"ほとんどのアクションカードは使用にマナを必要とします。マナはターン開始時に自然に回復します。ターン開始時の基本回復値は3です。
+マナの最大値は6です。"
+Base attributes,,Images/Tutorial/Adventure/状态栏,基础属性,"玩家的基础属性一共有五种
+
+生命：代表魔女的健康状态，归零时游戏结束
+魔力：能够提高魔女造成的伤害
+精神：精神越高卡组能够装备的卡牌上限越高，下限越低
+感知：能够提高护盾的效果
+幸运：能够提高随机数检定的成功率，以及金币的获取量",Base Attributes,"There are five base attributes for the player:
+
+Health: Represents the witch's well-being; the game ends when it reaches zero.
+Magic: Increases the damage dealt by the witch.
+Spirit: Higher Spirit increases the upper limit and decreases the lower limit of cards you can equip in your deck.
+Perception: Enhances the effect of shields.
+Luck: Increases the success rate of random checks and the amount of gold obtained.",基本ステータス,"プレイヤーの基本ステータスは5種類あります：
+
+生命：魔女の健康状態。0になるとゲームオーバー。
+魔力：魔女が与えるダメージを増加させる。
+精神：精神が高いほど、デッキに装備できるカードの上限が増え、下限が減る。
+感知：シールドの効果を高める。
+幸運：ランダム判定の成功率とゴールドの獲得量を増加させる。"
+Relic,,Images/Tutorial/Adventure/状态栏,遗物,遗物可以用于强化魔女，最大可装备数量为6个，如果遗物不满6个，获得时会自动装备，否则需要在休息点替换。,Relics,"Relics can be used to enhance the witch. You can equip a maximum of 6. If you have fewer than 6 relics, newly acquired ones will be automatically equipped. Otherwise, you will need to swap them at a rest stop.",遺物,遺物は魔女を強化するために使用できます。最大6個まで装備可能です。装備数が6個未満の場合、獲得した遺物は自動的に装備されます。そうでない場合は、休憩所で交換する必要があります。
+Monetary resources,,Images/Tutorial/Adventure/状态栏,货币资源,"货币分为两种，金币和真理之晶
+
+金币可以用于在游戏中的商店购买各种卡牌，遗物，祝福。顺利完成一次冒险可以带回所有金币
+，反之死亡会丢失所有随身携带的金币。
+冒险中可以通过保险箱带出或者带入少量金币。
+
+真理之晶用于魔女屋的升级和解锁，通常只能通过完成游戏获得，即使死亡也不会丢失。",Currencies,"There are two types of currency: Gold and Crystals of Truth.
+
+Gold can be used in shops during a run to buy various cards, relics, and blessings. If you successfully complete an adventure, you can bring back all your gold.
+However, if you die, you will lose all the gold you are carrying.
+You can bring a small amount of gold in or out of an adventure via the safe box.
+
+Crystals of Truth are used for upgrades and unlocks in the Witch's House. They are usually obtained by completing games and will not be lost upon death.",通貨リソース,"通貨はゴールドと真理の結晶の2種類です。
+
+ゴールドはゲーム中のショップでカード、遺物、祝福などを購入するために使用します。冒険を無事に完了すると、全てのゴールドを持ち帰ることができますが、
+死亡すると所持しているゴールドは全て失われます。
+金庫を使えば、少量のゴールドを冒険に持ち込んだり持ち出したりできます。
+
+真理の結晶は魔女の家のアップグレードや解放に使用します。通常はゲームを完了することで獲得し、死亡しても失われることはありません。"
+Toughness,,Images/Tutorial/Fight/敌人,韧性,"敌人每次受到直接攻击时韧性会遭到削减1点，
+韧性为零后敌人为进入破韧状态，接下来受到的伤害会提高100%，直到敌人的回合开始时恢复至上限",Toughness,"Each time an enemy is hit by a direct attack, their Toughness is reduced by 1.
+When Toughness reaches zero, the enemy enters a Broken state and will take 100% increased damage until the start of their next turn, when their Toughness is restored to its maximum.",靭性,"敵が直接攻撃を受けるたびに、靭性が1減少します。
+靭性が0になると、敵は靭性ブレイク状態になり、受けるダメージが100%増加します。この効果は、敵のターン開始時に靭性が上限まで回復するまで続きます。"
+Hp,,Images/Tutorial/Fight/敌人,生命值,在单位名称脚下显示的是单位的健康状态，当生命值归零时单位死亡,Health,"Displayed beneath the unit's name is their health status. When health reaches zero, the unit dies.",HP,ユニット名の足元に表示されているのが、そのユニットの健康状態です。HPが0になると、そのユニットは死亡します。
+Defence,,Images/Tutorial/Fight/敌人,护盾,在战斗中魔女可以获得护盾，以蓝色的血条表示，大部分伤害都会先对护盾造成伤害，然后才对生命造成伤害，护盾可以保留到战斗结束,Shield,"During combat, the witch can gain a Shield, represented by a blue health bar. Most damage will be dealt to the Shield first before affecting Health. The Shield can be retained until the end of the battle.",シールド,戦闘中、魔女はシールドを獲得できます。これは青いHPバーで表示されます。ほとんどのダメージは、まずシールドに与えられ、その後にHPに影響します。シールドは戦闘終了まで保持されます。
+Buff,,Images/Tutorial/Fight/敌人,buff,单位的血条下方为buff栏，显示单位受到的异常状态，鼠标悬浮在单位上方可查看详细的异常效果,Buffs,"Below the unit's health bar is the buff bar, which displays the status effects on the unit. You can hover your mouse over the unit to view detailed descriptions of the effects.",バフ,ユニットのHPバーの下にはバフ欄があり、ユニットが受けている状態異常が表示されます。ユニットにマウスカーソルを合わせると、効果の詳細を確認できます。
+Action,,Images/Tutorial/Fight/敌人,意图,非魔女的单位头顶会出现意图，代表此单位下一回合的行动，每个意图对应一次行动，鼠标悬浮在意图上可以查看意图的详细效果,Intent,"Above non-witch units, an Intent will appear, representing the unit's action on its next turn. Each Intent corresponds to one action. You can hover your mouse over the Intent to see its detailed effect.",インテント,魔女以外のユニットの頭上には、次のターンに行う行動を示すインテントが表示されます。各インテントは1回の行動に対応しています。インテントにマウスカーソルを合わせると、その詳細な効果を確認できます。

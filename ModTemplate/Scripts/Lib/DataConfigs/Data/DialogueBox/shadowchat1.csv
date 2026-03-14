@@ -1,0 +1,12 @@
+﻿Id,RoleId,StartScript,EndScript,EventName
+对话Id,说话者唯一标识,对话开始时执行,对话结束时执行,何时执行对话（事件名）
+1,shadow,"PlayerInfo.ShowOptions((""讲个故事"", () => {PlayerInfo.ShowDialogueBox(""shadowchat1_""+ PlayerInfo.RandomSelect(""2"",""4"",""6""));}), (""关于魔女屋"", () => {PlayerInfo.ShowDialogueBox(""shadowchat1_7"");}));",;,ShadowChat1
+2,shadow,,,
+3,shadow,,PlayerInfo.EndDialogue();,
+4,shadow,,,
+5,shadow,,PlayerInfo.EndDialogue();,
+6,shadow,,PlayerInfo.EndDialogue();,
+7,shadow,"Vars[""Waiting""]=""true"";PlayerInfo.ShowOptions((""关于电梯"", () => {if (Vars[""ChatState""] == ""Chatting"") {PlayerInfo.ShowDialogueBox(""shadowchat1_10""); return;} PlayerInfo.ShowDialogueBox(""shadowchat1_8"");}), (""关于你"", () => {if (Vars[""ChatState""] == ""Chatting"") {PlayerInfo.ShowDialogueBox(""shadowchat1_10""); return;} PlayerInfo.ShowDialogueBox(""shadowchat1_9"");}));",;,
+8,shadow,,PlayerInfo.EndDialogue();,
+9,shadow,,PlayerInfo.EndDialogue();,
+10,shadow,,PlayerInfo.EndDialogue();,

@@ -1,0 +1,20 @@
+﻿Id,Note,Type,Name,Name_en,Name_zh-Hant,Name_ja,是否完成,Description,Description_zh-Hant,Description_en,Description_ja
+唯一的标识（不能重复）,,卡牌类型,名称,Name,,,FALSE,描述,,Description,
+*1,,攻击牌,法杖敲头,Staff Strike,法杖敲頭,杖で殴る,TRUE,造成{0}点伤害。,造成{0}點傷害。,Deal {0} damage.,{0}のダメージを与える。
+*2,,技能牌,魔能屏障,Magic Barrier,魔力屏障,魔力障壁,TRUE,获得{0}点护盾。,增加{0}點護盾。,Gain {0} shield.,{0}のシールドを獲得する。
+*3,,消耗技能牌,冥想针剂,Meditation Injector,冥想針劑,瞑想注射剤,TRUE,"抽{0}张卡牌,","抽{0}張卡牌,",Draw {0} cards.,カードを{0}枚引く。
+4,,消耗攻击牌,无锋重刃,Bottled Fireworks,瓶裝焰火,無鋒の重刃,TRUE,对所有敌人造成{0}点伤害。,對所有敵人造成{0}點傷害。,Deals {0} damage to all enemies.,全ての敵に{0}のダメージを与える。
+5,,消耗技能牌,魔力铸金,Mana Goldsmithing,魔力鑄金,魔力鋳金,TRUE,"获得{0}枚金币,注能1:再触发一次.","獲得{0}枚金幣,注能1:再觸發一次.",Gain {0} gold coin(s). Infuse 1: Trigger again.,{0}ゴールドを獲得する。注魔1：もう一度発動する。
+6,,消耗技能牌,装甲结晶,Armor Crystal,裝甲結晶,装甲結晶,TRUE,获得{0}点护盾。,得到{0}點護盾。,Gains {0} shield .,{0}のシールドと獲得する。
+7,,消耗技能牌,魔能之心,Heart of Mana,魔能之心,魔力の心臓,TRUE,获得1层魔化。,獲得1層{buff_eclipse}。,Gain 1 layer of {buff_eclipse}.,{buff_eclipse}を1スタック獲得する。
+8,,攻击牌,终结一击,Finishing Blow,終結一擊,とどめの一撃,TRUE,"结束本回合,对所有敌人造成{0}点伤害。","結束本回合,對所有敵人造成{0}點傷害。",End this turn and deal {0} damage to all enemies.,このターンを終了し、全ての敵に{0}のダメージを与える。
+9,,消耗技能牌,谢幕曲,Finale,謝幕曲,フィナーレ,TRUE,"结束本回合,对所有敌人造成{0}点伤害,获得{1}枚金币。","結束本回合,對所有敵人造成{0}點傷害,獲得{1}枚金幣。","End this turn, deal {0} damage to all enemies, and gain {1} gold coin(s) for each point of damage taken, up to a maximum of 100.",このターンを終了し、全ての敵に{0}のダメージを与え、{1}ゴールドを獲得する。
+10,,消耗攻击牌,复仇短匕,Revenge Dagger,復仇短匕,復讐の短剣,TRUE,对敌方造成自身最大生命值10%的伤害。,對敵方造成自身最大生命值10%的傷害。,Deal damage equal to 10% of your maximum health to enemies.,敵に自身の最大HPの10%分のダメージを与える。
+11,,消耗攻击牌,复仇链枪,Chain Spear,復仇鏈槍,復讐の鎖槍,TRUE,对随机目标造成自身已损失生命50%的伤害。,對隨機目標造成自身已損失生命50%的傷害。,Deal damage equal to 50% of your lost health to a random enemy.,ランダムな敵に、自身の失ったHPの50%分のダメージを与える。
+*12,,消耗技能牌,瓶装救赎,Bottled Redemption,瓶裝救贖,瓶詰めの救済,TRUE,净化2个随机负面状态。,淨化2個隨機負面狀態。,Remove 2 random debuffs.,ランダムなデバフを2つ解除する。
+*13,,消耗攻击牌,天界护佑,Heavenly Protection,天界護佑,天界の加護,TRUE,"净化自身全部负面状态,对所有敌人造成{0}点伤害。","淨化自身全部負面狀態,對所有敵人造成{0}點傷害。",Remove all debuffs from yourself and deal {0} damage to all enemies.,自身の全てのデバフを解除し、全ての敵に{0}のダメージを与える。
+14,,攻击牌,回旋斩,Whirlwind Slash,迴旋斬,回転斬り,TRUE,造成{0}点伤害2次。,造成{0}點傷害2次。,Deal {0} damage twice.,{0}のダメージを2回与える。
+15,,攻击牌,魔导飞弹,Magic Missile,魔導飛彈,魔導ミサイル,TRUE,造成{0}点伤害3次。,造成{0}點傷害3次。,Deals {0} damage 3 times.,{0}のダメージを3回与える。
+16,,消耗技能牌,石化针剂,Petrification Injector,石化針劑,石化注射剤,TRUE,"获得{0}层强韧,","得到{0}層{buff_resilient},",Gain {0} layer(s) of {buff_resilient}.,{buff_resilient}を{0}スタック獲得する。
+17,,消耗技能牌,魔能电池,Mana Battery,魔能電池,魔力バッテリー,TRUE,获得{0}层循环。抽取{1}张牌。,獲得{0}層{buff_cycle}。抽取{1}張牌。,Gain {0} layer(s) of {buff_cycle}. Draw {1} card(s).,{buff_cycle}を{0}スタック獲得する。カードを{1}枚引く。
+18,,消耗技能牌,罐装紊乱,Canned Chaos,罐裝紊亂,缶詰の紊乱,TRUE,给与对方{0}层失格。,給對方{0}層{buff_degrade}。,Give enemies {0} layer(s) of {buff_degrade}.,敵に{buff_degrade}を{0}スタック付与する。

@@ -1,0 +1,5 @@
+﻿Id,Note,Name,Name_en,Name_ja,Description
+地图id,备注,名字,,,描述
+1,天界彩券,天界彩券,Celestial Lottery,天界彩券,<color=green>安全</color><br>只抽到非怪物
+2,联邦金券,联邦金券,Federal Gold Certificate,連邦金券,<color=grey>未知</color><br>一切随机。
+3,恶魔债券,恶魔债券,Demon Bond,悪魔債券,<color=red>危险</color><br>一定会抽到怪物

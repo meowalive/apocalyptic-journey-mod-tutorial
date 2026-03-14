@@ -1,0 +1,11 @@
+﻿Id,Text,Text_en,Text_ja,ChoiceText1,ChoiceText1_en,ChoiceText1_ja,ChoiceText2,ChoiceText2_en,ChoiceText2_ja,Notification,Notification_en,Notification_ja
+对话Id,对话正文,,,选项1文本,,,,,,,,
+1,呜哇……这只怪物看起来好脏。绝对不要用拳头去打，手会弄脏的。而且一点都不可爱！,Eww... This monster looks so filthy. Never punch it—my hands would get dirty. And it's not cute at all!,うわ……この魔物きたない。拳で殴るのはやめとこ、手が汚れる。しかも全然可愛くない！,,,,,,,,,
+2,哦？阿米莉娅酱，你终于回忆起一些作为【魔女】的本能了吗？,Oh? Amelia-chan,have you finally remembered some of your instincts as a [witch]?,お？アメリアちゃん、ようやく【魔女】としての本能を思い出してきたの？,,,,,,,,
+3,……你这是在嘲讽我吧。说起来，刚刚好像回忆起了一些不太妙的术式。,......You're mocking me,aren't you. Come to think of it,I just recalled some rather nasty spells...,……皮肉でしょ。そういえば、さっきちょっとヤバい術式を思い出した。,,,,,,,
+4,这就对了！与其费力气去互殴，不如给它加点'佐料'！毕竟，我们是魔女嘛……,That's right! Rather than slug it out,"add some ""seasoning""! We're witches",after all...,その通り！殴り合うよりちょっと「味付け」してあげなさい！何せ私たちは魔女だもの……,,,,,,,
+5,比如……让它的伤口无法愈合的诅咒，或者是让它五脏六腑都溃烂的毒素？,Like... a curse that keeps its wounds from healing,or toxin that rots it from the inside?,例えば……傷を塞がれない呪いとか、内臓を腐らせる毒とか？,,,,,,,,
+6,真是恶趣味呢…看着敌人在痛苦中慢慢倒下，而我们只要站在旁边修指甲就好了，这就是作为【魔女】的生存法则。,How delightfully twisted... Watch the enemy slowly fall in agony while we just stand there filing our nails—that's the survival law of a [witch].,悪趣味ね…敵が苦しみながら倒れるのを見て、私たちは傍で爪でも磨いとけばいい。これが【魔女】の生存法則。,,,,,,,,,
+7,你这么说着比它更像怪物了喂！,You sound more like a monster than it does!,それ言うあなたの方が魔物より魔物だよ！,,,,,,,,,
+8,不过这才是魔女该有的战斗方式嘛！那种挥舞大剑流汗的野蛮人打法，果然还是不适合我。,But this is how a witch ought to fight! That barbarian style of swinging a greatsword and sweating? Not for me.,でもこれが魔女の戦い方よね！大剣振り回して汗かく野蛮なやり方は、やっぱ私向いてない。,,,,,,,,,
+9,"那么，要用这份""礼物""，为这只怪物送上华丽丽的死亡吗？","So, shall I deliver a gorgeous death to this monster with this ""gift""?",では、この「贈り物」で、この魔物に華麗な死を届けましょうか？,是,Yes,はい,否,No,いいえ,,,

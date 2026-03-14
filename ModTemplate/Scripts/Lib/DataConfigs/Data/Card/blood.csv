@@ -1,0 +1,93 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,花费,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效路径,动作
+1,1,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""7"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_bleeding, ""7"");",,Icon/Card/血刃术,溅血,Skill
+2,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""Self"");AddBuff(DataId.buff_bleeding, ""1"");AddBuff(DataId.buff_impregnable, ""2"");",,Icon/Card/血盾术,自我溅血,
+3,3,0,"Burnout, Retain","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""10"");",,"SetStatus(""All"");
+ int count=0;
+ foreach (var item in Object)
+ {
+ var buff = item.GetBuff(DataId.buff_bleeding);
+ if (buff==null)
+ {
+ continue;
+ }
+ count+=buff.buffConfig.Level*2;
+ buff.ClearBuff();
+ }
+SetStatus(""Self"");
+ChangeHp(count.ToString());
+ChangeDefence(count.ToString());",,Icon/Card/公爵绶带,溅血,
+4,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";",,"if (Self.GetBuff(DataId.buff_bleeding) == null) return;
+string count=(Self.GetBuff(DataId.buff_bleeding).buffConfig.Level*2).ToString();
+SetStatus(""AllTarget"");
+AddBuff(DataId.buff_bleeding,  count);
+SetStatus(""Self"");
+Self.RemoveBuff(DataId.buff_bleeding);",,Icon/Card/苦痛转移,溅血,Skill
+5,1,1,,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_bleeding, ""2"");
+SetStatus(""Target"");
+if (Object.Count>0)
+{
+    var buff= Object[0].GetBuff(DataId.buff_bleeding);
+ if (buff!=null)
+ {
+ AddBuff(DataId.buff_bleeding,buff.buffConfig.Level.ToString());
+}
+
+ }",,Icon/Card/炽烈穿刺,溅血,
+6,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""AllTarget""); AddBuff(DataId.buff_bleeding, ""2"");
+        AddBuff(DataId.buff_BonePiercingSpike,""1"");",,Icon/Card/透骨钉,溅血,
+7,2,1,,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");
+AddBuff(DataId.buff_bleeding, ""2"");
+SetStatus(""Target"");
+ for (int i = 0; i < 2; i++)
+ {
+ RunImmediately(DataId.buff_bleeding, ""Action"");
+ }",,Icon/Card/血爆术,溅血,
+8,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""3"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_bleeding, ""3"");
+ SetStatus(""Self"");
+ AddBuff(DataId.buff_Lilith_s_Pact,""1"");",,Icon/Card/莉莉丝契约,溅血,Skill
+9,3,0,,"Vars[""BaseScript""]=""CommonCardItem"";
+        if (Self!=null&&Self.GetBuff(DataId.buff_bleeding)!=null)
+        {
+            Vars[""Usable""]=int.Parse(Self.GetBuff(DataId.buff_bleeding).buffConfig.Level.ToString())<3 ? ""0"": ""1"";
+        }
+       else{Vars[""Usable""]=""0"";}",,"SetStatus(""All"");
+ int count=0;
+ foreach (var item in Object)
+ {
+ if (item.GetBuff(DataId.buff_bleeding)!=null)
+ {
+ count++;
+ }
+ }
+ for (int i = 0; i < count; i++)
+ {
+ RunImmediately(DataId.buff_bleeding, ""Action"");
+ }",,Icon/Card/放血仪式,溅血,Skill
+10,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""3"");",,"SetStatus(""AllTarget""); AddBuff(DataId.buff_bleeding, ""3"");
+        int count = 0;
+        foreach (var item in Object)
+        {
+            var buff = item.GetBuff(DataId.buff_bleeding);
+            if (buff == null)
+            {
+                continue;
+            }
+            count += buff.buffConfig.Level / 5;
+        }
+        SetStatus(""Self"");
+        RandomAddBuffAndAbility(count.ToString());",,Icon/Card/祭祀者加护,溅血,
+11,3,0,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""3"");",,"SetStatus(""Self"");
+ AddBuff(DataId.buff_bloodriver, ""1"");
+SetStatus(""AllTarget"");AddBuff(DataId.buff_bleeding, ""3"");",,Icon/Card/饮血者加护,溅血,Skill
+*12,2,0,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_bloodsea, ""1"");",,Icon/Card/盛宴,溅血,Skill
+13,1,0,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_bleeding, ""2"");
+SetStatus(""Target"");
+ if (Object.Count > 0)
+ {
+ var buff= Object[0].GetBuff(DataId.buff_bleeding);
+ if (buff!=null)
+ {
+ AddBuff(DataId.buff_bleeding,(buff.buffConfig.Level/2).ToString());
+ }
+ }",,Icon/Card/撕裂,溅血,

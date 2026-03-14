@@ -1,0 +1,22 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,花费,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效路径,动作
+*1,3,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Hp"", ""5"");",,"SetStatus(""AllFriends"");
+        int value = 5;
+            if (PlayerInfo.Power >= 1)
+            {
+                PlayerInfo.Power -= 1;
+            }
+            value *= 2;
+        ForAllStatus((status) =>
+        {
+            if (status.CurHp<status.MaxHp/2)
+            {
+                status.CurHp += value;
+            }
+            status.CurHp += value;
+         });",,Icon/Card/治愈之星,,
+*2,3,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");AddBuff(DataId.buff_synergies, ""1"");",,Icon/Card/连携,,
+*3,3,1,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";Vars[""Obj""] = ""Friends"";",,"SetStatus(""Target"");
+        Resurrection(""10"");",,Icon/Card/复苏术,,
+*4,2,0,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";Vars[""Obj""] = ""Friends"";",,Undone();,,Icon/Card/协助,,
+*5,3,2,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";Vars[""Obj""] = ""Friends"";",,"SetStatus(""Self"");AddBuff(DataId.buff_lifelink, ""1"");SetStatus(""Target"");AddBuff(DataId.buff_lifelink, ""1"");",,Icon/Card/生命链接,,

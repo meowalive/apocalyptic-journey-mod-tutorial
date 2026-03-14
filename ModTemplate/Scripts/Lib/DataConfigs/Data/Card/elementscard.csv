@@ -1,0 +1,42 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,消耗的费用,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效,动作
+1,2,0,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");AddDescription(""2"", ""Draw"", ""1"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""2"");DrawCount(""1"");",,Icon/Card/海洋之梦,强化,
+2,2,0,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""4"");",,"SetStatus(""Self"");AddBuff(DataId.buff_evergreen,""4"");AddBuff(DataId.buff_elements,""1"");",,Icon/Card/生长,,
+3,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""3"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""1"");AddBuff(DataId.buff_vitality,""3"");",,Icon/Card/森之结晶,,
+4,1,2,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");AddDescription(""2"",""Damage"",""14"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""2"");SetStatus(""AllTarget"");Damage(""14"");",,Icon/Card/聚雷术,斩击,Skill
+5,1,1,,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""2""); AddDescription(""2"",""Damage"",""6"");AddDescription(""3"", ""Buff"", ""1"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""2"");SetStatus(""Target"");Damage(""6"");AddBuff(DataId.buff_vulnerability,""1"");",,Icon/Card/雷枪,雷枪,Skill
+6,1,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"",""Buff"",""1"");AddDescription(""2"",""Buff"",""10"");AddDescription(""3"",""Defence"",""13"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""1"");AddBuff(DataId.buff_extraordinary,""10"");ChangeDefence(""13"");",,Icon/Card/雷绝,斩击,Skill
+7,2,0,,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""2"");AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""2"");SetStatus(""Target"");AddBuff(DataId.buff_burn,""2"");",,Icon/Card/凝火术,凝火术,Skill
+8,2,1,,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""2"");SetStatus(""Target"");AddBuff(DataId.buff_burn,""2"");SetStatus(""AllTarget"");RunImmediately(DataId.buff_burn,""StartRound"");",,Icon/Card/绽放,绽放,Skill
+9,2,1,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""2"");AddDescription(""3"",""Damage"",""7"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""1"");SetStatus(""Target"");AddBuff(DataId.buff_burn,""2"");Damage(""7"");",,Icon/Card/罐装火元,,Skill
+10,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");
+AddBuff(DataId.buff_elements,""2"");
+if(Self.GetBuff(DataId.buff_elements)==null){return;}
+Vars[""elements""]=Self.GetBuff(DataId.buff_elements).buffConfig.Level.ToString();
+ChangeDefence((2*int.Parse(Vars[""elements""])).ToString());",,Icon/Card/元素护盾,强化,
+11,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");
+        AddBuff(DataId.buff_elements, ""2"");
+        if (Self.GetBuff(DataId.buff_elements)==null)
+        {
+            return;
+        }
+        int count = Self.GetBuff(DataId.buff_elements).buffConfig.Level/4;
+        if (count>10)
+        {
+            count = 10;
+        }
+        DrawCount((count).ToString());  ",,Icon/Card/元素升华,强化,
+12,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""2""); if (Self.GetBuff(DataId.buff_elements)==null)
+        {
+            return;
+        }Vars[""elements""]=Self.GetBuff(DataId.buff_elements).buffConfig.Level.ToString();ChangePower((int.Parse(Vars[""elements""])/4).ToString());",,Icon/Card/元素循环,强化,
+13,2,1,,"int count=0;
+    if (Self!=null&&Self.GetBuff(""buff_elements"")!=null)
+    {
+        count= Self.GetBuff(""buff_elements"").buffConfig.Level*2;
+    }
+       Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");AddDescription(""2"",""Damage"",count.ToString());",,"SetStatus(""Self"");AddBuff(DataId.buff_elements,""2""); if (Self.GetBuff(DataId.buff_elements)==null)
+        {
+            return;
+        }Vars[""elements""]=Self.GetBuff(DataId.buff_elements).buffConfig.Level.ToString();SetStatus(""AllTarget"");
+        Damage((int.Parse(Vars[""elements""])* 2).ToString());",,Icon/Card/元素爆发,"元素爆发,强化",Skill

@@ -1,0 +1,106 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,花费,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效路径,动作
+1,2,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Defence"", ""6"");AddDescription(""2"", ""Money"", ""60"");",,"ChangeDefence(""6"");
+        SetStatus(""Self"");
+        ChangeRound();
+        ChangeMoney(""60"");",,Icon/Card/黄金时代,获得金币,
+*2,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""4"");",,"var cards = HandCard
+         .Where(card => card != null&&(!card.dataConfig.data[""Tag""].Contains(""Froze"")))
+         .ToList();
+        if (!cards.Any()) return;
+        int i = 1;
+        int count = cards.Count;
+        foreach (var card in cards)
+        {
+            card.Burning(0.2f * i);
+            i++;
+        }
+
+        PlayerInfo.Money += count * 45;
+        if (count >= 4)
+        {
+            SetStatus(""Self"");
+            DrawCount(ValueDice.WithRange(2, 5).Roll().Value.ToString());
+            ChangePower(ValueDice.WithRange(2, 5).Roll().Value.ToString());
+        }
+      ",,Icon/Card/统合之约,获得金币,Skill
+3,2,1,,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""5"");",,"int count = PlayerInfo.Money / 50;
+                if (count>20)
+                {
+                    count = 20;
+                }
+        SetStatus(""AllTarget"");
+        Damage((5 * count).ToString());
+        PlayerInfo.Money -= count * 25; ",,Icon/Card/乾坤一掷,获得金币,Skill
+4,3,0,Recycle,"Vars[""BaseScript""]=""CommonCardItem"";
+if (!Vars.ContainsKey(""luckycard_4""))
+{
+    Vars[""luckycard_4""] = ""0"";
+}
+AddDescription(""1"", ""Value"", Vars[""luckycard_4""]);",,"        
+
+        Vars[""luckycard_4""] = (int.Parse(Vars[""luckycard_4""]) + 1).ToString();
+        SetStatus(""Self"");
+        int count = int.Parse(Vars[""luckycard_4""]);
+        DiceCheck(50, result =>
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (result)
+                {
+                    PlayerInfo.Money += (int)(PlayerInfo.Money * 0.15f);
+                }
+                else
+                {
+                    PlayerInfo.Money -= (int)(PlayerInfo.Money * 0.1f);
+                    ChangeHp((-Self.MaxHp * 15/ 100).ToString());
+                }
+            }
+        });",,Icon/Card/诅咒炼金,获得金币,
+5,3,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Draw"", ""3"");",,"BurnCard(""2"", ""2"");
+List<Dictionary<string, string>> cards = GetcardsByRarity(""2"", ""3"").Where(x => !x[""Id""].Contains(""*"")&&(x[""Type""]!=""诅咒"")).ToList();
+        for (int i = 0; i < 3; i++)
+        {
+            AddCard(cards[DefaultDice.WithRange(0, cards.Count - 1).Roll().Value][""Id""]);
+        }
+        DrawCount(""3"");",,Icon/Card/灵光一闪,,
+6,3,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""Self"");
+        AddBuff(DataId.buff_reverie,""1"");",,Icon/Card/幻想酊剂,强化,
+7,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";","List<Dictionary<string, string>> list = GetcardsByRarity(""3"", ""3"").Where(x => x[""Type""].Contains(""技能牌"")).ToList();
+        int count=DefaultDice.WithRange(0, list.Count - 1).Roll().Value;
+        var newData = dataConfig.data.ToDictionary(x => x.Key, x => x.Value);
+        newData[""Id""] = list[count][""Id""];
+        newData[""UseScript""] = list[count][""UseScript""];;
+        newData[""Description""]= list[count][""Description""];
+        newData[""InitScript""]= list[count][""InitScript""];
+        dataConfig.data = newData;
+        ScriptDict.Remove(""UseScript"");
+        ScriptDict.Remove(""InitScript"");
+        foreach (var item in HandCard)
+        {
+            if (item.dataConfig==dataConfig)
+            {
+                item.DataUpdate();
+            }
+        }",,,Icon/Card/不稳定思绪,强化,
+*8,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";",,"
+            ValueDice.OnRoll += result => {
+            var result2 = ValueDice.InternalRoll();
+            result.CopyTo(result+result2);
+            };",,Icon/Card/奖励骰,强化,
+*9,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";",,"
+
+            CheckDice.OnRoll += result => {
+            var result2 = CheckDice.InternalRoll(); result.CopyTo(new(Math.Min (result.Value,result2.Value),result.Bonus));
+            };
+",,Icon/Card/惩罚骰,强化,
+10,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""Self"");
+        AddBuff(DataId.buff_fate,""1"");",,Icon/Card/雷鸣加护,强化,
+11,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Defence"", ""1"");AddDescription(""2"", ""Defence"", ""15"");
+",,"SetStatus(""Self"");ChangeDefence(ValueDice.WithRange(1,15).Roll().Value.ToString());",,Icon/Card/不稳定屏障,,
+12,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";
+",,"SetStatus(""Self"");int count=PlayerInfo.Money/100;
+        if (count>0)
+        {
+            AddBuff(DataId.buff_resilient,count.ToString());
+        }",,Icon/Card/帝国堡垒,"获得金币,强化",

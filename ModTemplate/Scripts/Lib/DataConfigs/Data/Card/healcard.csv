@@ -1,0 +1,38 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,消耗的费用,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效路径,动作
+1,1,0,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Hp"", ""6"");",,"SetStatus(""Self"");ChangeHp(""6"");",,Icon/Card/圣疗术,治疗,
+2,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Value"", ""4"");AddDescription(""2"", ""Buff"", ""3"");",,"SetStatus(""Self"");ChangeHp(""-4"");AddBuff(DataId.buff_keenedge,""3"");",,Icon/Card/渴血,强化,
+3,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";",,"SetStatus(""Self"");
+int A = 0;
+        for (int i = HandCard.Count - 1; i >= 0; i--)
+        {
+            bool shouldRemove = !(HandCard[i].data[""Tag""].Contains(""Froze""));
+            if (shouldRemove)
+            {
+                HandCard[i].ThrowCard();
+                A++;
+            }
+        }
+AddBuff(DataId.buff_keenedge,(A/2).ToString());",,Icon/Card/聚气凝神,,
+4,2,2,,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""10"");",,"if (Self.GetBuff(DataId.buff_keenedge) == null)
+        {
+            return;
+        }
+        SetStatus(""Self"");int a=Self.GetBuff(DataId.buff_keenedge).buffConfig.Level;SetStatus(""Target"");
+  for (int i = 0; i < a/2+1; i++)
+  {
+  Damage(""10"");
+  }
+  Self.GetBuff(DataId.buff_keenedge).buffConfig.Level=(a/2);",,Icon/Card/无我一击,,Attack
+5,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";",,"for (int i = 0; i < 3; i++)
+  {
+  RandomAddCard(""healcard_1"");
+  }",,Icon/Card/治愈祈愿,,
+6,2,2,Burnout,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""10"");AddDescription(""2"", ""Hp"", ""10"");",,"SetStatus(""Self"");ChangeHp(""10"");SetStatus(""Target"");Damage(""10"");",,Icon/Card/饮血刺剑,斩击,
+7,2,1,Burnout,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""7"");AddDescription(""2"", ""Hp"", ""6"");",,"SetStatus(""Target"");Damage(""7"");SetStatus(""Self"");ChangeRound();ChangeHp(""6"");",,Icon/Card/黄金之音,强化,
+8,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";",,"SetStatus(""Self"");AddBuff(DataId.buff_oniblood,""1"");",,Icon/Card/禁果,,
+9,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";",,"if (Self.GetBuff(DataId.buff_keenedge)== null)
+        {
+            return;
+        }
+        ChangeHp( (Self.GetBuff(DataId.buff_keenedge).buffConfig.Level*4).ToString());",,Icon/Card/肾上腺素,,

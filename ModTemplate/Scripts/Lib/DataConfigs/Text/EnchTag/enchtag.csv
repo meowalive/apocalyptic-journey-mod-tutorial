@@ -1,0 +1,17 @@
+﻿Id,Note,Name,Description,Name_en,Description_en,Name_ja,Description_ja
+Id（唯一标识）,备注,名称,效果描述,,,,
+1,,末日,附着卡打出时恢复1点魔能。,Doomsday,"When the attached card is played, restore 1 mana.",終末,付与されたカードを使用時、魔力を1回復する。
+2,,绝灭,附着卡打出次数+5，使用后彻底销毁。,Extinction,"Attached card play count +5, permanently destroyed after use.",絶滅,付与されたカードの使用回数+5、使用後に完全に破壊される。
+3,,双生,附着卡打出次数+1。,Twin,Attached card play count +1.,双生,付与されたカードの使用回数+1。
+4,,无限,附着卡打出时不会被丢弃。,Infinity,Attached card will not be discarded when played.,無限,付与されたカードは使用時に捨てられなくなるが。
+5,,相片,附着卡获得保留。,Photo,Attached card gains the Retain.,写真,付与されたカードは保留タグを獲得する。
+6,,虔诚,附着卡获得唤神:获得神启层数点护盾。,Devotion,Grants attached card Divinity: Gain shield equal to Revelation stacks.,敬虔,付与されたカードに神喚を付与：神啓の層数分シールドを獲得する。
+*7,,时痕,附着卡获得刹那。,Time Mark,Grants attached card Fleeting.,時の痕,付与されたカードに刹那を付与する。
+8,,复仇,附着卡打出时获得1层蓄势。,Vengeance,"When the attached card is played, gain 1 stack of Momentum.",復讐,付与されたカードを使用時、蓄勢を1層獲得する。
+9,,超频,附着卡打出时抽1张牌。,Overclock,"When the attached card is played, draw 1 card.",超過,付与されたカードを使用時、カードを1枚引く。
+10,,铸金,附着卡打出时获得2金币。,Gold Casting,"When the attached card is played, gain 2 gold.",鋳金,付与されたカードを使用時、ゴールドを2獲得する。
+11,,治愈,附着卡打出时恢复4*魔能消耗点生命。,Healing,"When the attached card is played, restore HP equal to 4 * mana cost.",治癒,付与されたカードを使用時、魔力消費×4のHPを回復する。
+12,,固化,附着卡打出时获得6*魔能消耗点护盾。,Solidify,"When the attached card is played, gain shield equal to 6 * mana cost.",固化,付与されたカードを使用時、魔力消費×6のシールドを獲得する。
+13,,刀刃,附着卡打出时对随机敌人造成7*魔能消耗点伤害。,Blade,"When the attached card is played, deal damage equal to 7 * mana cost to a random enemy.",刃,付与されたカードを使用時、魔力消費×7のダメージをランダムな敵に与える。
+14,,蓄能,附着卡打出后获得魔能消耗层储能。,Energy Storage,"After the attached card is played, gain Energy stacks equal to mana cost.",蓄能,付与されたカードを使用後、魔力消費層数分の蓄能を獲得する。
+15,,衔尾,若附着卡非焚毁，打出后返回抽牌堆。,Ouroboros,"If the card is not Burnout, the attached card returns to the draw pile after being played.",ウロボロス,カードが焼却でない場合、付与されたカードは使用後に山札に戻る。

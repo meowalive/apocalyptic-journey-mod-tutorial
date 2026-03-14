@@ -1,0 +1,3 @@
+﻿Id,InitScript,Timepoint,Script,Cost,DesValType
+唯一的标识（不能重复）,初始化脚本,时点,脚本,负荷,占位符类型
+damage,,Use,"SetStatus(""Self"");Damage(""1"");",,

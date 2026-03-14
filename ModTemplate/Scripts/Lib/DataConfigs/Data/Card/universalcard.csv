@@ -1,0 +1,43 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,花费,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效,动作
+1,3,0,Unusable,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Power"", ""1"");AddDescription(""2"", ""Draw"", ""1"");","ChangePower(""1"");DrawCount(""1"");",,,Icon/Card/冥想,,
+2,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";",,"foreach (var item in Object)
+  {
+  if (GetStatus.ContainsKey(item))
+  {
+  item.CurHp = GetStatus[item][""CurHp""];
+  item.MaxHp = GetStatus[item][""MaxHp""];
+  }
+  else
+  {
+  GetStatus[item] = new Dictionary<string, int>
+  {
+  { ""CurHp"", item.CurHp },
+  { ""MaxHp"", item.MaxHp },
+  };
+  }
+  };",,Icon/Card/生命回溯,,
+3,3,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""3"");",,"ChangeRound();AddBuff(DataId.buff_impregnable,""3"");",,Icon/Card/招架,,
+4,3,0,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Power"", ""3"");AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""Self"");ChangePower(""3"");AddBuff(DataId.buff_cripple,""2"");",,Icon/Card/魔能榨取,弱化,
+5,3,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Draw"", ""3"");AddDescription(""2"", ""Buff"", ""5"");",,"SetStatus(""Self"");DrawCount(""3"");AddBuff(DataId.buff_toxin,""5"");",,Icon/Card/思维榨取,弱化,
+6,2,2,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Defence"", ""14"");",,"SetStatus(""AllFriends"");ChangeDefence(""14"");",,Icon/Card/强化护盾,,
+7,3,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""Self"");AddBuff(DataId.buff_unyielding,""1"");",,Icon/Card/加速术,强化,
+8,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""Self"");AddBuff(DataId.buff_frenzy,""1"");",,Icon/Card/狂暴化,强化,
+9,2,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""5"");",,"SetStatus(""Self"");AddBuff(DataId.buff_evergreen,""5"");",,Icon/Card/庇护术,强化,
+10,2,1,,"Vars[""BaseScript""]=""AttackCardItem"";",,"SetStatus(""Self"");SetHp(""10"");string val1=((Self.MaxHp-Self.CurHp)*3/10).ToString(); SetStatus(""Target"");Damage(val1);",,Icon/Card/血契重锋,,Attack
+11,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";",,"SetStatus(""Self"");ChangeHp(""-1"");ChangePower(""1"");",,Icon/Card/活血术,强化,
+12,2,1,,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""2"");",,"SetStatus(""AllRandomTarget1"");for (int i=0;i<3;i++) Damage(""2"");",,Icon/Card/乱舞,斩击,Attack
+13,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");AddDescription(""2"", ""Buff"", ""5"");",,"SetStatus(""Self"");AddBuff(DataId.buff_weak,""1"");AddBuff(DataId.buff_evergreen,""5"");",,Icon/Card/防御姿态,,
+14,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Defence"", ""15"");AddDescription(""2"", ""Buff"", ""2"");",,"SetStatus(""Self"");
+  SetHp(""25"");ChangeDefence(""15"");
+  AddBuff(DataId.buff_resilient,  ""2"");",,Icon/Card/血契化盾,,
+15,3,0,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Draw"", ""4"");AddDescription(""2"", ""Power"", ""3"");",,"DrawCount(""4"");SetStatus(""Self"");SetHp(""10"");ChangePower(""3"");",,Icon/Card/血契冥想,,
+16,2,2,Burnout,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""5"");AddDescription(""2"", ""Defence"", ""8"");",,"SetStatus(""Self"");ChangeDefence(""8"");SetStatus(""Target"");for (int i=0;i<2;i++) Damage(""6"");",,Icon/Card/双刃剑盾,斩击,Skill
+*17,3,3,,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""6"");AddDescription(""2"", ""Defence"", ""14"");",,"SetStatus(""Target"");for (int i=0;i<4;i++) Damage(""6"");
+        SetStatus(""AllFriends"");
+        ChangeDefence(""14"");",,Icon/Card/星芒,斩击,Skill
+*18,2,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""Self"");AddBuff(DataId.buff_sourcecast,""1"");",,Icon/Card/源蜕,,
+19,3,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""Self"");AddBuff(DataId.buff_immortal,""1"");",,Icon/Card/不朽,,
+20,3,1,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Draw"", ""3"");",,"BurnCard(""1"",""0"");
+ChangeHp(""-1"");
+DrawCount(""3"");",,Icon/Card/灵感交换,,

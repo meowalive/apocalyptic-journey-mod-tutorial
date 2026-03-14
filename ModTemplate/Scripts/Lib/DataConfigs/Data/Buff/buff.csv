@@ -1,0 +1,568 @@
+﻿Id,InitScript,ApplyScript,ClearScript,ReducePerTurn,ReducePerAttacked,ReducePerUse,UpperBound,Icon,Type,Rarity,Effects,SoundEffects,Action
+BUFF的ID（唯一英文）,,BUFF生效时的效buff_BUFF的ID（唯一英文）时的效果,清除时效果,层数每回合减少数,层数每受击减少数,层数每行动减少数,层数上限,图标路径,类型,稀有度,特效,,
+timelock,,"AddEvent(""EndRound"",()=> {
+         var buff = Self.GetBuff(DataId.buff_timelock);
+        if (buff == null) { return; } var list = buff.effectList.ToList();
+        while (list.Count > 0) { list[0].action(); list.RemoveAt(0); buff.buffConfig.Level = 0; }  });",,0,0,0,999,Icon/Buff/时之笼,指示物,2,,,
+epiphany,,"       AddEvent(""buff_epiphanyOnLevelChange"",() => {
+
+           ChangeMaxPower(Self.GetBuff(DataId.buff_epiphany).buffConfig.Level.ToString());});",,0,0,0,999,Icon/Buff/启示,正面,4,,,
+cripple,,"AddEvent(""Hurt"",() => {ChangePower(""-1"");});",,0,1,0,100,Icon/Buff/失能,负面,4,,,
+sourcecast,,"AddEvent(""CostPower"",() => {
+            if (!Vars.ContainsKey(""ThisCount""))
+            {
+                Vars[""ThisCount""] = ""0"";
+            }
+            if (Self.GetBuff(DataId.buff_sourcecast)==null)
+            {
+                return;
+            }
+            Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();
+            if (int.Parse(Vars[""ThisCount""]) %2==0)
+            {
+                DrawCount(Self.GetBuff(DataId.buff_sourcecast).buffConfig.Level.ToString());
+            }
+            });",,0,0,0,3,Icon/Buff/源蜕,能力,5,,,
+bloodwall,,"SetStatus(""Self"");
+        
+        AddEvent(""Action"",() => {
+         if (Self.GetBuff(DataId.buff_bloodwall)==null)
+         {
+                return;
+         }
+            ChangeDefence(Self.GetBuff(DataId.buff_bloodwall).buffConfig.Level.ToString());});",,1,1,0,999,Icon/Buff/血墙,正面,3,,,
+timestop,,"SetStatus(""Self"");AddEvent(""StartRound"",() => {ChangeRound();});",,1,0,0,10,Icon/Buff/时停,指示物,5,,,
+elements,"AddDescription(""1"", ""Buff"", Vars[""layer""].ToInt() * 2);","SetStatus(""Self"");
+AddEvent(""Action"",() => {
+            AddBuff(DataId.buff_extraordinary,(int.Parse(Self.GetBuff(DataId.buff_elements).buffConfig.Level.ToString())*2).ToString());});",,0,0,0,9999,Icon/Buff/元素,正面,2,,,
+fast,,"AddEvent(""buff_fastOnLevelChange"",() => {ChangeDynamicVar(""RoundCard"",Self.GetBuff(DataId.buff_fast).buffConfig.Level.ToString());});",,1,0,0,10,Icon/Buff/敏锐,正面,3,,,
+*immortal,,"
+AddEvent(""Hurt"",() => {
+            if (!Vars.ContainsKey(""ThisCount""))
+            {
+                Vars[""ThisCount""] = ""0"";
+            }
+            Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();
+            if (int.Parse(Vars[""ThisCount""]) %2== 0)
+            {
+                ChangePower(Self.GetBuff(DataId.buff_immortal).buffConfig.Level.ToString());
+            }
+            });",,0,0,0,4,Icon/Buff/不朽,能力,5,,,
+frenzy,,"AddEvent(""Action"",() => {
+            if (Self.GetBuff(DataId.buff_frenzy)==null)
+            {
+                return;
+            }
+            AddBuff(DataId.buff_keenedge,Self.GetBuff(DataId.buff_frenzy).buffConfig.Level.ToString());
+            if (Self.CurHp>Self.GetBuff(DataId.buff_frenzy).buffConfig.Level*2)
+            {
+                ChangeHp((Self.GetBuff(DataId.buff_frenzy).buffConfig.Level*-2).ToString());
+            }
+            });",,0,0,0,999,Icon/Buff/狂暴,能力,4,,,
+*unyielding,,"
+        AddEvent(""Hurt"", () =>
+        {
+            if (!Vars.ContainsKey(""ThisCount""))
+            {
+                Vars[""ThisCount""] = ""0"";
+            }
+            Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();
+            DrawCount(Self.GetBuff(DataId.buff_unyielding).buffConfig.Level.ToString());
+        });",,0,0,0,3,Icon/Buff/不屈,能力,5,,,
+toxin,,"SetStatus(""Self"");
+ProcessEffect(Self, ""中毒"");
+        
+        AddEvent(""EndRound"",() => {ProcessEffect(Self, ""毒爆"");ChangeHp((-1*Self.GetBuff(DataId.buff_toxin).buffConfig.Level).ToString());});",,1,0,0,999999,Icon/Buff/毒素,负面,1,中毒,NewSounds/特效/中毒,
+oblivion,,"
+        Vars[""ThitCount""]=""0"";
+        AddEvent(""ICreateCardItem"",() => {
+        Vars[""ThitCount""]=(int.Parse(Vars[""ThitCount""])+1).ToString();
+        if (int.Parse(Vars[""ThitCount""])%3==0)
+        {
+           ThrowCard(""1"",""1"");
+        }
+        });",,1,0,0,10,Icon/Buff/遗忘,负面,1,,,
+bleeding,"if (Vars[""layer""].ToInt()>30)
+        {
+           AddDescription(""1"", ""TrueDamage"",  Vars[""layer""].ToInt()*2 ); 
+        }
+        else
+        {
+            AddDescription(""1"", ""TrueDamage"",  Vars[""layer""].ToInt() );
+        }","ProcessEffect(Self, ""流血"");
+        AddEvent(""Action"",() => {
+ProcessEffect(Self, ""流血"");
+if (Self.GetBuff(DataId.buff_bleeding).buffConfig.Level>30)
+{
+    ChangeHp((int.Parse(Self.GetBuff(DataId.buff_bleeding).buffConfig.Level.ToString())*-2).ToString());
+}
+else
+{
+    ChangeHp((int.Parse(Self.GetBuff(DataId.buff_bleeding).buffConfig.Level.ToString())*-1).ToString());
+}
+            });",,0,0,0,99999,Icon/Buff/流血,负面,1,流血,NewSounds/特效/流血,
+evergreen,,"AddEvent(""StartRound"",() => {ChangeHp(Self.GetBuff(DataId.buff_evergreen).buffConfig.Level.ToString());});",,1,0,0,9999,Icon/Buff/自愈,正面,1,,,
+rotten,,"AddEvent(""Action"",() => {Self.Defend=0;});",,1,0,0,2,Icon/Buff/腐朽,负面,4,,,
+burn,"AddDescription(""1"", ""TrueDamage"", Vars[""layer""].ToInt() * (1 + 0.01f * Self.MaxHp));","ProcessEffect(Self, ""灼烧"");
+        AddEvent(""StartRound"",() => {
+            
+            if (Self.GetBuff(DataId.buff_burn)==null)
+            {
+                return;
+            }
+            ProcessEffect(Self, ""灼烧"");
+            ChangeHp(((int)((-1-Self.MaxHp/100f)*Self.GetBuff(DataId.buff_burn).buffConfig.Level)).ToString());});",,1,0,0,35,Icon/Buff/灼烧,负面,2,火苗,NewSounds/特效/灼烧,
+chaos,,"
+        SetStatus(""Self"");
+        AddEvent(""Action"",() => {
+            int count=ValueDice.WithRange(0,100).Roll().Value;
+            if (count >= 67)
+            {
+                ChangeDynamicVar(""CardCost"", ( -Self.dynamicVariables[""CardCost""]).ToString());
+            }
+            else if (count >= 34)
+            {
+                ChangeDynamicVar(""CardCost"", ( 1-Self.dynamicVariables[""CardCost""] ).ToString());
+            }
+            else
+            {
+                ChangeDynamicVar(""CardCost"", ( 2-Self.dynamicVariables[""CardCost""]).ToString());
+            }
+        });",,0,0,0,1,Icon/Buff/混乱,负面,3,,,
+eclipse,,"SetStatus(""Self"");
+AddEvent(""buff_eclipseOnLevelChange"",()=>{ChangeDynamicVar(""CardCost"",""-2"");});","ChangeHp(""-999"");",10,0,0,1,Icon/Buff/魔化,指示物,4,,,
+vulnerability,"AddDescription(""1"", ""Percent"", Vars[""layer""].ToInt() * 0.1f);","SetStatus(""Self"");
+AddEvent(""buff_vulnerabilityOnLevelChange"",() => {ChangeDynamicVarPercent(""AttackedPercentDamage"",(int.Parse(Self.GetBuff(DataId.buff_vulnerability).buffConfig.Level.ToString())*10).ToString());});",,2,0,0,99,Icon/Buff/易伤,负面,2,,,
+cycle,,"AddEvent(""Shuffle"",() => {ChangePower(Self.GetBuff(DataId.buff_cycle).buffConfig.Level.ToString());});",,0,0,0,5,Icon/Buff/循环,正面,4,,,
+vitality,,"SetStatus(""Self"");AddEvent(""Hurt"",() => {ChangeDefence(Self.GetBuff(DataId.buff_vitality).buffConfig.Level.ToString());});",,1,0,0,999,Icon/Buff/吸收,正面,2,,,
+oniblood,"AddDescription(""1"", ""Hp"", Vars[""layer""].ToInt() * 4);","
+AddEvent(""EndRound"",() => {
+if (Self.CurHp>16)
+{
+ChangeHp(""-16"");
+}
+});AddEvent(""Action"",() => {ChangeHp((int.Parse(Self.GetBuff(DataId.buff_oniblood).buffConfig.Level.ToString())*4).ToString());});",,0,0,0,3,Icon/Buff/鬼化,能力,4,,,
+contagion,"AddDescription(""1"", ""Damage"", Vars[""layer""].ToInt() * 9);","AddEvent(""ICreateCardItem"",() => {
+        if (!Vars.ContainsKey(""ThisCount""))
+        {
+            Vars[""ThisCount""] = ""0"";
+        }
+        else
+        {
+            Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        }
+        if (int.Parse(Vars[""ThisCount""]) %2==0)
+        {
+            SetStatus(""AllRandomTarget1"");
+            Damage((int.Parse(Self.GetBuff(DataId.buff_contagion).buffConfig.Level.ToString())*9).ToString());
+        }
+        });",,0,0,0,999,Icon/Buff/污染,正面,3,,,
+keenedge,,"AddEvent(""buff_keenedgeOnLevelChange"",() => {ChangeDynamicVar(""DefaultDamage"",Self.GetBuff(DataId.buff_keenedge).buffConfig.Level.ToString());}); ",,0,0,0,9999,Icon/Buff/锋锐,正面,2,,,
+weak,,"AddEvent(""buff_weakOnLevelChange"",() => {ChangeDynamicVar(""DefaultDamage"",(int.Parse(Self.GetBuff(DataId.buff_weak).buffConfig.Level.ToString())*-1).ToString());});",,1,0,0,9999,Icon/Buff/无力,负面,2,,,
+resilient,,"
+        SetStatus(""Self"");
+        AddEvent(""buff_resilientOnLevelChange"",() => {ChangeDynamicVar(""AttackedDefaultDamage"",(int.Parse(Self.GetBuff(DataId.buff_resilient).buffConfig.Level.ToString())*-1).ToString());});",,0,0,0,9999,Icon/Buff/强韧,正面,2,,,
+counterattack,,"SetStatus(""AllTarget"");
+        void CountAttack(ActionData BaseAction)
+        {
+            if (BaseAction.data.data[""Action""] == ""Attack"" || BaseAction.data.data[""Action""] == ""Skill"")
+            {
+                if (Self == null)
+                {
+                    return;
+                }
+                Self.DamageFilter[""buff_counterattack""] = 100f;
+                SetStatusById(BaseAction.Id); Damage((Self.GetBuff(DataId.buff_counterattack).buffConfig.Level).ToString());
+                Self.GetBuff(DataId.buff_counterattack).buffConfig.Level = 0;
+            }
+        }
+        ;
+         AddEvent<NewEnemyData>(""AddEnemy"",
+        (newData) =>
+        {
+            SetStatusById(newData.Id);
+            AddEvent<ActionData>(""Action"",
+        (newData) =>
+        {
+            CountAttack(newData);
+        });
+        }); 
+        AddEvent<ActionData>(""Action"",
+        (newData) =>
+        {
+            CountAttack(newData);
+        });",,0,0,0,9999,Icon/Buff/反击,指示物,2,,,
+impregnable,"AddDescription(""1"", ""Percent"", Vars[""layer""].ToInt() * 0.1f);","AddEvent(""buff_impregnableOnLevelChange"",() => {ChangeDynamicVarPercent(""AttackedPercentDamage"",(int.Parse(Self.GetBuff(DataId.buff_impregnable).buffConfig.Level.ToString())*-10).ToString());});",,0,0,0,8,Icon/Buff/坚毅,正面,3,,,
+chrysalis,,"SetStatus(""Self"");
+        AddEvent(""buff_chrysalisOnLevelChange"",()=>
+        {
+            ChangeDynamicVarPercent(""MaxChangeHp"", ""-50"");
+            AddBuff(DataId.buff_limitdamage,  ""1"");
+        });",,1,0,0,10,Icon/Buff/庇护,正面,5,,,
+barkhide,"            if (!Vars.ContainsKey(""ThisCount""))
+            {
+                Vars[""ThisCount""] = ""0"";
+            }
+AddDescription(""1"", ""Defence"", Vars[""ThisCount""].ToInt() * 2);","AddEvent(""StartRound"", () => { Vars[""ThisCount""] = ""0""; });
+        AddEvent(""Hurt"", () =>
+        {
+            if (!Vars.ContainsKey(""ThisCount""))
+            {
+                Vars[""ThisCount""] = ""0"";
+            }
+            Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();
+            for (int i = 0; i < 2; i++)
+            {
+                ChangeDefence(Vars[""ThisCount""]);
+            }
+        });",,0,0,0,999,Icon/Buff/树肤,正面,5,,,
+bloodriver,,"AddEvent(""Action"",()=>{int a=CheckDice.Roll().Value;
+            if (a>=75)
+            {
+                SetStatus(""Self"");
+                AddBuff(DataId.buff_bleeding,""2"");
+            }
+            else
+            {
+                SetStatus(""AllTarget"");
+                AddBuff(DataId.buff_bleeding,""4"");
+            }
+        });",,1,0,0,3,Icon/Buff/血河,能力,3,,,
+extraordinary,"AddDescription(""1"", ""Percent"", Vars[""layer""].ToInt() * 0.01f);","AddEvent(""buff_extraordinaryOnLevelChange"",() => {
+            ChangeDynamicVarPercent(""PercentDamage"",Self.GetBuff(DataId.buff_extraordinary).buffConfig.Level.ToString());});",,0,0,0,99999,Icon/Buff/超凡,正面,1,,,
+limitdamage,"AddDescription(""1"", ""Value"", Vars[""layer""].ToInt() - 1);","
+Self.GetBuff(DataId.buff_limitdamage).buffConfig.Level=
+           (int)(Self.MaxHp * Self.dynamicVariables[""MaxChangeHp""] - Self.dynamicVariables[""thisHP""]) +1;
+        AddEvent(""buff_limitdamageOnLevelChange"",()=> {
+        if (Self.GetBuff(DataId.buff_limitdamage) == null || Self.dynamicVariables[""MaxChangeHp""] == 1f)
+            {
+                return;
+            }
+            Self.GetBuff(DataId.buff_limitdamage).buffConfig.Level=
+           (int)(Self.MaxHp * Self.dynamicVariables[""MaxChangeHp""] - Self.dynamicVariables[""thisHP""]) +1;});
+        AddEvent(""Hurt"",() =>
+        {
+            if (Self.GetBuff(DataId.buff_limitdamage) == null)
+            {
+                return;
+            }
+            if (Self.dynamicVariables[""MaxChangeHp""] != 1f)
+            {
+                Self.GetBuff(DataId.buff_limitdamage).buffConfig.Level =
+               (int)(Self.MaxHp * Self.dynamicVariables[""MaxChangeHp""] - Self.dynamicVariables[""thisHP""]) + 1;
+            }
+        else
+        {
+             Self.GetBuff(DataId.buff_limitdamage).buffConfig.Level = 0;
+        }
+           });   ",,0,0,0,99999,Icon/Buff/限伤,指示物,1,,,
+reverie,," List<Dictionary<string,string>>cards=GetcardsByRarity(""2"",""3"");
+        cards=cards.Where(x => x[""Type""]!=(""诅咒"")).ToList();
+        AddEvent(""Hurt"",()=>
+        {
+            AddCard(cards[DefaultDice.WithRange(0, cards.Count - 1).Roll().Value][""Id""]);
+            DrawCount(""1"");
+        });",,0,0,0,1,Icon/Buff/空想,能力,3,,,
+fate,,"AddEvent(""OnDiceCheck"", () => {SetStatus(""AllTarget""); Damage(""2""); });",,0,0,0,100,Icon/Buff/天罚,能力,3,,,
+degrade,"AddDescription(""1"", ""Percent"", Vars[""layer""].ToInt() * 0.1f);","AddEvent(""buff_degradeOnLevelChange"",() => {ChangeDynamicVarPercent(""PercentDamage"",(int.Parse(Self.GetBuff(DataId.buff_degrade).buffConfig.Level.ToString())*-10).ToString());});",,1,0,0,6,Icon/Buff/失格,负面,3,,,
+bloodsea,,"AddEvent(""Action"",  () => {SetStatus(""Self"");AddBuff(DataId.buff_bleeding,  ""3"");});",,0,0,0,1,Icon/Buff/血海,能力,4,,,
+lifelink,,"void AverageHp()
+{
+    SetStatus(""All"");
+    int total = 0; int minMaxHp = 0; int count = 0;
+    ForAllStatus(status => { 
+        if (status.GetBuff(DataId.buff_lifelink) == null) return; 
+        if (count == 0) minMaxHp = status.MaxHp; 
+        else minMaxHp = minMaxHp > status.MaxHp ? status.MaxHp : minMaxHp; 
+        total += status.CurHp; count += 1; 
+        });
+    if (count <= 1) return; 
+    int even = total / count; even = even > minMaxHp ? minMaxHp : even; 
+    SetStatus(Object.Where(x => x.GetBuff(DataId.buff_lifelink) != null));
+    SetHp(even.ToString());
+}
+SetStatus(""Self"");
+AverageHp();
+AddEvent(""Hurt"", () => AverageHp());
+AddEvent(""Heal"", () => AverageHp());",,1,0,0,9,Icon/Buff/同心,指示物,4,,,
+synergies,,"Vars[""CorCount""]=""0"";SetStatus(""AllFriends"");int count = 0;foreach (var status in Object){
+            if (status==null)
+            {
+                continue;
+            }
+            var buff = status.GetBuff(DataId.buff_synergies); if (buff != null) count ++;}foreach (var status in Object){
+            if (status==null)
+            {
+                continue;
+            }
+            var buff = status.GetBuff(DataId.buff_synergies); if (buff != null) buff.buffConfig.dataConfig.Vars[""CorCount""]=count.ToString(); buff.buffConfig.dataConfig.Vars[""DesVal1""] = count.ToString();}","SetStatus(""AllFriendsExSelf"");int count = 0;foreach (var status in Object){var buff = status.GetBuff(DataId.buff_synergies); if (buff != null) count ++;}foreach (var status in Object){var buff = status.GetBuff(DataId.buff_synergies); if (buff != null) buff.buffConfig.dataConfig.Vars[""CorCount""]=count.ToString(); buff.buffConfig.dataConfig.Vars[""DesVal1""] = count.ToString();}",1,0,0,2,Icon/Buff/连携,指示物,3,,,
+DoomPower,"AddDescription(""1"", ""Percent"", Vars[""layer""].ToInt() * 0.1f);
+AddDescription(""2"", ""Hp"", Vars[""layer""]);","AddEvent(""buff_DoomPowerOnLevelChange"",()=>
+         {
+             if (Self == null)
+             {
+                 return;
+             }
+             ChangeDynamicVarPercent(""HealMultiplier"", (10 * Self.GetBuff(DataId.buff_DoomPower).buffConfig.Level).ToString());
+             ChangeMaxHp(( Self.GetBuff(DataId.buff_DoomPower).buffConfig.Level).ToString());
+             PlayerInfo.SpecialVars[""DoomPower""] = Self.GetBuff(DataId.buff_DoomPower).buffConfig.Level.ToString();
+         }); ",,0,0,0,9999,Icon/Buff/厄运魔能,技能,5,,,
+revelation,,"AddEvent<ActionData>(""Action"",(thisData)=>
+        {
+            if (!thisData.data.data[""Tag""].Contains(""Combo""))
+            {
+                if (!(thisData.data.Vars.ContainsKey(""SpecialTag"") && thisData.data.Vars[""SpecialTag""].Contains(""Combo"")))
+                {
+                    var enchCard = CardGetEnch(thisData.data);
+                    if (enchCard==null||!enchCard.data[""Tag""].Contains(""Combo""))
+                    {
+                        var buff = Self.GetBuff(DataId.buff_revelation);
+                        if (buff != null)
+                        {
+                            buff.buffConfig.Level =0;
+                            return;
+                        }
+                    }     
+                }
+            }
+       
+        });",,0,0,0,999,Icon/Buff/神启,指示物,1,,,
+weakness,"AddDescription(""1"", ""Percent"", Vars[""layer""].ToInt() * 0.1f);","AddEvent(""Hurt"",()=> {
+            
+            ChangeDynamicVarPercent(""AttackedPercentDamage"",
+            ""10"");
+             });",,999,0,0,1,Icon/Buff/弱点,负面,4,,,
+obsidianSoldier,"AddDescription(""1"", ""Value"", Vars[""layer""].ToInt() * 2);"," AddEvent(""StartRound"",()=>
+        {
+            if (Self == null || Self.GetBuff(DataId.buff_obsidianSoldier) == null)
+            {
+                return;
+            }
+            SetStatus(""AllTarget"");
+            int count = Self.GetBuff(DataId.buff_obsidianSoldier).buffConfig.Level;
+            for (int i = 0; i < count; i++)
+            {
+                Damage(""2"");
+            }CallEffect();
+        });",,0,0,0,999,Icon/Buff/黑曜士兵,技能,4,,,Special
+obsidianKnight,"AddDescription(""1"", ""Damage"", Vars[""layer""].ToInt() * 3);
+AddDescription(""2"", ""TrueDamage"", Vars[""layer""].ToInt() * 0.01f);","AddEvent(""StartRound"",()=>
+        {
+            if (Self == null || Self.GetBuff(DataId.buff_obsidianKnight) == null)
+            {
+                return;
+            }
+            SetStatus(""AllTarget"");
+            if (Object.Count == 0)
+            {
+                return;
+            }
+            SetStatusById(Object[0].InstanceId);
+            int count = Self.GetBuff(DataId.buff_obsidianKnight).buffConfig.Level;
+            int val = Object[0].MaxHp*count/100;
+            Damage((3 * count).ToString());
+            Damage(val.ToString(),""True"");
+           CallEffect();
+        });",,0,0,0,999,Icon/Buff/黑曜骑士,技能,4,,,Special1
+obsidianQueen,"AddDescription(""1"", ""Hp"", Vars[""layer""].ToInt() * 10);
+AddDescription(""2"", ""Value"", Vars[""layer""]);
+","AddEvent(""StartRound"",()=>
+        {
+            if (Self == null || Self.GetBuff(DataId.buff_obsidianQueen) == null)
+            {
+                return;
+            }
+            int count = Self.GetBuff(DataId.buff_obsidianQueen).buffConfig.Level;
+            for (int i = 0; i < count; i++)
+            {
+                ChangeMoney(""10"");
+                ChangeHp(""10"");
+                RandomAddGoodBuff();
+            }CallEffect();
+        });",,0,0,0,999,Icon/Buff/黑曜皇后,技能,4,,,Special2
+thorns,,"AddEvent<HurtData>(""Hurt"",
+        (fromData) =>
+        {
+            
+            if (Self==null)
+            {
+                return;
+            }
+        SetStatusById(fromData.SourceId); Damage((Self.GetBuff(DataId.buff_thorns).buffConfig.Level).ToString());
+        });",,0,0,0,999,Icon/Buff/荆棘,指示物,3,,,
+biologicalArmor,,"ChangeDynamicVar(""ConversionRate"", ""1"");",,0,0,0,1,Icon/Buff/生物装甲,指示物,4,,,
+poised,,"AddEvent(""EndRound"",()=> { Vars[""ThisCount""] = ""0""; });
+        AddEvent(""Hurt"",
+        () => {
+            if (Self.GetBuff(DataId.buff_poised)==null)
+            {
+                return;
+            }
+            AddBuff(DataId.buff_counterattack, Self.GetBuff(DataId.buff_poised).buffConfig.Level.ToString());
+            Vars[""ThisCount""]= (int.Parse(Vars[""ThisCount""])+1).ToString();
+        });",,0,0,0,999,Icon/Buff/蓄势,指示物,3,,,
+swordIntent,,"Vars[""ThisCount""] = ""0"";
+        AddEvent(""Action"",() => {
+            Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (Self.CurHp > 2)
+                {
+                    ChangeHp(""-1"");
+                }
+            if (int.Parse(Vars[""ThisCount""]) % 2 == 0)
+            {
+                
+                AddBuff(DataId.buff_poised, ""1"");
+            }
+        });",,0,0,0,1,Icon/Buff/剑意,能力,4,,,
+elementalBody,,"Vars[""ThisCount""]=""0"";
+        AddEvent(""StartRound"",()=>{Vars[""ThisCount""]=""0"";});
+        AddEvent<HurtData>(""Hurt"",(data=>
+        {
+            if (int.Parse(Vars[""ThisCount""])>2)
+            {
+                return;
+            }
+            Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""])+1).ToString();
+            if (data.damageType == ""True"")
+            {
+                SetStatus(""Self"");
+                ChangeHp((Self.MaxHp/20).ToString());
+            }
+        }));",,0,0,0,1,Icon/Buff/元素身躯,能力,3,,,
+BonePiercingSpike,,"AddEvent(""Dead"", () =>
+            {
+                var buff = Self.GetBuff(DataId.buff_bleeding);
+            SetStatus(""AllFriends"");
+            if (buff != null)
+            {
+                AddBuff(DataId.buff_bleeding, (buff.buffConfig.Level * 2*Self.GetBuff(DataId.buff_BonePiercingSpike).buffConfig.Level).ToString());
+            }
+            });",,0,0,0,99,Icon/Buff/透骨钉,指示物,3,,,
+Lilith's Pact,,"if (!Self.DamageFilter.ContainsKey(""buff_bleeding""))
+       {
+        Self.DamageFilter.Add(""buff_bleeding"",0f);
+       }
+       Self.DamageFilter[""buff_bleeding""]+=100f;","if (Self.DamageFilter.ContainsKey(""buff_bleeding""))
+ {
+ Self.DamageFilter[""buff_bleeding""]-=100f;
+}",1,0,0,1,Icon/Buff/莉莉丝契约,能力,3,,,
+GuleiSummoningArt,,"AddEvent<ActionData>(""Action"",(thisData)=>
+        {
+            int count=Self.GetBuff(DataId.buff_GuleiSummoningArt)!=null?Self.GetBuff(DataId.buff_GuleiSummoningArt).buffConfig.Level:0;
+            for (int i = 0; i < count; i++)
+            {
+                if (!thisData.data.data[""Tag""].Contains(""Combo""))
+            {
+                if (!(thisData.data.Vars.ContainsKey(""SpecialTag"") && thisData.data.Vars[""SpecialTag""].Contains(""Combo"")))
+                {
+                    return;
+                }
+            }
+            if (Self.GetBuff(DataId.buff_revelation) != null)
+            {
+                if (ValueDice.Roll().Value>(100-4*Self.GetBuff(DataId.buff_revelation).buffConfig.Level))
+                {
+                    ChangeDynamicVar(""UseCount"", ""1"");
+                }
+            }
+            }
+            
+            
+        });",,99,0,0,99,Icon/Buff/古蕾降神术,能力,3,,,
+RegenerationPrayer,,"AddEvent<ActionData>(""Action"",(thisData)=>
+        {
+            if (!thisData.data.data[""Tag""].Contains(""Combo""))
+            {
+                if (!(thisData.data.Vars.ContainsKey(""SpecialTag"") && thisData.data.Vars[""SpecialTag""].Contains(""Combo"")))
+                {
+                    return;
+                }
+            }
+            int count=Self.GetBuff(DataId.buff_RegenerationPrayer)!=null?Self.GetBuff(DataId.buff_RegenerationPrayer).buffConfig.Level:0;
+            ChangeHp((2*count).ToString());
+        });",,99,0,0,99,Icon/Buff/再生祷言,能力,3,,,
+EnergyStorage,,"AddEvent(""StartRound"",()=>
+        {
+            if (Self == null || Self.GetBuff(DataId.buff_EnergyStorage) == null)
+            {
+                return;
+            }
+            int count = Self.GetBuff(DataId.buff_EnergyStorage).buffConfig.Level;
+            ChangePower(count.ToString());
+            RemoveBuff(""buff_EnergyStorage"");
+        });",,0,0,0,99,Icon/Buff/储能,指示物,3,,,
+WailingWall,,"AddEvent(""EndRound"", () =>
+        {
+            BurnCard(""10"", ""1"");
+        });",,1,0,0,1,Icon/Buff/叹息之墙,技能,3,,,
+ChaosMark,"AddDescription(""1"", ""Value"", Vars[""DesVal1""]);","void RandomEffect()
+        {
+            int count=ValueDice.WithRange(0,96).Roll().Value/16;
+            count=Math.Min(count,5);
+            Vars[""DesVal1""]=(count+1).ToString();
+            if (count==0)
+            {
+                SetStatus(""Self"");
+                if (Self.CurHp<=Self.MaxHp/5)
+                {
+                    ChangeHp((-1*(Self.CurHp-1)).ToString());
+                }
+                else
+                {
+                    ChangeHp((-1*(Self.MaxHp/5)).ToString());
+                }
+                SetStatus(""AllTarget"");
+                var tempList=new List<IStatusManager>(Object);
+                foreach (var status in tempList)
+                {
+                    SetStatusById(status.InstanceId);
+                    ChangeHp((status.MaxHp/-10).ToString());
+                }
+            }
+            else if(count==1)
+            {
+                SetStatus(""Self"");
+                ChangeHp((Self.MaxHp*3/10).ToString());
+            }
+            else if(count==2)
+            {
+                SetStatus(""Self"");
+                ChangePower(""-1"");
+                DrawCount(""2"");
+            }
+            else if(count==3)
+            {
+                int scCount=DefaultDice.WithRange(0,100).Roll().Value;
+                int thCount=DefaultDice.WithRange(0,98).Roll().Value;
+                if (scCount<50)
+                {
+                    SetStatus(""Self"");
+                    AddBuff(DataId.buff_burn, (thCount/33+1).ToString());
+                    SetStatus(""AllTarget"");
+                    AddBuff(DataId.buff_burn, (thCount*2/33+2).ToString());
+                }
+                else
+                {
+                    
+                    SetStatus(""Self"");
+                    AddBuff(DataId.buff_bleeding, (thCount/33+1).ToString());
+                    SetStatus(""AllTarget"");
+                    AddBuff(DataId.buff_bleeding, (thCount*2/33+2).ToString());
+                }
+            }
+            else if(count==4)
+            {
+                var buffs=Self.GetBuffs();
+                foreach (var item in buffs)
+                {
+                    item.buffConfig.Level=item.buffConfig.Level*6/5;
+                }
+            }
+            else 
+            {
+                SetStatus(""Self"");
+                AddBuff(DataId.buff_extraordinary, ""100"");
+            }
+        }
+        AddEvent(""StartRound"",RandomEffect);
+        AddEvent(""RandomEffect"", RandomEffect);",,0,0,0,1,Icon/Buff/混沌标记,技能,3,,,

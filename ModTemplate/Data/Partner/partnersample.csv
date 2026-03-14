@@ -1,0 +1,2 @@
+﻿Id,Hp,Attack,Defend,ActionCount,InitScript,DollIcon,Model,Animation,Bless
+唯一标识,血量,攻击力,防御盾,行动次数,更新显示信息用的,玩偶图标,怪物的模型路径,,给与的祝福

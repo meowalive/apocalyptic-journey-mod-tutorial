@@ -1,0 +1,17 @@
+﻿Id,Note,Description,Keywords,Keywords_en,Description_en,Keywords_ja,Description_ja
+Id,备注,描述,关键词,keyword,description,Keywords_ja,Description_ja
+Burnout,,该牌在使用后本场战斗中会消逝无法再次使用。,焚毁,Burnout,This card disappears after use and cannot be used again in the current battle.,焼却,このカードは使用後、この戦闘中は消滅し、再使用できなくなります。
+Backtracking,,若魔能小于X，则魔能回复到X。,回溯,Backtracking,"If your power is less than X, your power returns to X.",巻き戻し,マナがX未満の場合、マナはXまで回復します。
+Froze,,该卡无法以正常出牌或者回合末弃牌以外的方式离开手卡。,凝滞,Froze,This card cannot leave your hand except by normal play or discarding.,停滞,このカードは通常プレイまたはターン終了時の手札破棄以外で手札から離れることはありません。
+Instant,,该卡牌打出时，效果封存至时之笼中。,刹那,Instant,"The effect of this card (use effect) is not resolved immediately after it is played, but is stored in the ‘{buff_timelock}’.",刹那,このカードの効果（使用効果）はプレイ後すぐに解決されず、「時の檻」に保存されます。
+Infuse,,若魔能足够，自动额外投入X点魔能，触发效果。,注能,Infuse,"If you have enough action points, X additional action points are automatically added, triggering the effect.",注魔,十分なマナがある場合、追加でXマナが自動的に投入され、効果が発動します。
+Metamagic,,当数额大于等于给定要求（X)，额外执行效果。,超魔,Metamagic,"When the amount is greater than or equal to the specified requirement (X), the additional effect is executed.",スーパーマジック,量が指定された要件（X）以上の場合、追加効果が実行されます。
+Recycle,,这张卡牌打出后不会被丢弃。,回转,Recycle,This card will not be discarded after being played.,回収,このカードは使用後、捨てられません。
+Retain,,回合结束后，这张卡不进入弃牌堆。,保留,Retain,"At the end of the turn, this card does not go to the discard pile.",保留,ターン終了時、このカードは捨て札置き場に行きません。
+Unusable,,这张牌不可以正常出牌方式被打出。,不可打出,Unusable,This card may not be played in the normal way.,使用不可,このカードは通常の方法でプレイすることはできません。
+Curse,,诅咒牌。,诅咒,Curse,This is a curse;,呪い,これは呪いのカードです。
+Combo,,打出后，获得一层神启，并检索一张唤神卡，如果已有神启，则执行额外效果。,唤神,Combo,"If the previous card also has [Combo] or has no {buff_revelation} of its own, gain a layer of ｛buff_revelation｝, draw an [Combo] card and add it to your hand, and perform the effect, or lose a layer of ｛buff_revelation｝.",神を呼ぶ,前のカードも[神を呼ぶ]を持つか、自身がアルカナを持たない場合、アルカナを1スタック獲得し、[神を呼ぶ]カードを1枚引いて手札に加え、効果を発動する。そうでない場合はアルカナを1スタック失う。
+Ascension,,打出后，此牌在本次冒险获得永久加强。,飞升,Ascension,"After being played, this card gains a permanent boost in this adventure.",昇格,このカードをプレイすると、この冒険中に永続的な強化を得る
+Fission,,打出后，此牌在本次战斗获得永久加强。,裂变,Fission,"After being played, this card gains a permanent boost in this battle.",核分裂,この牌を出すと、この戦闘中、この牌は永続的な強化を得る
+Fragmented,,使用后，会立即销毁对应卡牌。,碎裂,Fragmented,"After use, the corresponding card will be immediately destroyed.",粉々になる,使用後、対応するカードはすぐに破棄されます。
+Exhaustion,,卡牌打出费用+1。,耗竭,Exhaustion,Card play cost +1.,枯渇,カードをプレイするコストが+1。

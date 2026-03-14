@@ -1,0 +1,314 @@
+﻿Id,1Script,2Script,3Script,4Script,InitScript,IsHighRisk,EntryScript
+Id,选项1脚本,选项2脚本,选项3脚本;,选项4脚本,含所有选项的解锁条件,是否是高危事件,退出脚本，为后置事件准备的
+*999,"PlayerInfo.ContinueEvent(""2"");PlayerInfo.Hp+=PlayerInfo.MaxHp*3/10;","PlayerInfo.ContinueEvent(""2"");",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",TRUE,
+Sub_*999_2,"PlayerInfo.StartLevel(""build"",""shop"");PlayerInfo.EndEvent();",PlayerInfo.EndEvent();,,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",TRUE,
+*1000,"PlayerInfo.ContinueEvent(""2"");PlayerInfo.Hp+=PlayerInfo.MaxHp*3/10;PlayerInfo.Goodbless(""4"");","PlayerInfo.ContinueEvent(""2"");PlayerInfo.Hp+=PlayerInfo.MaxHp*3/10;PlayerInfo.Goodbless(""4"");",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",TRUE,
+Sub_*1000_2,PlayerInfo.EndEvent();,PlayerInfo.EndEvent();,,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",TRUE,
+1,"int baseCount = PlayerInfo.CardTotalCount;
+        PlayerInfo.RemoveCard(""All"");
+        PlayerInfo.RandomAddCardByDeck(baseCount.ToString());
+        int relicCount = PlayerInfo.RelicCount;
+        PlayerInfo.RemoveRelic(""All"");
+        PlayerInfo.RandomAddRelic(relicCount.ToString());
+        PlayerInfo.Hp = PlayerInfo.MaxHp;
+        PlayerInfo.Money += 100;
+        PlayerInfo.EndEvent();","PlayerInfo.AddBless(""blessing_5"");PlayerInfo.AddBless(""blessing_5"");
+        PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+2,PlayerInfo.Wisdom+=4; PlayerInfo.EndEvent();,"if (PlayerInfo.CardList.Count>0)
+        {
+            PlayerInfo.CopyCard(PlayerInfo.CardList[^1].InstanceID);
+        }
+        PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+3,"SelectCardAndAddTag(""3"",PlayerInfo.CardList.ToList()); PlayerInfo.EndEvent();",PlayerInfo.Wisdom += 3; PlayerInfo.EndEvent();,,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+4,"PlayerInfo.RandomAddCard(""1"");PlayerInfo.AddBless(""blessing_5"");
+        PlayerInfo.EndEvent();","PlayerInfo.RandomAddRelic(""1"");
+        PlayerInfo.EndEvent();",PlayerInfo.EndEvent();,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";
+Vars[""Choice3""]=""1"";",FALSE,
+*7,"PlayerInfo.Reward += 1;
+        string levelId="""";
+        int a = PlayerInfo.DefaultRoll;
+        if (a<33)
+        {
+            levelId = ""level_10026"";
+        }
+        else if(a<66)
+        {
+            levelId = ""level_10027"";
+        }
+        else
+        {
+            levelId = ""level_10028"";
+        }
+        Vars[""Use1""] = levelId;
+PlayerInfo.EndEvent();",PlayerInfo.EndEvent();,,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,"if (Vars.ContainsKey(""Use1""))  
+        {PlayerInfo.AnnounceEventDone();
+            PlayerInfo.StartLevel(""Fight"", Vars[""Use1""]);
+        }
+        else
+        {
+            PlayerInfo.EventTryChangeMap();
+        }"
+8,"PlayerInfo.RandomAddRelic(""1"");PlayerInfo.EndEvent();","PlayerInfo.AddRelic(""relic_77"");
+        PlayerInfo.Money -= 50;
+         PlayerInfo.EndEvent();","PlayerInfo.AddRelic(""relic_78"");
+        PlayerInfo.Money -= 200;
+         PlayerInfo.EndEvent();",,"Vars[""Choice1""] = ""1"";
+        if (PlayerInfo.Money<50)
+        {
+            Vars[""Choice2""] = ""2"";
+        }
+        else
+        {
+            Vars[""Choice2""] = ""1"";
+        }
+        if (PlayerInfo.Money<200)
+        {
+            Vars[""Choice3""] = ""2"";
+        }
+        else
+        {
+        Vars[""Choice3""] = ""1"";
+        }
+       ",FALSE,
+9," PlayerInfo.ContinueEvent(""2"");","PlayerInfo.Perceive += 3;
+        PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+Sub_9_2,"Vars[""Use1""] = ""True"";
+       
+     PlayerInfo.EndEvent();",,,,"Vars[""Choice1""]=""1"";
+",FALSE,"if (Vars.ContainsKey(""Use1""))
+        {
+            PlayerInfo.AnnounceEventDone();
+            PlayerInfo.StartLevel(""Fight"", ""elite"");
+        }else
+        {
+            PlayerInfo.EventTryChangeMap();
+        }"
+10,"int a=PlayerInfo.DefaultRoll-PlayerInfo.Lucky*5/4;
+        Vars[""ThisCount""] = (int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if ((int.Parse(Vars[""ThisCount""]) != 6) &&(a < 100 - 100 /(7- int.Parse(Vars[""ThisCount""]))) )
+        {
+            if (int.Parse(Vars[""ThisCount""]) < 3)
+            {
+                PlayerInfo.Money += 40 * int.Parse(Vars[""ThisCount""]);
+            }
+            else
+            {
+                PlayerInfo.RandomAddRelic(""1"");
+                PlayerInfo.Money += 100;
+            }
+            PlayerInfo.ChangeEventSubtip(@""<good>(.*?)<\/good>"");
+            if (Vars[""ThisCount""]==""5"")
+            {
+                PlayerInfo.LockChoice(""1"");
+            PlayerInfo.EndEvent();
+            }
+        }
+        else
+        {
+            PlayerInfo.LockChoice(""1"");
+            PlayerInfo.Hp =1;
+            PlayerInfo.EndEvent();
+            PlayerInfo.ChangeEventSubtip(@""<bad>(.*?)<\/bad>"");
+        }", PlayerInfo.EndEvent();,,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+11,"PlayerInfo.Wisdom -= 1;
+        PlayerInfo.Perceive -= 1;
+        PlayerInfo.Strength += 2;
+ Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (int.Parse(Vars[""ThisCount""]) >= 8)
+        {
+            PlayerInfo.EndEvent();
+        }","PlayerInfo.Wisdom += 2;
+        PlayerInfo.Perceive -= 1;
+        PlayerInfo.Lucky -= 1;
+ Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (int.Parse(Vars[""ThisCount""]) >= 8)
+        {
+            PlayerInfo.EndEvent();
+        }","PlayerInfo.Lucky -= 1;
+        PlayerInfo.Perceive += 2;
+        PlayerInfo.Strength -= 1;
+        Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (int.Parse(Vars[""ThisCount""]) >= 8)
+        {
+           PlayerInfo.EndEvent();
+        }", PlayerInfo.EndEvent();,"Vars[""Choice1""]=""1"";
+        Vars[""Choice2""]=""1"";
+        Vars[""Choice3""]=""1"";
+        Vars[""Choice4""] = ""1"";
+        int a=PlayerInfo.DefaultRoll/25;
+        if (a>3)
+        {
+            a = 3;
+        }
+        else if (a < 1)
+        {
+            a = 1;
+        }
+        Vars[""Choice"" + (a )] = ""0""; ",FALSE,
+12,"if (PlayerInfo.Money >= 20&&PlayerInfo.CardTotalCount<PlayerInfo.Wisdom+18)
+        {
+            PlayerInfo.RandomAddCard(""1"");
+            PlayerInfo.Money -= 20;
+            if (PlayerInfo.Money < 20)
+            {
+                PlayerInfo.LockChoice(""1"");
+            }
+        }
+        else
+            {
+                PlayerInfo.LockChoice(""1"");
+            }  ","if (PlayerInfo.TrueCount >= 5)
+        {
+            PlayerInfo.RandomAddBless(""1"");
+            PlayerInfo.TrueCount -= 5;
+            if (PlayerInfo.TrueCount < 5)
+            {
+                PlayerInfo.LockChoice(""2"");
+            }
+        }
+        else
+            {
+                PlayerInfo.LockChoice(""2"");
+            } Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (int.Parse(Vars[""ThisCount""]) >= 8)
+        {
+            PlayerInfo.EndEvent();
+        }", PlayerInfo.EndEvent();,,"if (PlayerInfo.Money>=20)
+        {
+            Vars[""Choice1""]=""1"";
+        }
+        else
+        {
+            Vars[""Choice1""]=""2"";
+        }
+        if (PlayerInfo.TrueCount>=5)
+        {
+            Vars[""Choice2""]=""1"";
+        }
+        else
+        {
+            Vars[""Choice2""]=""2"";
+        }
+Vars[""Choice3""]=""1"";",FALSE,
+13,"PlayerInfo.Reward += 1;
+        Vars[""Use1""]=""True"";
+        PlayerInfo.EndEvent();",PlayerInfo.EndEvent();,,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,"if (Vars.ContainsKey(""Use1""))
+        {PlayerInfo.AnnounceEventDone();
+            PlayerInfo.StartLevel(""fakefight"",""elite"");
+        }else
+        {
+            PlayerInfo.EventTryChangeMap();
+        }"
+14,"PlayerInfo.Money += 120;
+        PlayerInfo.EndEvent();","PlayerInfo.MaxHp += 10;
+        PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+*15,PlayerInfo.Money += 400;EndTheGame();,"PlayerInfo.AddBless(""blessing_2"");
+        PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",TRUE,
+16,"PlayerInfo.AddBless(""blessing_36"");
+        PlayerInfo.EndEvent();",PlayerInfo.EndEvent();,,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+17,"PlayerInfo.Money += 100;
+        PlayerInfo.EndEvent();","PlayerInfo.MaxHp += 20;PlayerInfo.Hp = PlayerInfo.MaxHp;
+        PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+18,"if (PlayerInfo.Money >= 20)
+        {
+            int a = PlayerInfo.DefaultRoll + PlayerInfo.Lucky;
+            if (a > 80)
+            {
+                PlayerInfo.RandomAddRelic(""1"");
+                PlayerInfo.ChangeEventSubtip(@""<good>(.*?)<\/good>"");
+            }
+            else if (a > 40)
+            {
+                PlayerInfo.RandomAddCard(""1"");
+                PlayerInfo.ChangeEventSubtip(@""<Normal>(.*?)<\/Normal>"");
+            }
+            else
+            {
+                PlayerInfo.ChangeEventSubtip(@""<bad>(.*?)<\/bad>"");
+            }
+            PlayerInfo.Money -= 20;
+            if (PlayerInfo.Money < 20)
+            {
+                PlayerInfo.LockChoice(""1"");
+            }
+        }
+        else
+        {
+            PlayerInfo.LockChoice(""1"");
+        }  Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (int.Parse(Vars[""ThisCount""]) >= 8)
+        {
+            PlayerInfo.EndEvent();
+        }", PlayerInfo.EndEvent();,,,"if (PlayerInfo.Money>=20)
+        {
+            Vars[""Choice1""]=""1"";
+        }Vars[""Choice2""]=""1"";",FALSE,
+19,"PlayerInfo.AddRelic(""relic_79"");
+        PlayerInfo.EndEvent();","PlayerInfo.AddRelic(""relic_80"");
+        PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,
+20,"if (PlayerInfo.Money >= 20)
+        {
+            int a = PlayerInfo.DefaultRoll ;
+            if (a > 75)
+            {
+                PlayerInfo.Wisdom+=2;
+                PlayerInfo.ChangeEventSubtip(@""<wis>(.*?)<\/wis>"");
+            }
+            else if (a > 50)
+            {
+                PlayerInfo.Strength+=1;
+                PlayerInfo.ChangeEventSubtip(@""<str>(.*?)<\/str>"");
+            }
+            else if (a > 25)
+            {
+                PlayerInfo.Lucky+=2;
+                PlayerInfo.ChangeEventSubtip(@""<lucky>(.*?)<\/lucky>"");
+            }
+            else
+            {
+                PlayerInfo.Perceive+=1;
+                PlayerInfo.ChangeEventSubtip(@""<per>(.*?)<\/per>"");
+            }
+            PlayerInfo.Money -= 20;
+            if (PlayerInfo.Money < 20)
+            {
+                PlayerInfo.LockChoice(""1"");
+            }
+        }
+        else
+        {
+            PlayerInfo.LockChoice(""1"");
+        }  Vars[""ThisCount""]=(int.Parse(Vars[""ThisCount""]) + 1).ToString();
+        if (int.Parse(Vars[""ThisCount""]) >= 4)
+        {
+            PlayerInfo.EndEvent();
+        }","
+        PlayerInfo.EndEvent();",,,"if (PlayerInfo.Money>=20)
+        {
+            Vars[""Choice1""]=""1"";
+        }Vars[""Choice2""]=""1"";",FALSE,
+21,"PlayerInfo.TrueCount+=20;
+        PlayerInfo.Wisdom+=3;
+        PlayerInfo.EndEvent();",,,,"Vars[""Choice1""]=""1"";",FALSE,
+*1001,PlayerInfo.EndEvent();,,,,"Vars[""Choice1""]=""1"";",FALSE,
+*1002,"PlayerInfo.SetGameVar(""IsKing"",""True"");
+       PlayerInfo.EndEvent();","PlayerInfo.SetGameVar(""IsKing"",""False"");
+       PlayerInfo.EndEvent();",,,"Vars[""Choice1""]=""1"";
+Vars[""Choice2""]=""1"";",FALSE,

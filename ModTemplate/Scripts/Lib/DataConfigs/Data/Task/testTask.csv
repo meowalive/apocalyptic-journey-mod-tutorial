@@ -1,0 +1,13 @@
+﻿Id,Reward,InitScript,Target,Belong
+Id,真理之晶奖励数,控制是否达成,达成数量,属于哪类
+1,10,"if (PlayerInfo.Getsave().Gain.ContainsKey(""testTask_1"")&&PlayerInfo.Getsave().Gain[""testTask_1""]==-999)
+        {
+            return;
+        }  
+        PlayerInfo.AddEvent(""Win"", () =>
+        {if (!PlayerInfo.Getsave().Gain.ContainsKey(""testTask_1""))
+        {
+            PlayerInfo.Getsave().Gain[""testTask_1""]=0;
+        }
+            PlayerInfo.Getsave().Gain[""testTask_1""]=Math.Min(PlayerInfo.Getsave().Gain[""testTask_1""]+1,3);
+        },this);",3,Side quest

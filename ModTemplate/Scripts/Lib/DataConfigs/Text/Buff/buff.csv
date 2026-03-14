@@ -1,0 +1,88 @@
+﻿Id,Note,Name,Name_zh-Hant,Name_en,Name_ja,Description,Description_zh-Hant,Description_ja,Description_en
+唯一的标识（不能重复）,备注,名称,,,,描述,描述,説明,Description
+timelock,,时之笼,時之籠,Timelock,時の籠,层数等同于已储存的效果数，回合结束时，结算所有已储存的效果并清空。,層數等同於已儲存的效果數，回合結束時，結算所有已儲存的效果並清空。,スタック数は保存された効果の数に等しい。ターン終了時、保存された全ての効果を発動し、全てクリアする。,"Layers equal the number of stored effects. At the end of the turn, resolve all stored effects and clear them."
+epiphany,,启示,啟示,Epiphany,啓示,每次层数变动时，给予层数({layer})点回合自然恢复魔能。,每次層數變動時，給予層數({layer})點本回合自然恢復魔能。,スタック数が変動するたび、スタック数({layer})分の自然回復魔力をこのターン獲得する。,"Each time the number of layers changes, gain natural mana regeneration equal to layers ({layer}) this turn."
+cripple,,失能,失能,Cripple,無力化,受伤时玩家失去层数({layer})点魔能。,受傷時玩家失去層數({layer})點魔能。,ダメージを受けた時、スタック数({layer})分の魔力を失う。,"When damaged, the player loses mana equal to layers ({layer})."
+sourcecast,,源蜕,源蛻,Sourcecast,源化,失去魔能两次后抽层数({layer})张牌。,失去魔能兩次後抽層數({layer})張牌。,魔力を2回失うたび、スタック数({layer})に等しい枚数のカードを引く。,"After losing mana twice, draw cards equal to layers ({layer})."
+bloodwall,,血墙,血牆,Bloodwall,血の壁,每次行动时获得层数({layer})点护盾。,每次行動時獲得層數({layer})點護盾。,行動するたび、スタック数({layer})分のシールドを獲得する。,Gain Shield equal to layers ({layer}) each time you act.
+timestop,,时停,時停,Timestop,時間停止,轮到单位行动时，消耗1层{buff_timestop}，跳过本回合。,輪到單位行動時，消耗1層{buff_timestop}，跳過本回合。,ユニットのターン開始時、{buff_timestop}を1スタック消費し、このターンをスキップする。,"When this unit’s turn begins, consume 1 layer of {buff_timestop} and skip this turn."
+elements,,元素,元素,Elements,元素,行动时获得层数*2({0})层{buff_extraordinary}。,行動時獲得層數*2({0})層{buff_extraordinary}。,行動時、スタック数×2({0})の{buff_extraordinary}を獲得する。,"When acting, gain layers ×2 ({0}) of {buff_extraordinary}."
+fast,,敏锐,敏銳,Fast,迅速,每回合开始时额外抽等同于层数({layer})张牌。,每回合開始時額外抽等同於層數({layer})張牌。,ターン開始時、スタック数({layer})に等しい枚数のカードを追加で引く。,"At the start of each turn, draw additional cards equal to layers ({layer})."
+*immortal,,不朽,不朽,Immortal,不朽,受两次伤时获得层数({layer})点魔能。,受兩次傷時獲得層數({layer})點魔能。,2回ダメージを受けるたび、スタック数({layer})分の魔力を獲得する。,"After taking damage twice, gain mana equal to layers ({layer})."
+frenzy,,狂暴,狂暴,Frenzy,狂暴,"每次行动时获得层数({layer})层{buff_keenedge}，如果血量大于1,受到2点真实伤害。",每次行動時獲得層數({layer})層{buff_keenedge}，若血量大於1，受到2點真實傷害。,行動するたび、スタック数({layer})の{buff_keenedge}を獲得する。HPが1より大きい場合、2の貫通ダメージを受ける。,"When acting, gain layers ({layer}) of {buff_keenedge}. If HP is greater than 1, take 2 True Damage."
+*unyielding,,不屈,不屈,Unyielding,不屈,每受伤两次抽层数({layer})张牌。,每受傷兩次抽層數({layer})張牌。,2回ダメージを受けるたび、スタック数({layer})に等しい枚数のカードを引く。,"For every 2 times damaged, draw cards equal to layers ({layer})."
+toxin,,毒素,毒素,Toxin,毒素,每回合结束时受到层数({layer})点真实伤害。,每回合結束時受到層數({layer})點真實傷害。,ターン終了時、スタック数({layer})に等しい貫通ダメージを受ける。,"At the end of each turn, take True Damage equal to layers ({layer})."
+oblivion,,遗忘,遺忘,Oblivion,忘却,每抽到3张卡牌时丢弃1张卡牌，回合结束时层数-1。,每抽到3張卡牌時丟棄1張卡牌，回合結束時層數-1。,カードを3枚引くたび、カードを1枚捨てる。ターン終了時、スタック数-1。,"For every 3 cards drawn, discard 1 card. At turn end, layers -1."
+bleeding,,流血,流血,Bleeding,出血,行动时受到层数点({0})真实伤害。层数大于30时，伤害翻倍。,行動時受到層數點({0})真實傷害。層數大於30時，傷害翻倍。,行動時、スタック数({0})に等しい貫通ダメージを受ける。スタック数が30を超える場合、ダメージは倍になる。,"When acting, take True Damage equal to layers ({0}). If layers exceed 30, damage is doubled."
+evergreen,,自愈,自癒,Evergreen,再生,回合开始时恢复层数({layer})点生命。,回合開始時恢復層數({layer})點生命。,ターン開始時、スタック数({layer})に等しいHPを回復する。,"At the start of the turn, restore HP equal to layers ({layer})."
+rotten,,腐朽,腐朽,Rotten,腐敗,行动后失去所有护盾。,行動後失去所有護盾。,行動後、全てのシールドを失う。,Lose all Shield after acting.
+burn,,灼烧,灼燒,Burn,燃焼,回合开始时造成层数*(1+1%最大血量)({0})的真实伤害。,回合開始時造成層數*(1+1%最大血量)({0})的真實傷害。,ターン開始時、スタック数×(1+最大HPの1%)({0})の貫通ダメージを与える。,"At the start of the turn, deal True Damage equal to layers × (1 + 1% of Max HP) ({0})."
+chaos,,混乱,混亂,Chaos,混乱,"每次行动后,卡牌的费用随机变化为0倍,1倍,2倍，持续至战斗结束",每次行動後，卡牌的費用隨機變化為0倍、1倍、2倍，持續至戰鬥結束。,行動後、カードのコストがランダムに0倍、1倍、2倍に変化する。この効果は戦闘終了まで続く。,"After each action, card costs randomly change to 0×, 1×, or 2× until combat ends."
+eclipse,,魔化,魔化,Eclipse,魔化,"使用卡牌的消耗魔能减-200%,但回合结束时扣除999点生命。",使用卡牌的消耗魔能減-200%，但回合結束時扣除999點生命。,カードの魔力コストが200%減少するが、ターン終了時に999のHPを失う。,"Card mana costs are reduced by 200%, but lose 999 HP at turn end."
+vulnerability,,易伤,易傷,Vulnerable,脆弱,每层受伤加10%({0})。,每層受傷加10%({0})。,1スタックにつき、受けるダメージが10%増加する。,Take 10% increased damage per layer ({0}).
+cycle,,循环,循環,Cycle,循環,抽完1轮牌洗牌后获得层数({layer})点魔能。,抽完1輪牌洗牌後獲得層數({layer})點魔能。,山札を1巡してシャッフルした後、スタック数({layer})分の魔力を獲得する。,Gain mana equal to layers ({layer}) after drawing through the deck once and reshuffling.
+vitality,,吸收,吸收,Vitality,吸収,受伤时获得层数({layer})点护盾。,受傷時獲得層數({layer})點護盾。,ダメージを受けた時、スタック数({layer})分のシールドを獲得する。,Gain Shield equal to layers ({layer}) when damaged.
+oniblood,,鬼化,鬼化,Oniblood,鬼化,"回合结束时失去16点生命(不会导致死亡),每次行动恢复4倍层数({0})生命。",回合結束時失去16點生命(不會導致死亡)，每次行動恢復4倍層數({0})生命。,ターン終了時、16のHPを失う（致死にならない）。行動するたび、スタック数×4({0})のHPを回復する。,"Lose 16 HP at turn end (non-lethal). Each time you act, restore 4× layers ({0}) HP."
+contagion,,污染,污染,Contagion,汚染,每抽卡两次时对敌方造成9点({0})物理伤害。,每抽卡兩次時對敵方造成9點({0})物理傷害。,カードを2枚引くたび、敵に9({0})の物理ダメージを与える。,"For every 2 cards drawn, deal 9 ({0}) Physical Damage to the enemy."
+keenedge,,锋锐,鋒銳,Keenedge,鋭利,每层使造成的伤害+1({layer})。,每層使造成的傷害+1({layer})。,1スタックにつき、与えるダメージ+1({layer})。,Each layer increases damage dealt by +1 ({layer}).
+weak,,无力,無力,Weak,脱力,每层造成的伤害-1(-{layer})。,每層造成的傷害-1(-{layer})。,1スタックにつき、与えるダメージ-1(-{layer})。,Each layer reduces damage dealt by -1 (-{layer}).
+resilient,,强韧,強韌,Resilient,強靭,受到的伤害减少层数({layer})点。,受到的傷害減少層數({layer})點。,受けるダメージがスタック数({layer})分減少する。,Damage taken is reduced by layers ({layer}).
+counterattack,,反击,反擊,Counterattack,反撃,受到任何来源的伤害时，叠加层数点({layer}){buff_counterattack}。,受到任何來源的傷害時，疊加層數點({layer}){buff_counterattack}。,あらゆる出所からダメージを受けた時、スタック数({layer})分の{buff_counterattack}を獲得する。,"When taking damage from any source, gain {buff_counterattack} equal to layers ({layer})."
+impregnable,,坚毅,堅毅,Impregnable,堅毅,每层坚毅减少10%({0})的受伤。,每層堅毅減少10%({0})的受傷。,堅毅1スタックにつき、受けるダメージが10%({0})減少する。,Each layer of Fortitude reduces damage taken by 10% ({0}).
+chrysalis,,庇护,庇護,Chrysalis,庇護,每回合最多受到最大生命值一半的伤害。,每回合最多受到最大生命值一半的傷害。,1ターンに受けるダメージは最大HPの半分まで。,Take at most half of Max HP as damage per turn.
+barkhide,,树肤,樹膚,Barkhide,樹皮,每次受伤时获得本回合受伤次数*2({0})的护盾。,每次受傷時獲得本回合受傷次數*2({0})的護盾。,ダメージを受けるたび、このターンに受けた回数×2({0})分のシールドを獲得する。,"When damaged, gain Shield equal to (times damaged this turn ×2) ({0})."
+bloodriver,,血河,血河,Bloodriver,血の川,"每次行动时，25%概率使自己获得2层{buff_bleeding},75%概率使随机敌人获得4层{buff_bleeding}。",每次行動時，25%機率使自己獲得2層{buff_bleeding}，75%機率使隨機敵人獲得4層{buff_bleeding}。,行動するたび、25%の確率で自身に{buff_bleeding}を2スタック、75%の確率でランダムな敵に{buff_bleeding}を4スタック付与する。,"When acting, 25% chance to gain 2 layers of {buff_bleeding}, 75% chance for a random enemy to gain 4 layers of {buff_bleeding}."
+extraordinary,,超凡,超凡,Extraordinary,超越,每层提供1%({0})的基础增伤。,每層提供1%({0})的基礎增傷。,1スタックにつき、基礎ダメージが1%({0})増加する。,Each layer provides 1% ({0}) base damage increase.
+limitdamage,,限伤,限傷,Limitdamage,ダメージ上限,本回合还可受到层数点-1({0})的伤害。,本回合還可受到層數-1({0})點的傷害。,このターン、あとスタック数-1({0})分のダメージを受けられる。,Can still take layers -1 ({0}) more damage this turn.
+reverie,,空想,空想,Reverie,空想,每次受伤时，随机将一张稀有度2～3的技能牌加入手牌。,每次受傷時，隨機將一張稀有度2～3的技能牌加入手牌。,ダメージを受けた時、ランダムなレア度2～3のスキルカードを1枚手札に加える。,"When damaged, randomly add a Rarity 2–3 Skill card to your hand."
+fate,,天罚,天罰,Fate,天罰,每次检定后，对所有敌人造成2点伤害。,每次檢定後，對所有敵人造成2點傷害。,判定を行うたび、全ての敵に2ダメージを与える。,"After each check, deal 2 damage to all enemies."
+degrade,,失格,失格,Degrade,失格,每层降低10%伤害。,每層降低10%傷害。,1スタックにつき、与えるダメージが10%減少する。,Each layer reduces damage dealt by 10%.
+bloodsea,,血海,血海,Bloodsea,血の海,"每次行动时,获得3层流血。",每次行動時，獲得3層流血。,行動するたび、流血を3スタック獲得する。,"When acting, gain 3 layers of Bleeding."
+lifelink,,同心,同心,Lifelink,生命共有,拥有者之间的血量始终保持相同。,擁有者之間的血量始終保持相同。,この効果を持つ者同士のHPは常に同じになる。,Health remains the same among all holders.
+synergies,,连携,連攜,Synergy,連携,友方每有一个对象拥有此Buff，获得50%伤害加成。当前{0}。,友方每有一個對象擁有此Buff，獲得50%傷害加成。當前{0}。,このBuffを持つ味方1体につき、与ダメージが50%増加する。現在{0}体。,"For each ally with this Buff, gain 50% damage bonus. Current: {0}."
+DoomPower,,厄运魔能,厄運魔能,DoomPower,厄災魔力,每层厄运魔能提供10%({0})的治疗加成，每次层数变动时获得层数点({1})永久最大生命值加成,每層厄運魔能提供10%({0})的治療加成，每次層數變動時獲得層數點({1})永久最大生命值加成。,厄運魔力1スタックにつき、回復ボーナスが10%({0})増加する。スタック数が変動するたび、スタック数({1})分の最大HPを永久に獲得する。,"Each stack of Doom Mana provides 10% ({0}) healing bonus. Each time layers change, gain permanent Max HP equal to layers ({1})."
+revelation,,神启,神啓,DivineRevelation,神の啓示,增幅唤神卡的效果，当打出唤神卡时，层数+1，否则层数归零。,增幅喚神卡的效果，當打出喚神卡時，層數+1，否則層數歸零。,召喚神カードの効果を増幅する。召喚神カードをプレイした時、スタック数+1。それ以外をプレイした時、スタック数は0になる。,"Amplify the effect of Summon God cards. When a Summon God card is played, layers +1; otherwise, layers reset to 0."
+weakness,,弱点,弱点,Weakness,弱点,每次受伤时提高10%受伤加深。,每次受傷時提高10%受傷加深。,ダメージを受けるたび、被ダメージが10%増加する。,"Each time damaged, damage taken increases by 10%."
+obsidianSoldier,,黑曜士兵,黑曜士兵,Obsidian Soldier,黒曜石の兵士,回合开始时，对随机敌人造成层数*2({0})点伤害,回合開始時，對隨機敵人造成層數*2({0})點傷害。,ターン開始時、ランダムな敵にスタック数×2({0})のダメージを与える。,"At the start of the turn, deal layers ×2 ({0}) damage to a random enemy."
+obsidianKnight,,黑曜骑士,黑曜骑士,Obsidian Knight,黒曜石の騎士,回合开始时，对第一个敌人造成3*层数({0})点伤害并附加层数*1%最大生命的真伤,回合開始時，對第一個敵人造成3*層數({0})點傷害，並附加層數*1%最大生命的真實傷害。,ターン開始時、最初の敵にスタック数×3({0})のダメージを与え、さらにスタック数×1%最大HP分の貫通ダメージを与える。,"At the start of the turn, deal 3× layers ({0}) damage to the first enemy and additional True Damage equal to layers ×1% of Max HP."
+obsidianQueen,,黑曜皇后,黑曜皇后,Obsidian Queen,黒曜石の女王,"回合开始时，每有一层此buff,获得10点({0})治疗和随机1({1})个增益Buff。",回合開始時，每有一層此Buff，獲得10點({0})治療和隨機1({1})個增益Buff。,ターン開始時、このBuff1スタックにつき、HPを10({0})回復し、ランダムな強化Buffを1つ({1})獲得する。,"At the start of the turn, for each layer of this Buff, restore 10 ({0}) HP and gain 1 random Buff ({1})."
+thorns,,荆棘,荊棘,Thorns,いばら,受到攻击时对所有敌对方造成层数({layer})点伤害。,受到攻擊時對所有敵對方造成層數({layer})點傷害。,攻撃を受けた時、全ての敵にスタック数({layer})のダメージを与える。,"When attacked, deal damage equal to layers ({layer}) to all enemies."
+biologicalArmor,,生物装甲,生物裝甲,Biological armor,生物装甲,生命恢复超过上限时，获得溢出部分的护盾。,生命恢復超過上限時，獲得溢出部分的護盾。,HPが上限を超えて回復した場合、余剰分をシールドとして獲得する。,"When healing exceeds Max HP, gain Shield equal to the overflow."
+poised,,蓄势,蓄勢,Poised,ためる,受到任何来源的伤害时，叠加层数点({layer})反击。,受到任何來源的傷害時，疊加層數點({layer})反擊。,あらゆる出所からダメージを受けた時、スタック数({layer})分の反撃を獲得する。,"When taking damage from any source, gain Counterattack equal to layers ({layer})."
+swordIntent,,剑意,劍意,Sword Intent,剣意,每次行动会使自身血量-1，每两次叠加1层{buff_poised}。,每次行動會使自身血量-1，每兩次疊加1層{buff_poised}。,行動するたびに自身のHPが1減り、2回行動するごとに{buff_poised}を1スタック獲得する。,"Each action reduces your HP by 1. Every 2 actions, gain 1 layer of {buff_poised}."
+elementalBody,,元素身躯,元素身軀,Elemental Body,エレメントの身体,受到真实伤害时，会恢复最大生命值5%的血量。每回合最多触发3次。,受到真實傷害時，會恢復最大生命值5%的血量。每回合最多觸發3次。,貫通ダメージを受けた時、最大HPの5%を回復する。1ターンに最大3回発動する。,"When taking True Damage, restore 5% of Max HP. Triggers up to 3 times per turn."
+BonePiercingSpike,,透骨钉,透骨釘,Bone-Piercing Spike,透骨釘,当前自身死亡时，将其流血层数翻倍转移给剩下的队友。,當前自身死亡時，將其流血層數翻倍轉移給剩下的隊友。,このユニットが死亡した時、その流血スタックを2倍にして残りの味方に移す。,"When this unit dies, double its {buff_bleeding} layers and transfer them to remaining allies."
+Lilith's Pact,,莉莉丝契约,莉莉絲契約,Lilith's Pact,リリスの契約,直到回合结束，你不再因流血受到伤害。,直到回合結束，你不再因流血受到傷害。,ターン終了まで、あなたは流血によるダメージを受けない。,"Until the end of the turn, you no longer take damage from Bleeding."
+GuleiSummoningArt,,古蕾降神术,古蕾降神術,Gulei Summoning Art,古蕾降神術,"本回合,当你打出唤神牌时,有({buff_revelation}层数*4%)概率使下一张卡额外打出一次",本回合，當你打出喚神牌時，有({buff_revelation}層數*4%)概率使下一張卡額外打出一次。,このターン、召喚神カードをプレイした時、({buff_revelation}スタック×4%)の確率で次のカードが追加で1回発動する。,"This turn, when you play a Summon God card, there is a ({buff_revelation} layers ×4%) chance for the next card to be played an additional time."
+RegenerationPrayer,,再生祷言,再生禱言,Regeneration Prayer,再生の祈り,"本回合,你每打出一张唤神牌,获得2点生命。",本回合，你每打出一張喚神牌，獲得2點生命。,このターン、召喚神カードを1枚プレイするたび、2のHPを得る。,"This turn, each time you play a Summon God card, gain 2 HP."
+EnergyStorage,,储能,儲能,Energy storage,蓄電,"下回合恢复层数点({layer})能量,并移除此buff。",下回合恢復層數點({layer})能量，並移除此Buff。,次のターンでスタック数({layer})分のエネルギーを回復し、このBuffを解除する。,Restore energy equal to layers ({layer}) next turn and remove this Buff.
+WailingWall,,叹息之墙,嘆息之牆,WailingWall,嘆きの壁,回合结束时，焚毁所有手牌。,回合結束時，焚毀所有手牌。,ターン終了時、手札をすべて焼却する。,"At turn end, Burn all cards in hand."
+ChaosMark,,混沌标记,混沌標記,ChaosMark,カオスマーク,"每当自己的回合开始时，随机触发一种混沌效果，混沌效果包含以下可能：
+1.受到最大生命值20%的真实伤害（不会致死），敌方全体受到最大生命值10%的真实伤害。
+2.恢复最大生命值的30%。
+3.额外抽2张牌失去1魔能。
+4.获得随机层数（1~3）的{buff_bleeding}或{buff_burn}，所有敌方获得双倍。
+5.自身当前所有状态层数*1.2。
+6.获得100层超凡。
+当前为({0})。","每當自己的回合開始時，隨機觸發一種混沌效果，混沌效果包含以下可能：
+1.受到最大生命值20%的真實傷害（不會致死），敵方全體受到最大生命值10%的真實傷害。
+2.恢復最大生命值的30%。
+3.額外抽2張牌失去1魔能。
+4.獲得隨機層數（1~3）的{buff_bleeding}或{buff_burn}，所有敵方獲得雙倍。
+5.自身當前所有狀態層數*1.2。
+6.獲得100層超凡。
+當前為({0})。","自分のターン開始時、ランダムで1つの混沌効果が発動する。可能性は以下の通り：
+1. 最大HPの20%の貫通ダメージを受ける（致死にならない）。敵全体は最大HPの10%の貫通ダメージを受ける。
+2. 最大HPの30%を回復する。
+3. 追加でカードを2枚引き、1魔力を失う。
+4. ランダムで1～3スタックの{buff_bleeding}または{buff_burn}を獲得し、敵全体はその2倍を獲得する。
+5. 自身の現在の全ての状態スタック数が1.2倍になる。
+6. 100スタックの超凡を獲得する。
+現在は({0})。","At the start of your turn, trigger a random Chaos effect. Possible effects:
+1. Take True Damage equal to 20% of Max HP (cannot be fatal); all enemies take True Damage equal to 10% of their Max HP.
+2. Restore 30% of Max HP.
+3. Draw 2 extra cards and lose 1 mana.
+4. Gain a random 1–3 layers of {buff_bleeding} or {buff_burn}; all enemies gain double.
+5. Multiply all current status layers by 1.2.
+6. Gain 100 layers of Extraordinary.
+Current: ({0})."

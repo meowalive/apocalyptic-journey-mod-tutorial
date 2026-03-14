@@ -1,0 +1,31 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,消耗的费用,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效,动作
+*1,1,1,,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""5"");",,"SetStatus(""Target"");Damage(""5"");",,Icon/Card/法杖敲头,slash,Attack
+*2,1,1,Retain,"Vars[""BaseScript""]=""CommonCardItem"";;AddDescription(""1"", ""Defence"", ""5"");",,"SetStatus(""Self"");ChangeDefence(""5"");",,Icon/Card/魔能屏障,,
+*3,3,0,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";;AddDescription(""1"", ""Draw"", ""2"");",,"DrawCount(""2"");",,Icon/Card/冥想针剂,,
+4,1,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""4"");",,"SetStatus(""AllTarget"");Damage(""4"");",,Icon/Card/无锋重刃,斩击,
+5,1,0,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";;AddDescription(""1"", ""Money"", ""15"");",,"ChangeMoney(""15"");
+        if (PlayerInfo.Power >= 1)
+        {
+            PlayerInfo.Power -= 1;
+            ChangeMoney(""15"");
+        }",,Icon/Card/魔力铸金,,
+6,1,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";;AddDescription(""1"", ""Defence"", ""10"");",,"SetStatus(""Self"");ChangeDefence(""10"");",,Icon/Card/装甲结晶,强化,
+7,2,2,"Burnout, Retain","Vars[""BaseScript""]=""CommonCardItem"";",,"SetStatus(""Self"");AddBuff(DataId.buff_eclipse,""1"");",,Icon/Card/魔能之心,强化,
+8,2,1,,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""8"");",,"SetStatus(""AllTarget"");Damage((8).ToString());SetStatus(""Self"");ChangeRound();",,Icon/Card/终结一击,斩击,Skill
+9,2,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""10"");AddDescription(""2"", ""Money"", Math.Min(int.Parse(GetDesValue(""1"")), 100).ToString());",,"SetStatus(""AllTarget"");Damage(""10"");
+        SetStatus(""Self"");string a=Self.DamageCalculate(10)<100?Self.DamageCalculate(10).ToString():""100"";
+        ChangeMoney(a);
+        ChangeRound();",,Icon/Card/谢幕曲,斩击,Skill
+10,2,1,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";",,"SetStatus(""Target"");Damage(((Self.MaxHp)/10).ToString());",,Icon/Card/复仇短匕,斩击,Skill
+11,2,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";",,"SetStatus(""AllRandomTarget1"");Damage(((Self.MaxHp-Self.CurHp)/2).ToString());",,Icon/Card/复仇链枪,斩击,Attack
+*12,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";",,"SetStatus(""Self"");RemoveBadBuff(""2"");",,Icon/Card/瓶中救赎,净化,
+*13,2,2,Burnout,"Vars[""BaseScript""]=""CommonCardItem""; AddDescription(""1"",""Damage"",""10"");",,"SetStatus(""Self"");RemoveAllBadBuff(""0"");SetStatus(""AllTarget"");Damage(""10"");",,Icon/Card/天界护佑,斩击,
+14,1,2,,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""6"");",,"SetStatus(""Target"");Damage(""7"");Damage(""7"");",,Icon/Card/回旋斩,slash,Attack
+15,2,2,,"Vars[""BaseScript""]=""AttackCardItem""; AddDescription(""1"",""Damage"",""4"");",,"SetStatus(""Target"");for (int i=0;i<3;i++) Damage(""4"");",,Icon/Card/魔导飞弹,,Skill
+16,2,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";;AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");
+        AddBuff(DataId.buff_resilient,  ""2"");",,Icon/Card/石化针剂,强化,
+17,3,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";;AddDescription(""1"", ""Buff"", ""1"");;AddDescription(""2"", ""Draw"", ""1"");",,"SetStatus(""Self"");
+        AddBuff(DataId.buff_cycle,  ""1"");DrawCount(""1"");",,Icon/Card/魔能电池,强化,
+18,2,0,Burnout,"Vars[""BaseScript""]=""AttackCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,"SetStatus(""Target"");
+        AddBuff(DataId.buff_degrade,  ""1"");",,Icon/Card/罐装紊乱,弱化,

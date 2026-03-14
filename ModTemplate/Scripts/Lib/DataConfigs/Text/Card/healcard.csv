@@ -1,0 +1,11 @@
+﻿Id,Type,是否完成,Note,Name,Name_zh-Hant,Name_en,Name_ja,Description,Description_zh-Hant,Description_en,Description_ja
+唯一的标识（不能重复）,卡牌类型,FALSE,备注,名称,,Name,,描述,,Description,
+1,技能牌,TRUE,,圣疗术,聖療術,Sacred Healing,聖療術,为自身恢复{0}点生命。,為自身恢復{0}點生命。,Restore {0} health to self.,自身のHPを{0}回復する。
+2,技能牌,TRUE,,渴血,渴血,Bloodthirst,渇血,"消耗自身{0}点生命,获得{1}层锋锐。","消耗自身4點生命,獲得{0}層{buff_keenedge}。",Lose 4 HP to gain {0} layer(s) of {buff_keenedge}.,自身のHPを4消費し、{buff_keenedge}を{0}スタック獲得する。
+3,技能牌,TRUE,,聚气凝神,聚氣凝神,Focus Mind,気力集中,"丢弃自身所有手牌,每丢弃二张获得1层锋锐。","丟棄自身所有手牌,每丟棄2張獲得1層{buff_keenedge}。",Discard all hand cards. Gain 1 layer of {buff_keenedge} per 2 cards discarded.,手札を全て捨てる。捨てたカード2枚につき{buff_keenedge}を1スタック獲得する。
+4,技能牌,TRUE,,无我一击,無我一擊,Egoless Strike,無我の一撃,每有二层锋锐造成{0}点物理伤害一次。结束后锋锐层数减半。,每有2層{buff_keenedge}造成{0}點物理傷害一次。結束後{buff_keenedge}層數減半。,Deal {0} physical damage once per 2 layers of {buff_keenedge}. Then halve {buff_keenedge} layers.,{buff_keenedge}が2スタックごとに{0}物理ダメージを1回。その後{buff_keenedge}を半分に。
+5,技能牌,TRUE,,治愈祈愿,治癒祈願,Healing Wish,治癒の祈り,往抽牌堆中加入三张圣疗术。,在抽牌堆中加入三張聖療術。,Add 3 Sacred Healing cards to your draw pile.,山札に「聖療術」を3枚加える。
+6,消耗攻击牌,TRUE,,饮血刺剑,飲血刺劍,Vampiric Blade,吸血の刺剣,"造成{0}点伤害,恢复{1}点生命。","造成{0}點傷害,恢復{1}點生命。",Deal {0} damage and restore {1} health.,{0}ダメージを与え、HPを{1}回復する。
+7,消耗攻击牌,TRUE,,黄金之音,黃金之音,Golden Resonance,黄金の響き,"结束本回合,造成{0}点伤害,恢复{1}点生命。","結束本回合,造成{0}點傷害,恢復{1}點生命。","End this turn, deal {0} damage, and restore {1} health.",このターンを終了し、{0}ダメージを与え、HPを{1}回復する。
+8,消耗技能牌,TRUE,,禁果,禁果,Forbidden Fruit,禁断の果実,获得鬼化。,獲得{buff_oniblood}。,Gain 1 layer of {buff_oniblood}.,{buff_oniblood}を1スタック獲得する。
+9,消耗技能牌,TRUE,,肾上腺素,腎上腺素,Adrenaline,アドレナリン,自身获得锋锐层数四倍的生命。,自身恢復{buff_keenedge}層數×4的生命。,Restore HP equal to 4× your {buff_keenedge} layers.,{buff_keenedge}スタック数×4のHPを回復する。

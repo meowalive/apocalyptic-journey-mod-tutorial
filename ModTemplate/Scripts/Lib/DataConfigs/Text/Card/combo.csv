@@ -1,0 +1,33 @@
+﻿Id,Type,Note,是否完成,Name,Description,Name_en,Description_en,Name_ja,Description_ja
+唯一的标识（不能重复）,类型,备注,,名称,描述,Name,Description,,
+1,攻击牌,唤神,FALSE,圣裁,"造成{0}点伤害。
+ 唤神:造成5+神启层数点伤害。",Holy Judgment,"Deal {0} damage.
+ Invocation: Deal 5 plus {buff_revelation} stacks of damage.",聖裁,"{0}ダメージを与える。
+ 神を呼ぶ：5+{buff_revelation}スタック分のダメージを与える。"
+2,攻击牌,唤神,FALSE,群星落,"造成{0}点伤害。
+ 唤神:造成三*(1+神启层数)点伤害。",Starfall,"Deal {0} damage.
+ Invocation: Deal 3×(1+{buff_revelation} stacks) damage.",群星落,"{0}ダメージを与える。
+ 神を呼ぶ：3×(1+{buff_revelation}スタック)ダメージを与える。"
+3,技能牌,唤神,FALSE,宣告,"对全体敌人造成神启平方点伤害,自身获得神启平方点护盾,消耗所有神启。",Proclamation,"Deal {buff_revelation} squared damage to all enemies, gain {buff_revelation} squared Block for yourself, consume all {buff_revelation}.",宣告,全ての敵に{buff_revelation}の二乗ダメージを与え、自身は{buff_revelation}の二乗ブロックを得る。全ての{buff_revelation}を消費する。
+4,技能牌,唤神,FALSE,星界启示,唤神:获得{0}+神启层数一半的神启。,Astral Revelation,Invocation: Additionally gain {0} plus half of {buff_revelation} stacks.,星界啓示,神を呼ぶ：さらに{0}+{buff_revelation}スタックの半分を得る。
+5,技能牌,唤神,FALSE,重塑祷告," 唤神:若神启>3,获得{0}点魔能。",Reshape Prayer," Invocation: If {buff_revelation}>3, gain {1} Mana.",再構の祈り,神を呼ぶ：{buff_revelation}>3の場合、{1}マナを得る。
+6,技能牌,唤神,FALSE,伪·使徒之枪,"唤神:造成{0}×神启层数点伤害。如果神启>{1},返还{2}点魔能。",Pseudo-Apostle's Gun,"Deal {0} damage.
+ Invocation: Deal {1}×{buff_revelation} stacks of damage. If {buff_revelation}>{2}, refund {3} Mana.",偽・使徒の銃,"{0}ダメージを与える。
+ 神を呼ぶ：{1}×{buff_revelation}スタック分のダメージを与える。{buff_revelation}≥{2}の場合、{3}マナを返還する。"
+7,技能牌,唤神,FALSE,星界降灵,唤神:抽{0}张牌。,Astral Descent,"Draw {0} cards, Ethereal.
+Invocation: Draw {1} cards, not Ethereal.",星界降霊,"{0}枚ドローする。消散。
+神を呼ぶ：{1}枚ドローする。消散しない。"
+8,技能牌,唤神,FALSE,圣灵屏障,"获得{0}点护盾。
+ 唤神:获得{1}点护盾。",Holy Barrier,"Gain {0} Block.
+ Invocation: Gain {1} Block.",聖霊障壁,"{0}ブロックを得る。
+ 神を呼ぶ：{1}ブロックを得る。"
+9,攻击牌,唤神,FALSE,银弹装填,给予弱点。唤神:返还{0}点魔能。,Silver Bullet Load,Apply {buff_vulnerability}. Invocation: Refund {0} Mana.,銀弾装填,{buff_vulnerability}を付与。神を呼ぶ：{0}マナを返還する。
+10,消耗技能牌,唤神,FALSE,克莉斯娜唤神术,将手卡中所有唤神牌的使用效果生效一次。唤神:获得手牌中唤神牌数量乘五的超凡。,Krisna's Invocation,Trigger the effect of all Invocation cards in hand once. Invocation: Gain {buff_extraordinary} equal to 5× number of Invocation cards in hand.,クリスナ神召術,手札の全ての神を呼ぶカードの効果を1回発動。神を呼ぶ：手札の神を呼ぶカード数×5の{buff_extraordinary}を得る。
+11,消耗技能牌,唤神,FALSE,纯化祷言,"焚毁手卡中所有非唤神牌,若神启小于八层,获得4层流血。",Purification Prayer,"Exhaust all non-Invocation cards in hand. If {buff_revelation} is less than 8 stacks, gain 4 stacks of {buff_bleeding}.",浄化の祈り,手札の全ての非神を呼ぶカードを消尽する。{buff_revelation}が8スタック未満の場合、{buff_bleeding}を4スタック獲得する。
+12,消耗技能牌,唤神,FALSE,古蕾降神术,"获得{0}层灼烧。
+ 唤神:本回合,当你打出唤神牌时,有(神启层数*4%)概率使下一张卡额外打出一次。",Gurei's Divine Art,"Gain {0} stacks of {buff_burn}.
+ Invocation: This turn, when you play an Invocation card, there is a ({buff_revelation} stacks×4%) chance to play the next card an additional time.",グレイ降神術,"{buff_burn}を{0}スタック獲得する。
+ 神を呼ぶ：このターン、神を呼ぶカードをプレイした時、({buff_revelation}スタック×4%)の確率で次のカードを追加でもう一度プレイする。"
+13,消耗技能牌,唤神,FALSE,再生祷言,"本回合,你每打出一张唤神牌,获得{0}点生命。唤神:回复神启层数%的生命值。",Regeneration Prayer,"This turn, gain {0} HP for each Invocation card you play. Invocation: Heal {buff_revelation} stacks% of Max HP.",再生の祈り,このターン、神を呼ぶカードをプレイする度に{0}HPを得る。神を呼ぶ：最大HPの{buff_revelation}スタック%を回復する。
+14,攻击牌,唤神,FALSE,银弹连发,"造成{0}伤害。唤神:造成4+银弹连发被打出的次数/2的伤害,现在为{1}。",Silver Burst,"Deal {0} damage. Invocation: Deal 4 plus (times this card has been played/2) damage, currently {1}.",銀弾連発,{0}ダメージを与える。神を呼ぶ：4+(このカードがプレイされた回数/2)ダメージを与える。現在{1}。
+15,消耗攻击牌,唤神,FALSE,菲奥涅裁决术,唤神:对当前生命值小于(10+神启层数)%最大生命值的目标造成100%最大生命值的真实伤害。,Fione's Judgment,Invocation: Deal 100% Max HP True Damage to targets whose current HP is less than (10+{buff_revelation} stacks)% of Max HP.,フィオネ裁決術,神を呼ぶ：現在HPが最大HPの(10+{buff_revelation}スタック)%未満の対象に、最大HPの100%の確定ダメージを与える。

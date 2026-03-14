@@ -1,0 +1,7 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,花费,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效路径,动作
+1,2,0,,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");
+        AddBuff(DataId.buff_keenedge,""2"");",,Icon/Card/武装化,强化,Buff
+*3,3,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";",,"ChangeDynamicVar(""UseCount"",""1"");",,Icon/Card/重现,强化,
+5,2,0,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""30"");",,"BurnCard(""1"",""2"");AddBuff(DataId.buff_extraordinary,""30"");",,Icon/Card/极尽升华,强化,
+6,3,1,Burnout,"Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");AddDescription(""2"", ""Draw"", ""1"");",,"SetStatus(""AllTarget"");AddBuff(DataId.buff_degrade,""2"");",,Icon/Card/瓶装失意,弱化,Skill

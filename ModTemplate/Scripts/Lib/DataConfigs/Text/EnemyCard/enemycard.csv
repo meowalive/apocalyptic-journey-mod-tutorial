@@ -1,0 +1,60 @@
+﻿Id,Note,Name,Name_en,Name_ja,Description,Description_en,Description_ja
+唯1标识,备注,名称,,,描述,,
+defence,,魔力屏障,Defense,防御,增加{0}护盾。,Gain {0} Shield.,<color=yellow>{0}</color>のシールドを獲得する。
+OrdinaryHit,,断脊,Ground Slam,地割り,造成{0}伤害。,Deal {0} damage.,{0}のダメージを与える。
+QuadrupleHits,,破灭,Quadruple Strike,強襲,造成{0}伤害。,Deal {0} damage.,{0}のダメージを与える。
+rejuvenation,,基础再生,Rejuvenation,回復,回复{0}生命。,Restore {0} health.,<color=green>{0}</color>のHPを回復する。
+charmed,,时序魔法：停滞,Confusion,混乱,给与对方{0}层时停。,Apply 1 layer of {buff_timestop} to the enemy.,敵に{buff_timestop}を{0}スタック付与する。
+OverrunWorkouts,,刃契,Blade Pact,刃の契約,给与自身{0}层锋锐。,Gain {0} layers of {buff_keenedge}.,自身に{buff_keenedge}を{0}スタック付与する。
+NerveReflexes,,狂暴化,Deepening Corruption,狂暴化,给与自身{0}层狂暴。,Gain 1 layer of {buff_frenzy}.,自身に{buff_frenzy}を{0}スタック付与する。
+fearless,,适应屏障,Lick Wounds,傷舐め,给与自身{0}层吸收。,Gain 4 layers of {buff_vitality}.,自身に{buff_vitality}を{0}スタック付与する。
+Witness,,硬质化,Resistance,硬化,给与自身{0}层坚毅。,Gain 2 layers of {buff_impregnable}.,自身に{buff_impregnable}を{0}スタック付与する。
+Toxin1,,腐渊之息：一阶,Origin of Decay,魔蝕の始まり,给与对方{0}层毒素。,Apply 3 layers of {buff_toxin} to the enemy.,敵に{buff_toxin}を{0}スタック付与する。
+Toxin2,,腐渊之息：二阶,Breath of Corruption,腐淵の息吹,给与对方{0}层毒素。,Apply 4 layers of {buff_toxin} to the enemy.,敵に{buff_toxin}を{0}スタック付与する。
+Toxin3,,蚀髓之刻：一阶,Marrow Erosion,蝕髄の刻,给与对方{0}层毒素。,Apply 5 layers of {buff_toxin} to the enemy.,敵に{buff_toxin}を{0}スタック付与する。
+Toxin4,,蚀髓之刻：二阶,Abyss of Decay,腐髄の淵,给与对方{0}层毒素。,Apply 6 layers of {buff_toxin} to the enemy.,敵に{buff_toxin}を{0}スタック付与する。
+foraging,,法杖敲头,Bite,噛みつき,造成{0}伤害。,Deal {0} damage.,{0}のダメージを与える。
+Licking,,溃烂术,Stench,破甲,给与对方{0}回合腐朽。,Apply 1 turn of {buff_rotten} to the enemy.,敵に{buff_rotten}を{0}ターン付与する。
+NeverDead,,活性化,Ancient Medicine,自己治癒,赋予自身{0}层自愈。,Gain 5 layers of {buff_evergreen}.,自身に{buff_evergreen}を{0}スタック付与する。
+SuperFireBall,,魔爆术,Grand Fireball,炎爆,造成{0}伤害。,Deal {0} damage twice.,{0}のダメージを与える。
+WeakLight,,无力化：一阶,Malicious Gaze,弱体化,赋予对方{0}层无力。,Apply 2 layers of {buff_weak} to the enemy.,敵に{buff_weak}を{0}スタック付与する。
+OrdinaryFiveHit,,蝶翼复切,Butterfly Wing Cuts,蝶翼連斬,造成{0}伤害。,Deal {0} damage in rapid succession.,{0}のダメージを与える。
+Weak,,无力化：二阶,Languor,虚弱,给与自身{0}层无力。,Gain {0} layers of {buff_weak}.,自身に{buff_weak}を{0}スタック付与する。
+thief,,窃取,Steal,窃盗,偷窃对方{0}点金币。,Steal {0} Gold from the enemy.,敵から{0}ゴールドを盗む。
+Thieves,,摸金术,Robbery,強奪,偷窃对方{0}点金币。,Forcibly take {0} Gold from the enemy.,敵から{0}ゴールドを強奪する。
+Charge1,,蓄势,Stance Preparation,チャージ,正在进行蓄力。,Charging power...,チャージ中...
+Charge2,,发条驱动,Initiative Drive,ゼンマイ駆動,正在进行蓄力。,Charging power...,チャージ中...
+burn,,蹈火之域：一阶,Fire Domain,火渡りの領域,给与对方{0}层灼烧。,Apply 3 layers of {buff_burn} to the enemy.,敵に{buff_burn}を{0}スタック付与する。
+burn1,,蹈火之域：二阶,Burning Realm,焚火の領域,给与对方{0}层灼烧。,Apply 3 layers of {buff_burn} to the enemy.,敵に{buff_burn}を{0}スタック付与する。
+burn2,,蹈火之域：三阶,Offering to Flames,炎への献上,给与对方{0}层灼烧。,Apply 8 layers of {buff_burn} to the enemy.,敵に燃焼を{0}スタック付与する。
+specialAttack,,神之福音,Divine Gospel,神の福音,"造成{0}点伤害,获得{1}点护盾。",Deal {0} damage and gain {1} Shield.,{0}のダメージを与え、{1}のシールドを獲得する。
+MakeIneffectiveRays1,,结晶化,Impregnable,鉄壁,"获得{0}点护盾,获得{1}层坚毅。",Gain {0} Shield and 2 layers of {buff_impregnable}.,{0}のシールドと{buff_impregnable}を{1}スタック獲得する。
+PlugCards1,,怯懦诅咒,Prepare Defense,臆病の呪い,将{0}张魔力屏障塞到魔女抽牌堆中。,Shuffle 3 Defense cards into the Witch's draw pile.,魔女の山札に「魔力障壁」を{0}枚加える。
+PlugCards2,,退行诅咒,My Fortune,退行の呪い,将{0}张隐疾和{1}张法杖敲头塞到魔女抽牌堆中。,Shuffle 1 Hidden Ailment and 2 Staff Bonk cards into the Witch's draw pile.,魔女の山札に「隠れた病」を{0}枚と「杖で殴る」を{1}枚加える。
+WhereverYouGo,,魔女权能：镜像复制,Shadow Mimic,鏡像,复制对方的所有战斗属性。,Copy all of the enemy's combat stats .,敵の全ての戦闘ステータスをコピーし。
+PlugCards3,,怯懦诅咒：二阶,Defensive Magic,守りの呪い,将{0}张魔力屏障塞到魔女抽牌堆中。,Shuffle 3 Magic Barrier cards into the Witch's draw pile.,魔女の山札に「魔力障壁」を{0}枚加える。
+vulnerabilityLight,,看破,Expose Weakness,見切り,给与对方{0}层易伤。,Apply 3 layers of {buff_vulnerability} to the enemy.,敵に{buff_vulnerability}を{0}スタック付与する。
+MakeIneffectiveRays2,,堡垒化,Struggle,要塞化,"获得{0}点护盾,获得{1}层坚毅。",Gain {0} Shield and 1 layer of {buff_impregnable}.,{0}のシールドと{buff_impregnable}を{1}スタック獲得する。
+SpreadWings,,熔炎重刃,Scorching Wind Strike,熱風の襲撃,造成{0}伤害，施加{1}层灼烧,Deal {0} damage and apply 1 layer of {buff_burn}.,{0}のダメージを与え、燃焼を{1}スタック付与する。
+HighFly,,浴火,Nirvana,涅槃,获得{0}护盾值，自身每有1层灼烧，本场战斗护盾量永久+1。,Gain {0} Shield. Permanently increase Shield gain by 1 for each layer of {buff_burn} on the self this combat.,{0}のシールドを獲得する。が持つ{buff_burn}1スタックにつき、この戦闘中、シールド獲得量が永久に+1される。
+Come,,有机分裂,Command,号令,"如果已经召唤了两次普拉提壮壮则自身受到最大生命值15%的伤害,否则召唤普拉提壮壮。","If Giantking's Heir has been summoned twice, take damage equal to 15% of max health. Otherwise, summon 1 Giantking's Heir.",既に「大力王の子」を2回召喚している場合、最大HPの15%のダメージを受ける。そうでない場合、「大力王の子」を1体召喚する。
+Dragon'sMajesty,,战栗咆哮,Intimidate,威嚇,往魔女抽牌堆加入{0}张脱力。,Shuffle {0} Exhaustion cards into the Witch's draw pile.,魔女の山札に「脱力」を{0}枚加える。
+FallenDragon,,激怒战吼,Fallen Dragon's Legacy,弔い：奮起,所有友方获得{0}层超凡。,All allies gain {0} layers of {buff_extraordinary}.,全ての味方が{buff_extraordinary}を{0}スタック獲得する。
+LimePowder,,思维侵入,Mind Capture,摂神,给与魔女{0}层遗忘。,Apply 1 layer of {buff_oblivion} to the Witch.,魔女に{buff_oblivion}を{0}スタック付与する。
+PoisonThrowing,,圣械断骨,Virulent Poison,猛毒,"给与魔女{0}层重伤,{1}层中毒。",Apply 1 layer of {buff_trauma} and 3 layers of {buff_toxin} to the Witch.,魔女に{buff_trauma}を{0}スタックと{buff_toxin}を{1}スタック付与する。
+Observe,,涣散,Dispersion,渙散,给与魔女{0}层失格。,Apply 2 layers of {buff_degrade} to the Witch.,魔女に{buff_degrade}を{0}スタック付与する。
+EvilCurse,,混沌诅咒,Cursed Doll,混沌の呪い,随机在魔女牌堆塞入{0}张诅咒牌。,Shuffle 1 random Curse card into the Witch's deck.,魔女の山札にランダムな呪いカードを{0}枚加える。
+IceShield,,幻景,Frost Domain,寒冷領域,"给与魔女{0}层迟缓,{1}层失能。",Apply 1 layer of {buff_slow} and 1 layer of {buff_cripple} to the Witch.,魔女に{buff_slow}を{0}スタックと{buff_cripple}を{1}スタック付与する。
+GiantClawStrike,,巨力爪击,GiantClawStrike,剛力の爪撃,造成{0}伤害，施加{1}层流血。,"Deals {0} damage, applying {1} layers of {buff_bleeding}.",{0}のダメージを与え、{buff_bleeding}を{1}スタック付与する。
+PowerlessCurse,,无力诅咒,Powerless Curse,無力の呪い,将{0}张无力塞到魔女抽牌堆中。,Stuff {0} cards into the witch's draw pile.,魔女の山札に「脱力」を{0}枚加える。
+MT1,,操偶术:保护,Manipulation technique: protection,操り術：保護,与友方获得1层同心。,Gain {0} layers of {buff_lifelink} with allies.,味方と{buff_lifelink}を{0}スタック獲得する。
+MT2,,操偶术:狂暴,Puppet technique: rage,操り術：狂暴,给与友方{0}层超凡并使行动次数加1。,Give allies {0} stacks of {buff_extraordinary} and +1 action.,味方に{buff_extraordinary}を{0}スタック付与し、行動回数+1。
+Wake,,唤醒,Wake,覚醒,唤醒玩偶熊。,Wake up the doll bear,ぬいぐるみ熊を目覚めさせる。
+FullSupport,,防护结界,Full support,全体支援,给与所有友方{0}点护盾。,Grant all allies {0} points of shield.,全ての味方に{0}のシールドを付与する。
+VenomSpray,,剧毒因子,Venom Spray,毒液噴射,造成{0}点伤害，将1张瘟疫塞到魔女抽牌堆中。,Deal {0} damage and shuffle 1 Forgetting into the Witch's draw pile.,{0}ポイントのダメージを与え、1枚のペストカードを魔女のドロー山札に置く。
+psychologicalShock,,震颤,Psychological Shock,精神的ショック,造成{0}点伤害，将1张遗忘塞到魔女抽牌堆中。,Deal {0} damage and shuffle 1 Forgetting into the Witch's draw pile.,{0}ポイントのダメージを与え、1枚の忘却カードを魔女のデッキに入れる。
+obtainMoney,,探囊取物,Obtain Money,朝飯前のこと,造成{0}点伤害，偷取魔女15点金币。,Deals {0} damage and steals 15 gold from the witch,{0}ポイントのダメージを与え、魔女から15ゴールドを盗む
+FiveHit,,寂灭黑星,Silent Black Star,寂滅の黒い星,造成{0}点伤害。,Deal {0} damage.,{0}のダメージを与える。
+OriginalSinCard,,原罪,OriginalSin,原罪,在魔女抽牌堆中塞入{0}张原罪。,Insert {0} Original Sin cards into the witch's deck.,魔女のデッキに{0}枚の原罪を入れる。
+Despair,,绝望,Despair,絶望,造成{0}伤害，施加3层中毒。,Deals {0} damage and applies {1} stacks of Poison.,{0}のダメージを与え、{1}層の中毒を付与する。
+RoyalBarrier,,王族壁垒,Royal Barrier,王族の砦,增加{0}护盾。,Gain {0} Shield.,<color=yellow>{0}</color>のシールドを獲得する。

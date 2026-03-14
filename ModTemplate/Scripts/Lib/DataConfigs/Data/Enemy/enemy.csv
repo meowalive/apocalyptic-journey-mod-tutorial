@@ -1,0 +1,73 @@
+﻿Id,Name,Hp,Attack,Defend,Tough,ActionCount,Rarity,InitScript,CardList,AttributeText,Animation
+Id,名字,血量,攻击力,防御盾,韧性,行动次数,单体强度,初始buff,卡牌列表,"用;分开,不能加空格(现在只是给个演示,因为怪物要重写特性)",
+10001,普拉提黏黏,48,6,3,1,2,1,,"enemycard_WeakLight, enemycard_NeverDead, enemycard_Charge1, enemycard_defence, enemycard_Observe, enemycard_vulnerabilityLight",,AnimationLib/普拉提黏黏
+10002,红心女仆,144,11,5,1,2,2,,"enemycard_vulnerabilityLight, enemycard_PlugCards2, enemycard_Witness, enemycard_Charge1, enemycard_defence, enemycard_OrdinaryHit",,AnimationLib/红心女仆
+10003,鼹鼠,90,8,5,1,2,2,"AddBuff(""SpecialBuff_ThievesKing"", ""1"");","enemycard_Thieves, enemycard_thief, enemycard_defence, enemycard_OrdinaryFiveHit, enemycard_obtainMoney",SpecialBuff_ThievesKing,AnimationLib/鼹鼠
+10004,灾厄先兆,84,10,3,2,2,1,,"enemycard_OrdinaryHit, enemycard_defence, enemycard_NeverDead",,AnimationLib/灾厄先兆
+10005,猎食者,30,5,0,2,2,1,"if (int.Parse(PlayerInfo.GetTagDiff()) > 20)
+        {
+            AddBuff(""buff_bloodwall"", ""5"");
+        }
+        else
+        {
+            AddBuff(""buff_bloodwall"", ""4"");
+        }","enemycard_OrdinaryHit, enemycard_defence",buff_bloodwall,AnimationLib/无形象敌人
+10007,失心魔女,166,8,7,1,3,3,"AddBuff(""SpecialBuff_ManInTheMirror"", ""1"");","enemycard_defence, enemycard_QuadrupleHits, enemycard_WhereverYouGo, enemycard_OrdinaryHit, enemycard_MakeIneffectiveRays1, enemycard_PlugCards1",SpecialBuff_ManInTheMirror,AnimationLib/失心魔女
+10008,最后一餐,78,8,6,2,2,1,,"enemycard_defence, enemycard_QuadrupleHits, enemycard_Licking, enemycard_OrdinaryHit",,AnimationLib/最后一餐
+10009,梅花侍从,140,11,8,3,3,2,"AddBuff(""SpecialBuff_believer"", ""6"");AddBuff(""buff_thorns"",  (int.Parse(atk())/7).ToString());","enemycard_OrdinaryHit,enemycard_defence, enemycard_burn2, enemycard_specialAttack, enemycard_burn1",SpecialBuff_believer;buff_thorns,AnimationLib/梅花侍从
+10010,深渊之触,82,9,5,2,2,2,"AddBuff(""SpecialBuff_fluster"",""1"");","enemycard_OrdinaryHit,enemycard_defence,enemycard_OverrunWorkouts,enemycard_OrdinaryFiveHit, enemycard_Charge1",SpecialBuff_fluster,AnimationLib/深渊之触
+10014,幽怨之心,106,10,5,2,2,2,,"enemycard_OrdinaryHit,enemycard_defence,enemycard_WeakLight, enemycard_psychologicalShock",,AnimationLib/幽怨之心
+10015,腐化巨蜥,120,12,7,3,2,3,"AddBuff(""buff_bleeding"", (int.Parse(atk())/2).ToString());","enemycard_OrdinaryHit, enemycard_defence, enemycard_Dragon'sMajesty, enemycard_FallenDragon, enemycard_QuadrupleHits, enemycard_burn",buff_bleeding,AnimationLib/腐化巨蜥
+10016,混血狼裔,60,6,4,2,2,1,"AddBuff(""buff_frenzy"", ""2"");","enemycard_OrdinaryHit,enemycard_defence,enemycard_NerveReflexes, enemycard_NeverDead",buff_frenzy,AnimationLib/混血狼裔
+10017,圣械协从,91,8,4,2,2,1,"AddBuff(""buff_resilient"", ""2"");","enemycard_defence, enemycard_burn1, enemycard_burn, enemycard_OrdinaryHit",buff_resilient,AnimationLib/圣械协从
+10018,惊喜礼物盒,300,14,24,3,2,2,"AddBuff(""SpecialBuff_expiation"", ""5"");","enemycard_OrdinaryHit,enemycard_Weak, enemycard_defence, enemycard_Witness",SpecialBuff_expiation,AnimationLib/惊喜礼物盒
+10019,莉莉,84,7,4,1,2,1,,"enemycard_OrdinaryHit, enemycard_defence, enemycard_charmed, enemycard_QuadrupleHits",,AnimationLib/莉莉
+10020,守夜人,156,5,0,3,2,3,"AddBuff(""buff_chrysalis"", ""1"");","enemycard_burn, enemycard_burn1, enemycard_Toxin1, enemycard_Toxin2, enemycard_Toxin3, enemycard_Toxin4, enemycard_PlugCards1, enemycard_VenomSpray",buff_chrysalis,AnimationLib/守夜人
+10021,腐化主教,72,8,4,2,3,1,"AddBuff(""SpecialBuff_BackToBasics"",  ""1"");","enemycard_rejuvenation, enemycard_OrdinaryFiveHit, enemycard_NeverDead, enemycard_OrdinaryHit, enemycard_defence, enemycard_Charge1, enemycard_burn1, enemycard_Toxin2, enemycard_VenomSpray",SpecialBuff_BackToBasics,AnimationLib/腐化主教
+10022,普拉提之王,240,5,5,1,2,3,"AddBuff(""SpecialBuff_UnparalleledPower"",  ""1"");
+","enemycard_OrdinaryHit,enemycard_defence,enemycard_OverrunWorkouts,enemycard_OrdinaryFiveHit, enemycard_Come",SpecialBuff_UnparalleledPower,AnimationLib/普拉提之王
+10023,普拉提壮壮,90,5,7,1,2,1,"
+","enemycard_OrdinaryHit,enemycard_defence,enemycard_OverrunWorkouts,enemycard_OrdinaryFiveHit",,AnimationLib/普拉提壮壮
+10024,腐化圣骑,144,10,4,2,2,2,"AddBuff(""buff_impregnable"", ""2"");AddBuff(""buff_barkhide"", ""1"");","enemycard_burn1, enemycard_Toxin3, enemycard_Toxin1, enemycard_NeverDead, enemycard_QuadrupleHits, enemycard_Charge1, enemycard_specialAttack, enemycard_VenomSpray",buff_impregnable;buff_barkhide,AnimationLib/腐化圣骑
+10025,腐化蛛人,78,5,4,2,2,1,,"enemycard_OrdinaryHit,enemycard_defence,enemycard_Toxin3, enemycard_Toxin1, enemycard_Charge1, enemycard_Weak",,AnimationLib/腐化蛛人
+10026,恶意聚合体,68,5,2,1,2,1,,"enemycard_OrdinaryHit,enemycard_defence,enemycard_Toxin1,enemycard_Toxin2,enemycard_Toxin3, enemycard_VenomSpray",,AnimationLib/恶意聚合体
+*99999,测试者,1199999,0,1,2,2,1,"AddBuff(""SpecialBuff_AdvancedWoodenStakes"",  ""1"");",enemycard_defence,SpecialBuff_AdvancedWoodenStakes,AnimationLib/无形象敌人
+10027,永夜化身,480,14,10,5,3,3,"AddBuff(""SpecialBuff_ImmortalGodhead"",  ""1"");
+if (int.Parse(PlayerInfo.GetTagDiff()) > 35)
+        {
+           AddBuff(""SpecialBuff_Law:Judgment"",  ""1"");
+        }
+        AddBuff(""SpecialBuff_Law:Death"",  ""6"");
+AddBuff(""SpecialBuff_Law:Supreme"",  ""1"");
+AddBuff(""SpecialBuff_Transcendent"",  ""1"");
+","enemycard_OrdinaryHit, enemycard_defence, enemycard_QuadrupleHits, enemycard_PlugCards2, enemycard_PlugCards1, enemycard_burn2, enemycard_specialAttack",SpecialBuff_Law:Death;SpecialBuff_Law:Supreme;SpecialBuff_Transcendent;SpecialBuff_ImmortalGodhead;SpecialBuff_Law:Judgment,AnimationLib/永夜化身
+10028,方片舞者,110,12,6,2,1,1,"AddBuff(""SpecialBuff_hunting"",  ""1"");","enemycard_QuadrupleHits, enemycard_OrdinaryHit, enemycard_defence, enemycard_rejuvenation",SpecialBuff_hunting,AnimationLib/方片舞者
+10029,暴怒残片,120,10,4,2,2,3,"AddBuff(""SpecialBuff_AllogeneicConcentric"",  ""1"");AddBuff(""buff_bloodwall"", ""8"");","enemycard_rejuvenation, enemycard_OverrunWorkouts, enemycard_OrdinaryHit, enemycard_NeverDead, enemycard_QuadrupleHits",SpecialBuff_AllogeneicConcentric,AnimationLib/暴怒残片
+10030,深渊骑士,300,0,14,3,1,2,"AddBuff(""SpecialBuff_TrialsOfStrength"",  ""1"");","enemycard_MakeIneffectiveRays2, enemycard_defence",SpecialBuff_TrialsOfStrength,AnimationLib/无形象敌人
+10031,魔械,396,14,0,8,2,2,"AddBuff(""SpecialBuff_TrialsOfTenacity"",  ""1"");","enemycard_OrdinaryHit, enemycard_QuadrupleHits, enemycard_psychologicalShock",SpecialBuff_TrialsOfTenacity,AnimationLib/守夜人
+10032,魔将 帕梅拉,900,12,8,4,2,3,"AddBuff(""SpecialBuff_TrialsOfWisdom"",  ""1"");","enemycard_FiveHit, enemycard_EvilCurse, enemycard_psychologicalShock, enemycard_defence",SpecialBuff_TrialsOfWisdom,AnimationLib/魔将 帕梅拉
+10033,熔火圣骸,192,4,2,3,2,3,"AddBuff(""SpecialBuff_Phoenix"",  ""1"");","enemycard_SpreadWings, enemycard_HighFly, enemycard_burn, enemycard_burn1, enemycard_Charge1",SpecialBuff_Phoenix,AnimationLib/熔火圣骸
+10034,自动机关人偶,192,8,5,2,3,1,"AddBuff(""SpecialBuff_Snitch"",  ""1"");","enemycard_OrdinaryHit, enemycard_defence, enemycard_LimePowder, enemycard_PoisonThrowing, enemycard_Weak",SpecialBuff_Snitch,AnimationLib/自动机关人偶
+10035,K,144,8,7,2,2,2,"AddBuff(""SpecialBuff_Priest"",  ""1"");","enemycard_defence, enemycard_EvilCurse, enemycard_Toxin2, enemycard_obtainMoney",SpecialBuff_Priest,AnimationLib/K
+10036,鬼牌:小王,132,10,6,2,2,2,"AddBuff(""SpecialBuff_Twins"",  ""1"");","enemycard_defence, enemycard_OrdinaryHit, enemycard_PlugCards3",SpecialBuff_Twins,AnimationLib/鬼牌小王黑
+10037,鬼牌:小王,132,10,6,2,2,2,"AddBuff(""SpecialBuff_Twins"",  ""1"");","enemycard_OrdinaryHit, enemycard_defence, enemycard_fearless, enemycard_IceShield, enemycard_Toxin4",SpecialBuff_Twins,AnimationLib/鬼牌小王白
+10038,灾厄祭司,90,8,6,2,2,1,"AddBuff(""SpecialBuff_Musician"",  ""1"");","enemycard_OrdinaryHit, enemycard_defence, enemycard_charmed",SpecialBuff_Musician,AnimationLib/无形象敌人
+10039,黑桃骑士,144,10,0,2,3,1,"AddBuff(""SpecialBuff_ThirstForBlood"",  ""1"");","enemycard_defence, enemycard_OrdinaryHit, enemycard_burn1",SpecialBuff_ThirstForBlood,AnimationLib/黑桃骑士
+10040,魔女教教徒,66,6,5,2,3,1,"AddBuff(""SpecialBuff_WitchCultists"",  ""1"");","enemycard_QuadrupleHits, enemycard_rejuvenation, enemycard_charmed, enemycard_OverrunWorkouts, enemycard_NerveReflexes, enemycard_fearless, enemycard_Witness, enemycard_Toxin1, enemycard_Toxin2, enemycard_Toxin3, enemycard_Toxin4, enemycard_foraging, enemycard_NeverDead, enemycard_OrdinaryHit, enemycard_SuperFireBall, enemycard_WeakLight, enemycard_OrdinaryFiveHit, enemycard_Weak, enemycard_thief, enemycard_Thieves",SpecialBuff_WitchCultists,AnimationLib/魔女教教徒
+10041,天眷者,50,5,4,2,2,1,"AddBuff(""SpecialBuff_BlessedByHeaven"",  ""1"");","enemycard_OrdinaryHit, enemycard_defence, enemycard_OrdinaryFiveHit, enemycard_Charge1",SpecialBuff_BlessedByHeaven,AnimationLib/天眷者
+10042,吞金兽,72,6,4,2,2,1,"AddBuff(""SpecialBuff_FortuneBoy"",  ""1"");","enemycard_defence, enemycard_OrdinaryHit, enemycard_OverrunWorkouts, enemycard_MakeIneffectiveRays1",SpecialBuff_FortuneBoy,AnimationLib/吞金兽
+10043,活性晶簇,108,8,4,3,2,1,"AddBuff(""SpecialBuff_Mimics"",  ""1"");","enemycard_defence, enemycard_OrdinaryHit, enemycard_NeverDead, enemycard_vulnerabilityLight",SpecialBuff_Mimics,AnimationLib/活性晶簇
+10044,操偶师,120,5,7,1,2,2,,"enemycard_defence, enemycard_OrdinaryHit, enemycard_MT1, enemycard_MT2, enemycard_Wake",,AnimationLib/操偶师
+10045,巨大玩偶熊,300,11,7,5,1,2,"AddBuff(""SpecialBuff_GiantDollBear"",  ""1"");","enemycard_GiantClawStrike, enemycard_PowerlessCurse, enemycard_defence, enemycard_OrdinaryHit, enemycard_Charge1",SpecialBuff_GiantDollBear,AnimationLib/巨大玩偶熊
+10046,恐惧残片,134,5,6,2,2,3,"AddBuff(""SpecialBuff_AllogeneicConcentric"",  ""1"");AddBuff(""buff_bloodwall"", ""12"");","enemycard_rejuvenation, enemycard_OrdinaryHit, enemycard_defence, enemycard_FullSupport",SpecialBuff_AllogeneicConcentric,AnimationLib/恐惧残片
+10047,怠惰残片,115,7,4,2,3,3,"AddBuff(""SpecialBuff_AllogeneicConcentric"",  ""1"");AddBuff(""buff_bloodwall"", ""10"");","enemycard_rejuvenation, enemycard_OverrunWorkouts, enemycard_OrdinaryHit, enemycard_Observe, enemycard_PowerlessCurse, enemycard_PlugCards1, enemycard_Charge1",SpecialBuff_AllogeneicConcentric,AnimationLib/怠惰残片
+10048,魔王,720,8,10,5,3,3,"AddBuff(""SpecialBuff_OriginalSin"",  ""1"");","enemycard_OriginalSinCard, enemycard_SuperFireBall, enemycard_defence, enemycard_OrdinaryHit, enemycard_specialAttack, enemycard_Despair, enemycard_RoyalBarrier",SpecialBuff_OriginalSin,AnimationLib/魔王一阶段
+10049,魔王剑,200,10,8,4,2,2,"AddBuff(""SpecialBuff_SwordOfTheDemonKing"",  ""1"");","enemycard_defence, enemycard_OrdinaryHit, enemycard_specialAttack",SpecialBuff_SwordOfTheDemonKing,AnimationLib/魔王剑右
+10050,魔王剑,160,12,7,4,2,2,"AddBuff(""SpecialBuff_SwordOfTheDemonKing"",  ""1"");","enemycard_defence, enemycard_OrdinaryHit, enemycard_FiveHit",SpecialBuff_SwordOfTheDemonKing,AnimationLib/魔王剑左
+*10051,魔王,720,8,10,5,3,3,"AddBuff(""SpecialBuff_OriginalSin"",  ""1"");","enemycard_OriginalSinCard, enemycard_SuperFireBall, enemycard_defence, enemycard_OrdinaryHit, enemycard_specialAttack, enemycard_Despair, enemycard_RoyalBarrier",SpecialBuff_OriginalSin,AnimationLib/魔王二阶段
+*10052,魔王,720,8,10,5,3,3,"AddBuff(""SpecialBuff_OriginalSin"",  ""1"");","enemycard_OriginalSinCard, enemycard_SuperFireBall, enemycard_defence, enemycard_OrdinaryHit, enemycard_specialAttack, enemycard_Despair, enemycard_RoyalBarrier",SpecialBuff_OriginalSin,AnimationLib/魔王三阶段
+*10053,永夜化身,120,8,8,3,2,3,"AddBuff(""SpecialBuff_ImmortalGodhead"",  ""1"");
+        AddBuff(""SpecialBuff_Law:Death"",  ""6"");
+AddBuff(""SpecialBuff_Law:Supreme"",  ""1"");
+AddBuff(""SpecialBuff_Transcendent"",  ""1"");
+","enemycard_OrdinaryHit, enemycard_defence, enemycard_QuadrupleHits, enemycard_PlugCards2, enemycard_PlugCards1, enemycard_burn2, enemycard_specialAttack",SpecialBuff_Law:Death;SpecialBuff_Law:Supreme;SpecialBuff_Transcendent;SpecialBuff_ImmortalGodhead;SpecialBuff_Law:Judgment,AnimationLib/永夜化身

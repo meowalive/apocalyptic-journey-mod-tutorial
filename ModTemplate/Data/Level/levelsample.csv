@@ -1,0 +1,2 @@
+﻿Id,EnemyIds,Note,Level,BGM
+唯一标识,敌人Id的数组,备注,出现层数,重载音乐

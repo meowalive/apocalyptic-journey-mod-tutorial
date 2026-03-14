@@ -1,0 +1,19 @@
+﻿Id,Rarity,Expend,Tag,InitScript,DrawScript,UseScript,DropScript,Icon,Effects,Action
+唯一的标识（不能重复）,稀有度,花费,标签,卡牌初始化脚本,卡牌抽到后执行,卡牌使用后执行,卡牌进入弃牌堆后执行,图标资源的路径,特效路径,动作
+1,1,1,"Retain, Unusable, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""5"");","SetStatus(""Self"");AddBuff(DataId.buff_vulnerability,""5"");",,,Icon/Card/脆弱感,,
+2,1,1,"Curse, Burnout","Vars[""BaseScript""]=""CommonCardItem"";","SetStatus(""Self"");AddBuff(DataId.buff_chaos,""1"");",,,Icon/Card/思维紊乱,,
+3,2,1,"Burnout, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");","SetStatus(""Self"");AddBuff(DataId.buff_weak,""2"");",,,Icon/Card/无力感,,
+4,2,2,"Burnout, Curse","Vars[""BaseScript""]=""CommonCardItem"";",,,"SetStatus(""Self"");AddBuff(DataId.buff_timestop,""2"");",Icon/Card/腐化白石,,
+5,1,1,"Burnout, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");","SetStatus(""Self"");AddBuff(DataId.buff_rotten,""1"");",,,Icon/Card/腐朽,,
+6,1,0,"Burnout,Retain, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");",,"SetStatus(""Self"");AddBuff(DataId.buff_oblivion,""2"");",,Icon/Card/遗忘,弱化,
+7,1,1,"Burnout,Retain, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""3"");",,"SetStatus(""Self"");AddBuff(DataId.buff_toxin,""3"");",,Icon/Card/隐疾,弱化,
+8,1,1,"Burnout,Retain, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");","SetStatus(""Self"");AddBuff(DataId.buff_weak,""1"");",,,Icon/Card/恐惧感,,
+9,3,1,"Burnout, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""2"");","SetStatus(""Self"");AddBuff(DataId.buff_cripple,""2"");",,,Icon/Card/湮灭,,
+10,2,1,"Burnout, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");","SetStatus(""Self"");AddBuff(DataId.buff_bleeding,""1"");",,,Icon/Card/幻痛,,
+11,1,1,"Curse, Burnout","Vars[""BaseScript""]=""CommonCardItem"";",,,,Icon/Card/虚无感,,
+12,2,1,"Burnout, Curse","Vars[""BaseScript""]=""CommonCardItem"";AddDescription(""1"", ""Buff"", ""1"");",,,"SetStatus(""Self"");AddBuff(DataId.buff_toxin,""1"");",Icon/Card/瘟疫,,
+13,3,2,"Burnout, Curse","Vars[""BaseScript""]=""CommonCardItem"";",,"ChangeHp(""-10"");
+        PlayerInfo.TempLucky -= 2;
+        PlayerInfo.TempStrength -= 2;
+        PlayerInfo.TempWisdom-= 2;
+        PlayerInfo.TempPerceive -= 2;","SetStatus(""Self"");RandomAddCard(DataId.cursecard_13);",Icon/Card/原罪,,

@@ -1,0 +1,6 @@
+﻿Id,Type,已完成,Name,Name_en,Name_zh-Hant,Name_ja,Description,Description_zh-Hant,Description_en,Description_ja,
+唯一的标识（不能重复）,卡牌类型,FALSE,名称,Name,,,描述,,Description,,
+1,攻击牌,TRUE,火雨术,Fire Rain,火雨術,火雨術,"对所有敌人造成{0}点伤害,并给予{1}层灼烧。","對所有敵人造成{0}點傷害,並給予{1}層{buff_burn}。",Deal {0} damage to all enemies and apply {1} layer(s) of {buff_burn}.,全ての敵に{0}のダメージを与え、{buff_burn}を{1}スタック付与する。,
+2,消耗攻击牌,TRUE,炽焰新星,Blazing Nova,熾焰新星,熾炎の新星,"对目标造成{0}点伤害,并给予{1}层灼烧。",對目標造成{0}點傷害，並給予{1}層{buff_burn}。,Deal {0} damage to target,apply {1} layer(s) of {buff_burn}.,対象に{0}のダメージを与え、{buff_burn}を{1}スタック付与する。
+3,消耗技能牌,TRUE,烈阳,Scorching Sun,烈陽,烈日,给予灼烧{0}层。,給予所有敵人{0}層{buff_burn}。,Apply {0} layer(s) of {buff_burn} to each enemy.,全ての敵に{buff_burn}を{0}スタック付与する。,
+4,攻击牌,TRUE,腐化黑星,Corrupted Dark Star,腐化黑星,腐敗した黒星,"对所有敌人造成{0}点伤害,并给予{1}层灼烧。","對所有敵人造成{0}點傷害,並給予{1}層灼燒。",Deal {0} damage to all enemies and apply {1} layer(s) of {buff_burn} .,全ての敵に{0}のダメージを与え、燃焼を{1}スタックと付与する。,

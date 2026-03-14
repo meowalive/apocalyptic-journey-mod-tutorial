@@ -1,0 +1,6 @@
+﻿Id,Note,Name,Type,Description,Name_en,Description_en,Name_zh-Hant,Description_zh-Hant,Name_ja,Description_ja,第 1 列
+唯一的标识（不能重复）,备注,名称,类型,描述,Name,Description,,,,,FALSE
+1,,武装化,技能牌,获得{0}层锋锐。,Physical Enhancement,Gain {0} stacks of {buff_keenedge}.,武裝化,獲得{0}層{buff_keenedge}。,武装化,{buff_keenedge}を{0}スタック獲得する。,TRUE
+*3,,重现,消耗技能牌,下张牌再打出一次。,Reenactment,Play the next card again.,重現,下張牌再打出一次。,再現,次のカードをもう一度使用する。,TRUE
+5,,极尽升华,消耗技能牌,"选择手牌中一张牌焚毁,获得{0}层超凡。",Extreme Sublimation,Choose a card in your hand to Burnout and gain {0} stacks of {buff_extraordinary}.,極盡昇華,"選擇手牌中一張牌燃燼,獲得{0}層{buff_extraordinary}。",極致昇華,手札のカードを1枚燃焼し、{buff_extraordinary}を{0}スタック獲得する。,TRUE
+6,,瓶装失意,消耗技能牌,所有敌人获得{0}层失格。,Weakening Spell,All enemies gain {0} stacks of {buff_degrade}.,瓶裝失意,所有敵人獲得{0}層{buff_degrade}。,瓶詰めの失意,全ての敵が{buff_degrade}を{0}スタック獲得する。,FALSE

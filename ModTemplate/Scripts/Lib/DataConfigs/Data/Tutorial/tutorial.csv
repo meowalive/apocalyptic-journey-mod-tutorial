@@ -1,0 +1,29 @@
+﻿Id,EventName,Initial
+Id,触发时点,初始状态
+Test1,,TRUE
+Test2,,TRUE
+Outside upgrades,UIOpen-OutsiderShopUI,TRUE
+Difficulty selection,UIOpen-SelectHardUI,FALSE
+SafeBox,,TRUE
+Illustrated book,,TRUE
+Announcement,,TRUE
+CardEditor,,TRUE
+DesChoice,,TRUE
+DesType,,TRUE
+Break,BreaksUIOpen,FALSE
+Shop,UIOpen-ShopUI,FALSE
+Event,,TRUE
+Disaster,,TRUE
+Function bar,,TRUE
+Round,,TRUE
+Action card,,TRUE
+Piles/fold piles,UIOpen-DeckUI,FALSE
+Magic power,,TRUE
+Base attributes,,TRUE
+Relic,RelicAdd,FALSE
+Monetary resources,,TRUE
+Toughness,ToughCountZero,FALSE
+Hp,,TRUE
+Defence,,TRUE
+Buff,,TRUE
+Action,,TRUE

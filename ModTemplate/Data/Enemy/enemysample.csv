@@ -1,0 +1,2 @@
+﻿Id,Name,Hp,Attack,Defend,Tough,ActionCount,Rarity,InitScript,CardList,AttributeText,Animation
+唯一标识,名字,血量,攻击力,防御盾,韧性,行动次数,稀有度,更新显示信息用的,卡牌列表,"用;分开,不能加空格(现在只是给个演示,因为怪物要重写特性)",

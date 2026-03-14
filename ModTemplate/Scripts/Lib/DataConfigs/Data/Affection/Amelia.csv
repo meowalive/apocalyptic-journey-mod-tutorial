@@ -1,0 +1,10 @@
+﻿Id,Character,Reward,InitScript,Target,Belong
+,哪个角色,真理之晶奖励数,控制是否达成,达成数量,属于等级
+1,Amelia,10,"PlayerInfo.AddEvent(""Win"", () =>
+        {
+            if (!PlayerInfo.Getsave().Gain.ContainsKey(""Amelia_1""))
+            {
+                PlayerInfo.Getsave().Gain[""Amelia_1""] = 0;
+            }
+            PlayerInfo.Getsave().Gain[""Amelia_1""]=Math.Min(PlayerInfo.Getsave().Gain[""Amelia_1""]+1,3);
+        },this);",3,0

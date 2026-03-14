@@ -1,0 +1,591 @@
+﻿Id,Note,Name,Name_en,Name_ja,TotalDescribe,TotalDescribe_en,TotalDescribe_ja,1Describe,1Describe_en,1Describe_ja,2Describe,2Describe_en,2Describe_ja,3Describe,3Describe_en,3Describe_ja,4Describe,4_Describe_en,4Describe_ja,CompareUse,CompareUse_en,CompareUse_ja,Column 24
+Id,备注,名字,Name,,整体文本,,,,,,,,,,,,,,,,,,
+*999,,黑潮-序幕,Black Tide - Prologue,黒き潮流 - プロローグ,<main>  你的眼前是一处破败不堪的圣所，好在圣泉尚未枯竭。</main>,"<main>  Before you lies a dilapidated sanctuary, but fortunately, the holy spring has not yet dried up.</main>",<main>  目の前には荒れ果てた聖域が広がっているが、幸いにも聖なる泉はまだ枯れていない。</main>,"<main>  前去疗伤……</main>
+<add></add>
+<subtip>  你沐浴在圣泉中，疲惫一扫而空。(生命+30%)</subtip>","<main>  Go to heal...</main>
+<add></add>
+<subtip>  You bathe in the holy spring, and your fatigue disappears. (HP+30%)</subtip>","<main>  傷を癒しに行く……</main>
+<add></add>
+<subtip>  聖なる泉に身を浸すと、疲労は一掃された。(HP+30%)</subtip>","<main>  继续前进</main>
+<add></add>
+<subtip>  你继续前进</subtip>","<main>  Keep moving forward</main>
+<add></add>
+<subtip>  You move on</subtip>","<main>  先へ進む</main>
+<add></add>
+<subtip>  あなたは先へ進んだ</subtip>",,,,,,,,,,
+Sub_*999_2,,黑潮-序幕,Black Tide - Prologue,黒き潮流 - プロローグ,<main>  哪怕在黑潮之下有倾覆之危，仍有人囤货居奇，想发一笔横财</main>,"<main>  Even under the threat of the Black Tide, there are still those who hoard goods, hoping to make a fortune.</main>",<main>  黒き潮流による崩壊の危機に瀕してもなお、一儲けを企んで物資を買い占める者がいる。</main>,"<main>  驻足购买</main>
+<add></add>
+<subtip>  “时间就是金钱”我的朋友。</subtip>","<main>  Stop to buy</main>
+<add></add>
+<subtip>  Time is money, my friend.</subtip>","<main>  立ち寄って購入する</main>
+<add></add>
+<subtip>  「時は金なり」ですよ、友よ。</subtip>","<main>  继续前进</main>
+<add></add>
+<subtip>  你继续前进</subtip>","<main>  Keep moving forward</main>
+<add></add>
+<subtip>  You move on</subtip>","<main>  先へ進む</main>
+<add></add>
+<subtip>  あなたは先へ進んだ</subtip>",,,,,,,,,,
+*1000,,终焉,The End,終焉,"<main>  要结束了吗,数千年的末世会在今日终结吗</main>",<main>  Is it ending? Will the millennia-long apocalypse finally conclude today?</main>,<main>  終わるのか？数千年にわたる終末は、今日、終わりを迎えるのか？</main>,"<main>  回望众生</main>
+<add></add>
+<subtip>  众生用最后的希望为你赐福(恢复30%生命,随机获得4个祝福)</subtip>","<main>  Look back at the masses</main>
+<add></add>
+<subtip>  The masses grant you their final blessing (Recover 30% HP, get 4 random blessings)</subtip>","<main>  衆生を振り返る</main>
+<add></add>
+<subtip>  衆生は最後の希望であなたを祝福する(HP30%回復、ランダムな祝福を4つ獲得)</subtip>","<main>  直面神明</main>
+<add></add>
+<subtip>  祂的恶意不能阻挡你(恢复30%生命,随机获得4个祝福)</subtip>","<main>  Face the divine</main>
+<add></add>
+<subtip>  His malice cannot stop you (sentient beings give you the last 4 blessings, 30% life recovery)</subtip>","<main>  神と対峙する</main>
+<add></add>
+<subtip>  彼の悪意はあなたを止められない(衆生は最後の祝福を4つ与え、HPが30%回復する)</subtip>",,,,,,,,,,
+Sub_*1000_2,,终焉,The End,終焉,"<main>  祂笑了,""你知道吗,数千年前的那些小虫子也是你这样自信的""</main>","<main>  He smiled, ""You know, those little bugs thousands of years ago were just as confident as you.""</main>",<main>  彼は笑った。「知っているか？数千年前のあの小虫どもも、お前のように自信満々だったぞ」</main>,"<main>  这一次不会一样!</main>
+<add></add>
+<subtip>  战斗一触即发</subtip>","<main>  Not the same this time!</main>
+<add></add>
+<subtip>  Battle is about to break out</subtip>","<main>  今回は違う！</main>
+<add></add>
+<subtip>  戦いは間もなくだ</subtip>","<main>  你,也配高高在上吗</main>
+<add></add>
+<subtip>  战斗一触即发</subtip>","<main>  You? Do you deserve to stand above?</main>
+<add></add>
+<subtip>  The battle is about to break out</subtip>","<main>  お前ごときが、高みに立つ資格などあるか</main>
+<add></add>
+<subtip>  戦いは間もなくだ</subtip>",,,,,,,,,,
+1,,锈蚀齿轮,Rusted Gear,錆びた歯車,"<main>  天谴？还是赐福？魔女脑中那根绷紧的弦此刻正濒临断裂，失忆也许就在下一秒
+你知道忘记一切意味着什么……但有时，这也不失为一种战术的选择</main>
+<tip=exclaim>真的到了必须忘记一切的地步了吗？</tip>
+<subtip>  神经颤鸣</subtip>","<main>  Divine punishment? Or a blessing? The string in the witch's mind is about to snap; amnesia may come at any moment.
+You know what it means to forget everything... but sometimes, this too can be a tactical choice.</main>
+<tip=exclaim>Has it really come to the point where you must forget everything?</tip>
+<subtip>  Nerve tremor</subtip>","<main>  天罰か？それとも祝福か？魔女の脳内で張り詰めた糸は今にも切れそうだ。記憶喪失は次の瞬間にも訪れるかもしれない。
+すべてを忘れることが何を意味するのか、あなたは知っている……だが時には、それも戦術的な選択となりうる。</main>
+<tip=exclaim>本当にすべてを忘れなければならないほど追い詰められているのか？</tip>
+<subtip>  神経の震え</subtip>","<main>  让一切从头再来</main>
+<add>拥抱混沌</add>
+<subtip>将你装备的所有卡牌和遗物替换为随机卡牌和遗物，恢复所有生命值并获得100金币</subtip>","<main>  Let everything start over -</main>
+<add>Embrace chaos</add>
+<subtip>  Replace all your equipped cards and relics with random ones, restore all HP and gain 100 gold</subtip>","<main>  すべてをやり直す</main>
+<add>混沌を受け入れる</add>
+<subtip>  装備している全てのカードと遺物をランダムなものに交換し、HPを全回復して100ゴールドを獲得する</subtip>","<main>  我还能坚持</main>
+<add>保持清醒</add>
+<subtip>  获得祝福""皇后""*2</subtip>","<main>  I can still hold on</main>
+<add>Stay sober</add>
+<subtip>  Get the blessing ""Queen""*2</subtip>","<main>  まだ耐えられる</main>
+<add>正気を保つ</add>
+<subtip>  祝福「皇后」を獲得する*2</subtip>",,,,,,,,,,
+2,,灵肉延展,Flesh and Spirit Extension,霊肉の拡張,"<main>  “我听到了，她的声音。”“谁？”“另一个我……也可能是你”“我一般称之为精神分裂或者幻听”
+“除非我们哪天从魔女岗位毕业，这些说法才能在生理上成立。”</main>
+<tip=exclaim>我独一无二</tip>
+<subtip>  接受自我</subtip>","<main>  ""I heard her voice."" ""Who?"" ""Another me... or maybe you."" ""I usually call that schizophrenia or auditory hallucination.""
+""Unless we one day graduate from being witches, these terms can only be used physiologically.""</main>
+<tip=exclaim>I am unique.</tip>
+<subtip>  Accept yourself</subtip>","<main>  「声が聞こえた」「誰の？」「もう一人の私……あるいは、あなたかもしれない」「私はそれを統合失調症か幻聴と呼ぶわ」
+「いつか私たちが魔女を卒業しない限り、その言葉は生理学的にしか成立しない」</main>
+<tip=exclaim>私は唯一無二</tip>
+<subtip>  自己を受け入れる</subtip>","<main>  平静心绪</main>
+<add>我始终唯一</add>
+<subtip>  精神+4</subtip>","<main>  Calm the mind</main>
+<add>I am always the only one.</add>
+<subtip>  Spirit+4</subtip>","<main>  心を落ち着ける</main>
+<add>私は常に唯一</add>
+<subtip>  精神+4</subtip>","<main>  复制记忆</main>
+<add>“她应是你”</add>
+<subtip>  获得最后一张移入装备区卡牌的复制</subtip>","<main>  Copy memory</main>
+<add>""She should be you""</add>
+<subtip>  Obtain a copy of the last equipped card</subtip>","<main>  記憶を複製する</main>
+<add>「彼女はあなたであるべき」</add>
+<subtip>  最後に装備したカードの複製を1枚獲得する</subtip>",,,,,,,,,,
+3,,教廷引路人,Church Guide,教会の案内人,"<main>  黑暗中一簇火苗在风中摇曳着，靠近之后才发现那是一名少女手中的提灯燃起的微光
+她身着教廷的修女制服，面带微笑，对你的到来似乎并不意外“魔女小姐，您看起来很困惑，我主或能为您指明前路……”</main>
+<tip=exclaim>接受指引卡牌或将发生变化</tip>
+<subtip>  沐浴圣恩，重归深渊</subtip>","<main>  A flicker of flame sways in the darkness, and as you approach, you see it's the faint glow of a lantern in a young girl's hand.
+She wears a nun's habit of the church, smiling as if your arrival was expected. ""Miss Witch, you look confused. Perhaps my Lord can show you the way...""</main>
+<tip=exclaim>Accepting guidance may change your cards</tip>
+<subtip>  Bathe in holy grace, return to the abyss</subtip>","<main>  暗闇の中、一筋の炎が風に揺れている。近づいてみると、それは少女が持つランタンの微かな光だった。
+彼女は教会の修道女服を身にまとい、微笑んでいる。あなたの到来を予期していたかのようだ。「魔女様、お困りのご様子。我が主が道を示してくださるやもしれません……」</main>
+<tip=exclaim>導きを受け入れるとカードが変化する可能性があります</tip>
+<subtip>  聖恩に浴し、深淵へ帰る</subtip>","<main>  试试又不吃亏</main>
+<add>接受指引</add>
+<subtip>  选择3张卡牌，给予其随机一项词条</subtip>","<main>  No harm in trying</main>
+<add>Accept guidance</add>
+<subtip>  Choose 3 cards to randomly give an affix</subtip>","<main>  試してみるだけなら損はない</main>
+<add>導きを受け入れる</add>
+<subtip>  カードを3枚選択し、ランダムな特性を1つ付与する</subtip>","<main>  怎么看都很可疑</main>
+<add>婉言谢绝</add>
+<subtip>  精神+3</subtip>","<main>  Looks suspicious in every way</main>
+<add>Politely refuse</add>
+<subtip>  Spirit+3</subtip>","<main>  どう見ても怪しい</main>
+<add>丁重に断る</add>
+<subtip>  精神+3</subtip>",,,,,,,,,,
+4,,垃圾箱先生,Mr. Trashcan,ゴミ箱さん,"<main>  绿色的巨大塑料箱，梯形外轮廓，上书白色的三角循环符号——毫无疑问，这是一个垃圾回收箱
+在这个有精灵和龙，骑士与狼人并存的魔法世界中，它就这么安静的杵在那里，丝毫没察觉到自己和周围的环境有多么撕裂
+“小姐……”垃圾箱开口了，他的盖子不停上下晃动着，似乎是在模拟发音“可以给我点吃的吗……我好饿……”</main>
+<tip=exclaim>吃进去可就吐不回来了</tip>
+<subtip>  献点爱心吧</subtip>","<main>  A huge green plastic box, trapezoidal in shape, with a white triangular recycling symbol—undoubtedly a trash recycling bin.
+In this magical world of elves and dragons, knights and werewolves, it stands quietly, oblivious to how out of place it is.
+""Miss..."" the trash can speaks, its lid bobbing up and down as if mimicking speech. ""Can you give me something to eat... I'm so hungry...""</main>
+<tip=exclaim>Once you eat it, you can't spit it out</tip>
+<subtip>  Show some kindness</subtip>","<main>  緑色の巨大なプラスチックの箱、台形の外観、上には白い三角のリサイクルマーク――間違いなく、これはリサイクルゴミ箱だ。
+エルフとドラゴン、騎士と狼男が共存するこの魔法の世界で、それは静かに佇んでおり、周囲の環境からどれほど浮いているかに全く気づいていない。
+「お嬢さん……」ゴミ箱が口を開いた。その蓋は発声を真似るかのように上下に揺れている。「何か食べるものをくれませんか……お腹が空いて……」</main>
+<tip=exclaim>一度食べさせたらもう戻ってこない</tip>
+<subtip>  少し優しさを見せよう</subtip>","<main>  喂它点卡牌</main>
+<add>知识就是食物</add>
+<subtip>  获得随机卡牌和皇后祝福</subtip>","<main>  Feed it a card</main>
+<add>Knowledge is food</add>
+<subtip>  Gain a random card and get the blessing ""Queen""</subtip>","<main>  カードをあげる</main>
+<add>知識は食料</add>
+<subtip>  ランダムなカードを1枚獲得する, 祝福「皇后」を獲得する</subtip>","<main>  喂它点遗物</main>
+<add>小心魔力爆炸</add>
+<subtip>  获得随机遗物</subtip>","<main>  Feed it a relic</main>
+<add>Beware of magic explosion</add>
+<subtip>  Get random relic</subtip>","<main>  遺物をあげる</main>
+<add>魔力爆発に注意</add>
+<subtip>  ランダムな遺物を1つ獲得する</subtip>","<main>  我的兜比你的壳子还干净 </main>
+<add>请自力更生</add>
+<subtip>  无事发生</subtip>","<main>  My pockets are drier than your shell</main>
+<add>Help yourself</add>
+<subtip>  Nothing happens</subtip>","<main>  私の懐はあなたの殻より空っぽよ</main>
+<add>ご自分でどうぞ</add>
+<subtip>  何も起こらない</subtip>",,,,,,,
+*7,,魔王冢,Demon King's Tomb,魔王の墓,"<main>  这是历代魔王最终的归宿，也是魔族的根基传说她是魔王加冕的最后一道仪式如今，你抚摸着碑文，尝试与异族先祖们共鸣</main>
+<tip=exclaim>这是一次危险的举动</tip>
+<subtip>  破坏它或许能动摇世界的根基</subtip>","<main>  This is the final resting place of generations of Demon Kings, the foundation of the demon race. Legend says it is the last ritual for a Demon King's coronation. Now, you touch the inscription, trying to resonate with the ancestors of other races.</main>
+<tip=exclaim>This is a dangerous move</tip>
+<subtip>  Destroying it might shake the world's foundation</subtip>","<main>  ここは歴代魔王の終の棲家であり、魔族の礎。伝説によれば、魔王戴冠の最後の儀式の場でもあるという。今、あなたはその碑文に触れ、異民族の祖先たちと共鳴を試みる。</main>
+<tip=exclaim>これは危険な行為だ</tip>
+<subtip>  これを破壊すれば、世界の礎を揺るがすことができるかもしれない</subtip>","<main>  挑战随机一种本源石碑</main>
+<add>不过如此</add>
+<subtip>  通关获得大量奖励并大幅减少腐化度</subtip>","<main>  Challenge a random original stone monument</main>
+<add>Just so so</add>
+<subtip>  Clearance gives massive rewards and greatly reduces Corruption</subtip>","<main>  ランダムな根源の石碑に挑戦する</main>
+<add>この程度か</add>
+<subtip>  クリアすると大量の報酬を獲得し、汚染度が大幅に減少する</subtip>","<main>  在此止步吧</main>
+<add>前方禁行</add>
+<subtip>  顺利离开</subtip>","<main>  Stop here</main>
+<add>No entry ahead</add>
+<subtip>  Leave smoothly</subtip>","<main>  ここで止まる</main>
+<add>この先、進入禁止</add>
+<subtip>  無事に立ち去る</subtip>",,,,,,,,,,
+8,,帽子,Hat,帽子,"<main>  对于普拉提来说，帽子既是身份，也是立场，每个普拉提都有属于自己独一无二的帽子
+如果你想和他们建立联系，首先就要给自己制作一顶符合自己的帽子</main>
+<tip=exclaim>这当然不是免费的</tip>
+<subtip>  除非你愿意用时间代替金钱</subtip>","<main>  For a Platy, a hat is both identity and stance. Every Platy has their own unique hat.
+If you want to connect with them, you must first make a hat that suits you.</main>
+<tip=exclaim>Of course, this isn't free</tip>
+<subtip>  Unless you're willing to trade time for money</subtip>","<main>  プラティにとって、帽子は身分であり、立場でもある。全てのプラティは自分だけのユニークな帽子を持っている。
+彼らと繋がりを持ちたいなら、まずは自分に合った帽子を作らなければならない。</main>
+<tip=exclaim>もちろん無料ではない</tip>
+<subtip>  お金の代わりに時間を使ってもいいのなら話は別だが</subtip>","<main>  自己动手，丰衣足食</main>
+<add>路障也是帽</add>
+<subtip>  获得一个随机遗物</subtip>","<main>  Do it yourself</main>
+<add>Barrier is also a hat</add>
+<subtip>  Gain a random relic</subtip>","<main>  自分で作る</main>
+<add>バリケードも帽子</add>
+<subtip>  ランダムな遺物を1つ獲得する</subtip>","<main>  拜托普拉提铁匠</main>
+<add>铁桶也是帽</add>
+<subtip>  花费50金币，获得遗物-铁桶</subtip>","<main>  Ask the Platy blacksmith</main>
+<add>Iron bucket is also a hat</add>
+<subtip>  Spend 50 gold to get the Relic - Iron Bucket</subtip>","<main>  プラティの鍛冶屋に頼む</main>
+<add>鉄のバケツも帽子</add>
+<subtip>  50ゴールドを消費し、遺物「鉄のバケツ」を獲得する</subtip>","<main>  打造一顶权力的顶点 </main>
+<add>纯金王冠</add>
+<subtip>  花费200金币，获得遗物-纯金王冠</subtip>","<main>  Make the crown of power</main>
+<add> Pure gold crown</add>
+<subtip>  Spend 200 golds to get Pure Gold Crown relic</subtip>","<main>  権力の頂点を築く</main>
+<add>純金の王冠</add>
+<subtip>  200ゴールドを消費し、遺物「純金の王冠」を獲得する</subtip>",,,,,,,
+9,,粉色传单,Pink Flyer_1,ピンクのチラシ,"<main>  一张粉色的传单，被大咧咧的贴在城镇外的大树上——很难想象贴广告的人出于一种什么样的心态才会认为这里是合适的营销地点
+走近看上面的内容：海报上画着一个身着性感透明纱裙和三点式泳衣的白发女人，她此时正戴着盖住半张面孔的硕大法师帽看向你。下书大字：“魔女小姐的课外辅导，精进异族语言的最佳选择，授课地址：……”</main>
+<tip=exclaim>这辅导正经吗？</tip>
+<subtip>  理性与感性的无休止斗争</subtip>","<main>  This is a pink flyer, boldly posted on a big tree outside the town—it's hard to imagine what kind of mindset would consider this a good marketing spot.
+Looking closer: the poster shows a white-haired woman in a sexy sheer dress and bikini, wearing a huge wizard hat that covers half her face, looking at you. Large text reads: “ Miss Witch's After-School Tutoring, the best choice for improving your foreign language skills , class location: ...”</main>
+<tip=exclaim>Is this tutoring legit?</tip>
+<subtip>  An endless struggle between reason and emotion</subtip>","<main>  ピンク色のチラシが、町の外れの大木に大胆に貼られている――広告を貼った人間が、ここが適切なマーケティング場所だと考えた精神状態は想像しがたい。
+近づいて内容を見る：ポスターにはセクシーな透けるドレスとビキニ姿の白髪の女性が描かれ、顔の半分を覆う巨大な魔術師の帽子を被ってこちらを見ている。下には大きな文字で：「魔女様のアフタースクール、異種族言語上達の最適解、授業場所：……」</main>
+<tip=exclaim>この個人指導はまともなのか？</tip>
+<subtip>  理性と感情の終わりのない戦い</subtip>","<main>  前往授课地点</main>
+<add>我喜欢外语！</add>
+<subtip>  前往小树林</subtip>","<main>  Go to the teaching spot</main>
+<add>I love foreign languages!</add>
+<subtip>  Go to the grove</subtip>","<main>  授業場所へ向かう</main>
+<add>外国語は大好き！</add>
+<subtip>  木立へ向かう</subtip>","<main>  下次不要再把广告贴在这种诡异的地方了</main>
+<add>到底谁想的？</add>
+<subtip>  感知+3</subtip>","<main>  Don't ever post ads in such creepy places next time.</main>
+<add>Whose idea was this?</add>
+<subtip>  Perception +3.</subtip>","<main>  二度とこんな不気味な場所に広告を貼らないで</main>
+<add>一体誰の仕業？</add>
+<subtip>  感知+3</subtip>",,,,,,,,,,
+Sub_9_2,,粉色传单_1,Pink Flyer_1,ピンクのチラシ,"<main>  你来到了传单上提示的地址，这是一处密林深处的空地，正疑惑这里为什么一个人也没有时，脚下一沉——你勉强用魔力协调住了身体让自己安稳落地而不至于摔伤，此时抬头向上看去，你已经来到了深入地底五米以上的地穴内，一群人围拢了过来，正从洞穴口向下看向你</main>
+<tip=exclaim>我就知道会变成这样</tip>
+<subtip>  但你们未免太小瞧我了</subtip>","<main>  You arrive at the address on the flyer, a clearing deep in the forest. Wondering why no one is here, the ground suddenly gives way—you barely use magic to steady yourself and land safely. Looking up, you find yourself more than five meters underground in a cavern, surrounded by people peering down at you from the cave entrance.</main>
+<tip=exclaim>I knew it would turn out like this</tip>
+<subtip>  But you all underestimate me</subtip>","<main>  チラシに書かれた住所に到着した。そこは密林の奥深くにある空き地だ。誰もいないことを不思議に思っていると、足元が沈んだ――かろうじて魔力で体を安定させ、怪我なく着地できた。見上げると、あなたは地下5メートル以上の洞窟の中にいて、大勢の人々が洞窟の入り口からあなたを見下ろしている。</main>
+<tip=exclaim>こうなることは分かっていた</tip>
+<subtip>  だが、私を甘く見すぎだ</subtip>","<main>  事到如今，唯有……</main>
+<add>鲨！</add>
+<subtip>  遭遇一场困难的战斗</subtip>","<main>  At this point, only...</main>
+<add>Shark!</add>
+<subtip>  Encounter a difficult battle</subtip>","<main>  こうなったからには、ただ……</main>
+<add>殺！</add>
+<subtip>  困難な戦闘に遭遇する</subtip>",,,,,,,,,,,,,
+10,,死亡轮盘,Death Roulette,死のルーレット,"<main>  这是一种古老的游戏，一把致命的投射器武器对着脑袋，两个人轮流扣动机关，先击发的人结束游戏也结束自己的人生
+现代的工艺经过了改良，现在庄家只负责给出奖励，那把投射器将永远只指向你的脑袋</main>
+<tip=exclaim>显而易见的危险</tip>
+<subtip>  每次扣动机关都有更高收益</subtip>","<main>  This is an ancient game: a deadly projectile weapon pointed at your head, two people take turns pulling the trigger, and the first to fire ends both the game and their life.
+Modern craftsmanship has improved it; now the dealer only gives out rewards, and the weapon will always be pointed at your head.</main>
+<tip=exclaim>Obvious danger</tip>
+<subtip>  Each pull of the trigger brings higher rewards</subtip>","<main>  これは古のゲームだ。致命的な射出武器を頭に向け、二人が交互に引き金を引く。先に発射した者がゲームを、そして自らの人生を終わらせる。
+現代の技術で改良され、今やディーラーは報酬を渡すだけで、その武器は常にあなたの頭に向けられている。</main>
+<tip=exclaim>明らかな危険</tip>
+<subtip>  引き金を引くたびに、より高い報酬が得られる</subtip>","<main>  扣动机关（若击发，魔女血量变成1）</main>
+<add>富贵险中求</add>
+<subtip>  未击中时，前2次依次获得40,80金币，第3,4,5次赠予随机遗物和100金币</subtip>","<main>  Pull the trigger (if hit, Brings your HP to 1)</main>
+<add>Fortune lies in risk</add>
+<subtip>  If no hit, get 40, 80, 120 golds for first 3 times, 4th and 5th get random relics and 100 golds</subtip>","<main>  引き金を引く（発射された場合、魔女のHPは1になる）</main>
+<add>富は危険の中にあり</add>
+<subtip>  不発の場合、最初の2回は40、80ゴールドを、3、4、5回目はランダムな遺物と100ゴールドを獲得する</subtip>","<main>  这并不是一场公平的游戏</main>
+<add></add>
+<subtip>  离开</subtip>","<main>  This is not a fair game</main>
+<add></add>
+<subtip>  Leave</subtip>","<main>  これは公平なゲームではない</main>
+<add></add>
+<subtip>  立ち去る</subtip>","<main>  我的命更值钱</main>
+<add></add>
+<subtip>  </subtip>","<main>  My life is worth more</main>
+<add></add>
+<subtip>  </subtip>","<main>  私の命の方が価値がある</main>
+<add></add>
+<subtip>  立ち去る</subtip>",,,,"<good>  没打中</good>
+<bad>  愿赌服输</bad>","<good>  没打中</good>
+<bad>  愿赌服输</bad>","<good>  没打中</good>
+<bad>  愿赌服输</bad>",
+11,,小克莉斯娜,Little Krisna,小さなクリスナ,"<main>  一台由克莉斯娜研发的模拟主天使：“小克莉斯娜”，这只小小的模拟机还有待发育
+完全无论你是要表达善意还是想诱导她往你期望的方向发展，现在都是最佳的时机</main>
+<tip=exclaim>但也有可能被诱导的是你自己</tip>
+<subtip>  点我开始聊天</subtip>","<main>  A simulated main angel developed by Krisna: “Little Krisna.” This little simulator is still growing.
+Whether you want to show kindness or guide her in your desired direction, now is the best time.</main>
+<tip=exclaim>But you might be the one getting guided</tip>
+<subtip>  Click me to start chatting</subtip>","<main>  クリスナが開発した模擬主天使：「小さなクリスナ」。この小さなシミュレーターはまだ成長途中だ。
+善意を示したいのであれ、望む方向に誘導したいのであれ、今が絶好の機会だ。</main>
+<tip=exclaim>だが、誘導されるのはあなた自身かもしれない</tip>
+<subtip>  クリックしてチャット開始</subtip>","<main>  生存还是死亡？</main>
+<add>谈点哲学</add>
+<subtip>  每次对话精神和感知-1，魔力+2</subtip>","<main>  Survive or death?</main>
+<add>Let's talk philosophy</add>
+<subtip>  Each chat: Spirit/Perception -1, Magic +2</subtip>","<main>  生きるべきか、死ぬべきか？</main>
+<add>哲学を語る</add>
+<subtip>  会話ごと：精神と感知-1、魔力+2</subtip>","<main>  重生之我在异世界做魔女</main>
+<add>讲讲爽文</add>
+<subtip>  每次对话感知和幸运-1，精神+2</subtip>","<main>  Reborn as a witch in another world</main>
+<add> Let's talk about ""feel-good"" novels</add>
+<subtip>  Each chat: Luck/Perception -1, Spirit+2</subtip>","<main>  転生したら異世界で魔女だった件</main>
+<add>なろう小説を語る</add>
+<subtip>  会話ごと：感知と幸運-1、精神+2</subtip>","<main>  有洞不见虫 - 猜一植物</main>
+<add>猜一植物</add>
+<subtip>  每次对话魔力和幸运-1，感知+2</subtip>","<main>  There are holes and no insects - guess a plant</main>
+<add>Guess a plant</add>
+<subtip>  Each chat: Magic/Luck-1, Perception +2</subtip>","<main>  穴あれど虫見えず - ある植物を当てて</main>
+<add>植物当てクイズ</add>
+<subtip>  会話ごと：魔力と幸運-1、感知+2</subtip>",<main>  溜了溜了</main>,<main>  I'm off now</main>,<main>  もう行くわ</main>,,,,
+12,,通关秘籍,Clearance Guide,攻略の裏技,"<main>  这是一则通告，由你的帽子代为传达：即日起天界将向所有魔女开放一项特殊服务，以便更好的支援魔女们在前线的活动主天使将为魔女们提供不限量的知识以及祝福</main>
+<tip=exclaim>那么，代价是什么呢？</tip>
+<subtip>  市场经济</subtip>","<main>  This is a notice, delivered by your hat: From now on, Heaven will offer a special service to all witches to better support their frontline activities. The main angel will provide unlimited knowledge and blessings to witches.</main>
+<tip=exclaim>So, what's the price?</tip>
+<subtip>  Market economy</subtip>","<main>  これはあなたへの通達です。あなたの帽子が代読します：本日より、天界は全ての魔女に対し、前線での活動をより良く支援するための特別サービスを開始します。主天使は魔女たちに無限の知識と祝福を提供します。</main>
+<tip=exclaim>では、代償は？</tip>
+<subtip>  市場経済</subtip>","<main>  用金币交换知识</main>
+<add></add>
+<subtip>  金币-20，获得随机卡牌</subtip>","<main>  Exchange knowledge with gold</main>
+<add></add>
+<subtip>  Gold -20, gain a random card</subtip>","<main>  ゴールドで知識と交換する</main>
+<add></add>
+<subtip>  ゴールド-20、ランダムなカードを1枚獲得</subtip>","<main>  用真理之晶交换启示</main>
+<add></add>
+<subtip>  真理之晶-5，获得随机祝福</subtip>","<main>  Exchange revelation with Truth Crystals</main>
+<add></add>
+<subtip>  Crystal of Truth-5, gain a random blessing</subtip>","<main>  真理の結晶で啓示と交換する</main>
+<add></add>
+<subtip>  真理の結晶-5、ランダムな祝福を1つ獲得</subtip>","<main>  离开</main>
+<add>不用轮椅</add>
+<subtip>  最强的魔女不需要秘籍！</subtip>","<main>  Leave</main>
+<add>No need for a wheelchair</add>
+<subtip>  The strongest witch needs no cheat code!</subtip>","<main>  立ち去る</main>
+<add>車椅子は不要</add>
+<subtip>  最強の魔女に裏技は必要ない！</subtip>",,,,,,,
+13,,模拟考核,Simulation Test,模擬試験,"<main>  就和所有公司员工一样，魔女们作为“天界无限责任公司”也有定期的绩效考核，不过在这个循环的模拟世界里，考核也换了形式
+它仅用于检测魔女的状态和能力，剔除了无意义的风险</main>
+<tip=exclaim>赢了有奖励，输了没惩罚，吗？</tip>
+<subtip>  没理由不试一下</subtip>","<main>  Just like all company employees, witches as part of the “Heaven Unlimited Liability Company” also have regular performance reviews. But in this cyclical simulation world, the reviews have changed form.
+They only test the witch's status and abilities, removing meaningless risks.</main>
+<tip=exclaim>Win and get rewards, lose and no punishment, right?</tip>
+<subtip>  No reason not to try</subtip>","<main>  全ての会社員と同様に、「天界無限責任会社」の一員である魔女たちにも定期的な業績評価がある。しかし、この循環するシミュレーション世界では、評価の形式も変わっている。
+それは魔女の状態と能力を測定するためだけのもので、無意味なリスクは排除されている。</main>
+<tip=exclaim>勝てば報酬、負けても罰なし、だよね？</tip>
+<subtip>  試さない理由はない</subtip>","<main>  参与模拟</main>
+<add>让我康康</add>
+<subtip>  进入一场有额外奖励的模拟战斗</subtip>","<main>  Participate in simulation</main>
+<add>Let me see</add>
+<subtip>  Enter a simulated battle with extra rewards</subtip>","<main>  シミュレーションに参加する</main>
+<add>見せてみろ</add>
+<subtip>  追加報酬のある模擬戦闘に入る</subtip>","<main>  这次算了吧</main>
+<add></add>
+<subtip>  结束事件</subtip>","<main>  Skip this time</main>
+<add></add>
+<subtip>  End event</subtip>","<main>  今回はやめておく</main>
+<add></add>
+<subtip>  イベントを終了する</subtip>",,,,,,,,,,
+14,,天使盲盒,Angel Blind Box,天使のブラインドボックス,"<main>  天界最近流行的盲盒商品，往机器里投币（也支持生命支付）就能收获一堆包装精美的小盒子
+购买盲盒也不完全是为了里面的东西，拆包装的仪式感也是很多人给它刷销量的理由</main>
+<tip=exclaim>如果你抽过盲盒就该知道这个东西的性价比了</tip>
+<subtip>  说不定就中了呢？</subtip>","<main>  The latest popular blind box product in Heaven: insert coins (or pay with life) into the machine to get a bunch of beautifully packaged little boxes.
+Buying blind boxes isn't just for what's inside; the ritual of unboxing is why many people keep buying them.</main>
+<tip=exclaim>If you've ever drawn a blind box, you know its value for money</tip>
+<subtip>  Maybe you'll hit the jackpot?</subtip>","<main>  天界で最近流行しているブラインドボックス商品。機械にコインを入れる（生命での支払いも可）と、美しく包装された小さな箱がたくさん手に入る。
+ブラインドボックスを買うのは中身のためだけではない。開封する儀式感も、多くの人がこれを買い続ける理由だ。</main>
+<tip=exclaim>ブラインドボックスを引いたことがあるなら、この商品のコストパフォーマンスは分かるはず</tip>
+<subtip>  もしかしたら大当たりかも？</subtip>","<main>  金币盲盒</main>
+<add>中！</add>
+<subtip>  金币+120</subtip>","<main>  Coin blind box</main>
+<add>Win!</add>
+<subtip>  Gold +120</subtip>","<main>  ゴールドのブラインドボックス</main>
+<add>当たり！</add>
+<subtip>  ゴールド+120</subtip>","<main>  生命盲盒</main>
+<add>中！</add>
+<subtip>  最大生命值+10</subtip>","<main>  Health blind box</main>
+<add>Win!</add>
+<subtip>  MaxHp+10</subtip>","<main>  生命のブラインドボックス</main>
+<add>当たり！</add>
+<subtip>  最大HP+10</subtip>",,,,,,,,,,
+*15,,提前结算,Early Settlement,早期精算,"<main>  “小姐，告诉你一个好消息”你的帽子开口了“
+应天界驻奥尔德林办事处的要求，积极响应关于“更快、更好推进终末计划”政策号召，现允许工龄超过五年，符合条件的魔女，在所携随从的协同下，依法依规、有序办理关于魔法器械，知识技术的结算业务。”
+“简单来说就是”帽子顿了顿：“您可以提前拿到自己的那一份了。”</main>
+<tip=exclaim>从天而降的大饼</tip>
+<subtip>  没见过哪个公司会提前发工资的</subtip>","<main>  ""Miss, I have good news for you,"" your hat says.
+At the request of Heaven's Aldrin office, in response to the policy of ""faster and better advancement of the End Plan,"" witches with more than five years of service and who meet the requirements may now, with the help of their followers, lawfully and orderly settle accounts for magical equipment and knowledge technology.
+""In short,"" the hat pauses, ""you can get your share in advance.""</main>
+<tip=exclaim>A windfall from the sky</tip>
+<subtip>  Never seen a company pay wages in advance</subtip>","<main>  「お嬢さん、良い知らせがあります」あなたの帽子が口を開いた。
+「天界オルドリン駐在事務所の要請に応じ、『終末計画のより迅速かつ優れた推進』に関する政策を積極的に推進するため、勤続5年以上の条件を満たす魔女は、従者の協力のもと、法規に基づき、秩序だって魔法器機、知識技術に関する精算業務を辦理することが許可されます」
+「簡単に言うと」帽子は一呼吸おいて言った。「あなたは自分の分け前を前倒しで受け取れるということです」</main>
+<tip=exclaim>棚からぼたもち</tip>
+<subtip>  給料を前払いする会社なんて見たことがない</subtip>","<main>  克莉斯娜还能骗我？</main>
+<add><color=#FF0000>我要结算</color></add>
+<subtip>  结算哩（额外获得400养老金）</subtip>","<main>  Would Krisna still lie to me?</main>
+<add><color=#FF0000>I want to settle</color></add>
+<subtip>  Settle now (gain 400 pension)</subtip>","<main>  クリスナが私を騙すはずがない</main>
+<add><color=#FF0000>精算する</color></add>
+<subtip>  精算する（追加で年金400を獲得）</subtip>","<main>  克莉斯娜肯定在骗我</main>
+<add></add>
+<subtip>  获得祝福""法师"",结束事件</subtip>","<main>  Krisna must be lying to me</main>
+<add></add>
+<subtip>  Obtain the blessing ""Mage"" to end the event</subtip>","<main>  クリスナはきっと私を騙している</main>
+<add></add>
+<subtip>  祝福「魔術師」を獲得し、イベントを終了する</subtip>","<main>  坏女人。</main>
+<add></add>
+<subtip>  </subtip>","<main>  Bad woman.</main>
+<add></add>
+<subtip>  </subtip>","<main>  悪い女。</main>
+<add></add>
+<subtip>  </subtip>",,,,,,,
+16,,奇美拉之血,Chimera's Blood,キメラの血,"<main>被黑色兜帽遮住面部的女性递给了你一小瓶红色的液体
+你认得这种物质，会蠕动的，介于血统论和暴力至上主义之间的，诅咒的源泉——奇美拉的血
+或者也可以说是魔王之血,历代魔王在登基之前都需得到它的认可</main>
+<tip=exclaim>没能得到认可的人去哪了？</tip>
+<subtip> Unfinished Trial</subtip>
+    
+","<main>A woman with her face hidden by a black hood hands you a small vial of red liquid. You recognize it—something that writhes, between bloodline doctrine and brute supremacy: the source of the curse, Chimera's blood. Or call it the Demon King's blood; every Demon King must gain its approval before coronation.</main>
+<tip=exclaim>What became of those who failed to gain approval?</tip>
+<subtip> Unfinished Trial</subtip>
+    
+","<main>黒い頭巾で顔を隠した女性が、赤い液体の入った小瓶を手渡した。あなたは知っている——蠢くあの物質、血統論と暴力至上の狭間にある呪いの源、キメラの血を。あるいは魔王の血。歴代の魔王は戴冠前にその認証を得ねばならない。</main>
+<tip=exclaim>認証を得られなかった者たちはどこへ？</tip>
+<subtip> 未完了の試練</subtip>
+    
+","<main>  一饮而尽</main>
+<add>魔女不是魔王</add>
+<subtip>  获得祝福""奇美拉之血""</subtip>","<main>  Drink it down</main>
+<add>A witch is not the Demon King</add>
+<subtip>  Obtain the blessing ""Chimera's Blood""</subtip>","<main>  一気に飲み干す</main>
+<add>魔女は魔王ではない</add>
+<subtip>  祝福「キメラの血」を獲得</subtip>","<main> 魔女不是魔王</main>
+<add>中！</add>
+<subtip>  平安离开</subtip>","<main> Leave safely</main>
+<add>Hit!</add>
+<subtip>  Leave safely</subtip>","<main> 魔女は魔王ではない</main>
+<add>当たり！</add>
+<subtip>  無事に立ち去る</subtip>",,,,,,,,,,
+17,,破败神像,Crumbling Idol,朽ちた神像,"<main> 一尊破败的神像伫立在你的面前，神明的头颅已被削去，往日圣洁的石像也被污斑浸染，但你仍能从神像身上感受到，主天使的一丝赐福</main>
+<tip=exclaim>多少给点</tip>
+<subtip> 未完成的试炼</subtip>","<main> A crumbling idol stands before you. The deity's head has been severed, and the once-holy statue is stained with filth, yet you can still sense a trace of the main angel's blessing emanating from it.</main>
+<tip=exclaim>Give me something at least</tip>
+<subtip> Unfinished Trial</subtip>","<main> 朽ちた神像があなたの前に立っている。神の首は切断され、かつて聖なる像だったものは汚れに染まっているが、それでもあなたは神像から主天使のわずかな祝福を感じ取ることができる。</main>
+<tip=exclaim>何かくれよ</tip>
+<subtip> 未完了の試練</subtip>","<main> 祈求财富</main>
+<add>中！</add>
+<subtip> 获得100金币</subtip>","<main> Pray for wealth</main>
+<add>Hit!</add>
+<subtip> Gain 100 gold</subtip>","<main> 富を祈る</main>
+<add>当たり！</add>
+<subtip> 100ゴールドを獲得する</subtip>","<main> 祈求健康</main>
+<add>中！</add>
+<subtip> 获得20点生命值上限并恢复至满血</subtip>","<main> Pray for health</main>
+<add>Hit!</add>
+<subtip> Gain 20 max HP and restore to full health</subtip>","<main> 健康を祈る</main>
+<add>当たり！</add>
+<subtip> 最大HPを20増加し、全回復する</subtip>","<main> 祈求健康</main>
+<add>中！</add>
+<subtip> 获得20点生命值上限并恢复至满血</subtip>","<main> Pray for health</main>
+<add>Hit!</add>
+<subtip> Gain 20 max HP and restore to full health</subtip>","<main> 健康を祈る</main>
+<add>当たり！</add>
+<subtip> 最大HPを20増加し、全回復する</subtip>",,,,,,,
+18,,乐园运营,Paradise Trial Run,楽園テスト運営,"<main> 头戴小丑面具，身材高挑的异貌之物拦住了你的去路
+“不好意思先生，能占用您一点时间嘛？”虽然隔着面具看不到脸，但你还是能感受到他脸上散发的商务型笑意：“我司创办的游乐园即将开业，诚邀您在开业之前参与乐园的测试运营，不知您可有兴趣？”</main>
+<tip=exclaim>看起来还算友善？</tip>
+<subtip> 未完成的试炼</subtip>","<main> A tall, strange creature wearing a clown mask blocks your path.
+""Excuse me, sir, could I have a moment of your time?"" Though you can't see his face behind the mask, you can sense the business-like smile on his face: ""Our company is about to open an amusement park, and we sincerely invite you to participate in the trial run before the grand opening. Would you be interested?""</main>
+<tip=exclaim>Seems friendly enough?</tip>
+<subtip> Unfinished Trial</subtip>","<main> ピエロの仮面をかぶった、背の高い異形の者があなたの行く手を塞いだ。
+「すみません、少しお時間よろしいでしょうか？」仮面の向こうで顔は見えないが、彼のビジネス的な笑みを感じ取れる：「当社が運営する遊園地がまもなくオープンしますので、オープン前のテスト運営にご参加いただけませんか？」</main>
+<tip=exclaim>友好的に見える？</tip>
+<subtip> 未完了の試練</subtip>","<main> 花费20金币启动机器</main>
+<add>中！</add>
+<subtip> 20%概率获得遗物，40%概率获得卡牌</subtip>","<main> Spend 20 gold to start the machine</main>
+<add>Hit!</add>
+<subtip> 20% chance to get a relic, 40% chance to get a card</subtip>","<main> 20ゴールドを消費してマシンを起動する</main>
+<add>当たり！</add>
+<subtip> 20%の確率で遺物を、40%の確率でカードを獲得する</subtip>","<main> 走了走了</main>
+<add>中！</add>
+<subtip> 结束事件</subtip>","<main> I'm leaving</main>
+<add>Hit!</add>
+<subtip> End event</subtip>","<main> 行くよ</main>
+<add>当たり！</add>
+<subtip> イベントを終了する</subtip>","<main> 走了走了</main>
+<add>中！</add>
+<subtip> 结束事件</subtip>","<main> I'm leaving</main>
+<add>Hit!</add>
+<subtip> End event</subtip>","<main> 行くよ</main>
+<add>当たり！</add>
+<subtip> イベントを終了する</subtip>",,,,"<good> 遗物！</good>
+<Normal>卡牌</Normal>
+<bad> 一无所有</bad>","<good> Relic!</good>
+<Normal>Card</Normal>
+<bad> Nothing at all</bad>","<good> 遺物！</good>
+<Normal>カード</Normal>
+<bad> 何もない</bad>",
+19,,迷途天使,Lost Angel,迷える天使,"<main>克莉斯娜的使徒再一次困在了异界的深渊坑
+如果不是奥尔德林的信号传达不到魔女屋，真想给她安一个GPS
+想吐槽的有很多，但是当务之急是先帮可可解决返航问题……</main>
+<tip=exclaim>这忙不白帮</tip>
+<subtip> 未完成的试炼</subtip>","<main>Krisna's apostle is once again trapped in the Abyss Pit of another world.
+If only signals could reach the Witch House from Aldrin, I'd install a GPS for her.
+There's much to complain about, but the priority is helping Coco solve her return journey problem...</main>
+<tip=exclaim>This favor won't go unrewarded</tip>
+<subtip> Unfinished Trial</subtip>","<main>クリスナの使徒がまたしても異界の深淵の穴に囚われている。
+オルドリンから魔女屋に信号が届くなら、GPSをつけてやりたいものだ。
+文句は山ほどあるが、当面の急務はココの帰還問題を解決することだ……</main>
+<tip=exclaim>この手伝いは無駄にはならない</tip>
+<subtip> 未完了の試練</subtip>","<main> 给她画张地图</main>
+<add>中！</add>
+<subtip> 获得遗物""可可的勾线笔""</subtip>","<main> Draw her a map</main>
+<add>Hit!</add>
+<subtip> Obtain the relic ""Coco's Inking Pen""</subtip>","<main> 地図を描いてあげる</main>
+<add>当たり！</add>
+<subtip> 遺物「ココのペン」を獲得する</subtip>","<main> 帮助她找到回家的路</main>
+<add>中！</add>
+<subtip> 获得遗物""迷途天使之环""</subtip>","<main> Help her find her way home</main>
+<add>Hit!</add>
+<subtip> Obtain the relic ""Lost Angel's Ring""</subtip>","<main> 家への道を見つけるのを手伝う</main>
+<add>当たり！</add>
+<subtip> 遺物「迷える天使の指輪」を獲得する</subtip>","<main> 帮助她找到回家的路</main>
+<add>中！</add>
+<subtip> 获得遗物""迷途天使之环""</subtip>","<main> Help her find her way home</main>
+<add>Hit!</add>
+<subtip> Obtain the relic ""Lost Angel's Ring""</subtip>","<main> 家への道を見つけるのを手伝う</main>
+<add>当たり！</add>
+<subtip> 遺物「迷える天使の指輪」を獲得する</subtip>",,,,,,,
+20,,占卜师,Fortune Teller,占い師,"<main>头戴巨大灰帽的魔女教教徒正在路边摆着她的占卜小摊
+和任何路边摊贩一样，这个基于魔法的业务也安装了一部巨大的（魔能）扩音器，循环播放着教徒稚嫩声音棒读的广告词
+让人不由得心生怜悯……</main>
+<tip=exclaim>照顾一下她的生意？</tip>
+<subtip> 未完成的试炼</subtip>","<main>A Witch Cultist wearing a huge gray hat has set up her fortune-telling stall by the roadside.
+Like any street vendor, this magic-based business has also installed a massive (mana-powered) loudspeaker, looping advertisements read in the cultist's稚嫩 voice.
+It makes one feel quite sympathetic...</main>
+<tip=exclaim>Support her business?</tip>
+<subtip> Unfinished Trial</subtip>","<main>巨大な灰色の帽子をかぶった魔女教の信者が、道端に占いの屋台を出している。
+他の屋台と同じように、この魔法ベースの商売も巨大な（魔動力）拡声器を設置しており、信者の未熟な声で棒読みされる広告を流している。
+思わず同情してしまう……</main>
+<tip=exclaim>彼女の商売を応援する？</tip>
+<subtip> 未完了の試練</subtip>","<main> 给我占卜一下(20金币)</main>
+<add>中！</add>
+<subtip> 获得基础属性</subtip>","<main> Tell my fortune (20 gold)</main>
+<add>Hit!</add>
+<subtip> Gain basic attributes</subtip>","<main> 占ってもらう（20ゴールド）</main>
+<add>当たり！</add>
+<subtip> 基本ステータスを獲得する</subtip>","<main> 我也很穷</main>
+<add>中！</add>
+<subtip> 离开事件</subtip>","<main> I'm also poor</main>
+<add>Hit!</add>
+<subtip> Leave event</subtip>","<main> 私も貧乏だ</main>
+<add>当たり！</add>
+<subtip> イベントを終了する</subtip>","<main> 我也很穷</main>
+<add>中！</add>
+<subtip> 离开事件</subtip>","<main> I'm also poor</main>
+<add>Hit!</add>
+<subtip> Leave event</subtip>","<main> 私も貧乏だ</main>
+<add>当たり！</add>
+<subtip> イベントを終了する</subtip>",,,,"<wis> 精神+2！</wis>
+<str> 魔力+1</str>
+<lucky> 幸运+2</lucky>
+<per> 感知+1</per>","<wis> Spirit +2!</wis>
+<str> Magic +1</str>
+<lucky> Luck +2!</lucky>
+<per> Perception +1</per>","<wis> 精神+2！</wis>
+<str> 魔力+1</str>
+<lucky> 幸運+2！</lucky>
+<per> 感知+1</per>",
+21,,提炼真理,Refining Truth,真理の錬成,"<main>魔女的力量强弱由她储备的知识质量决定，因此凝结为物质的真理可以直接成为魔女的养分
+这种珍贵的物质同样广泛存在于深渊坑之中，前提是被认知到她的人提炼出来</main>
+<tip=exclaim>未完成的试炼</tip>
+<subtip> 未完成的试炼</subtip>","<main>A witch's power is determined by the quality of knowledge she has accumulated, so truth condensed into material form can directly become nourishment for the witch.
+This precious substance also exists widely in the Abyss Pit, provided it is extracted by those who recognize it.</main>
+<tip=exclaim>Unfinished Trial</tip>
+<subtip> Unfinished Trial</subtip>","<main>魔女の力の強さは蓄積した知識の質で決まるため、物質化した真理は魔女の養分となりうる。
+この貴重な物質も深淵の穴に広く存在するが、それを認識した者が抽出する必要がある。</main>
+<tip=exclaim>未完了の試練</tip>
+<subtip> 未完了の試練</subtip>","<main> 分析深渊</main>
+<add>中！</add>
+<subtip> 获得20真理之晶，精神+3</subtip>","<main> Analyze the Abyss</main>
+<add>Hit!</add>
+<subtip> Gain 20 Truth Crystals, Spirit +3</subtip>","<main> 深淵を分析する</main>
+<add>当たり！</add>
+<subtip> 真理の結晶を20個獲得し、精神+3</subtip>",,,,,,,,,,,,,
+*1001,,新手考核,Beginner Assessment,新人評価,"<main>新手考核，即将模拟对战永夜化身</main>
+<tip=exclaim>未完成的试炼</tip>
+<subtip> 未完成的试炼</subtip>","<main>Beginner assessment, about to simulate battle against the Eternal Night Incarnation</main>
+<tip=exclaim>Unfinished Trial</tip>
+<subtip> Unfinished Trial</subtip>","<main>新人評価、まもなく永夜の化身との模擬戦闘を開始</main>
+<tip=exclaim>未完了の試練</tip>
+<subtip> 未完了の試練</subtip>","<main> 开战</main>
+<add>中！</add>
+<subtip> 开战</subtip>","<main> Start battle</main>
+<add>Hit!</add>
+<subtip> Start battle</subtip>","<main> 戦闘開始</main>
+<add>当たり！</add>
+<subtip> 戦闘開始</subtip>",,,,,,,,,,,,,
+*1002,,命运抉择,Fate's Choice,運命の選択,<main> 如果你真的能走到最后，你还会有勇气挑战祂吗？</main>,"<main> If you can really make it to the end, will you still have the courage to challenge Him?</main>",<main> 本当に最後までたどり着けたら、あなたはまだ彼に挑む勇気を持っているだろうか？</main>,"<main> 永不妥协</main>
+<add>中！</add>
+<subtip> 旅途的最后，你将直面魔王</subtip>","<main> Never compromise</main>
+<add>Hit!</add>
+<subtip> At the end of your journey, you will face the Demon King</subtip>","<main> 決して妥協しない</main>
+<add>当たり！</add>
+<subtip> 旅の終わりに、あなたは魔王と対峙することになる</subtip>","<main> 我会净化这腐朽的世界</main>
+<add>中！</add>
+<subtip> 旅途的最后，你将直面永夜</subtip>","<main> I will purify this corrupt world</main>
+<add>Hit!</add>
+<subtip> At the end of your journey, you will face the Eternal Night</subtip>","<main> この腐敗した世界を浄化する</main>
+<add>当たり！</add>
+<subtip> 旅の終わりに、あなたは永夜と対峙することになる</subtip>",,,,,,,,,,
