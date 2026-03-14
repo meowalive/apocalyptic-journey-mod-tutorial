@@ -1,0 +1,29 @@
+﻿using System;
+
+namespace XLua
+{
+	// Token: 0x02000179 RID: 377
+	public enum LuaTypes
+	{
+		// Token: 0x04000D85 RID: 3461
+		LUA_TNONE = -1,
+		// Token: 0x04000D86 RID: 3462
+		LUA_TNIL,
+		// Token: 0x04000D87 RID: 3463
+		LUA_TNUMBER = 3,
+		// Token: 0x04000D88 RID: 3464
+		LUA_TSTRING,
+		// Token: 0x04000D89 RID: 3465
+		LUA_TBOOLEAN = 1,
+		// Token: 0x04000D8A RID: 3466
+		LUA_TTABLE = 5,
+		// Token: 0x04000D8B RID: 3467
+		LUA_TFUNCTION,
+		// Token: 0x04000D8C RID: 3468
+		LUA_TUSERDATA,
+		// Token: 0x04000D8D RID: 3469
+		LUA_TTHREAD,
+		// Token: 0x04000D8E RID: 3470
+		LUA_TLIGHTUSERDATA = 2
+	}
+}

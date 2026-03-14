@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace XLua
+{
+	// Token: 0x0200017A RID: 378
+	public enum LuaGCOptions
+	{
+		// Token: 0x04000D90 RID: 3472
+		LUA_GCSTOP,
+		// Token: 0x04000D91 RID: 3473
+		LUA_GCRESTART,
+		// Token: 0x04000D92 RID: 3474
+		LUA_GCCOLLECT,
+		// Token: 0x04000D93 RID: 3475
+		LUA_GCCOUNT,
+		// Token: 0x04000D94 RID: 3476
+		LUA_GCCOUNTB,
+		// Token: 0x04000D95 RID: 3477
+		LUA_GCSTEP,
+		// Token: 0x04000D96 RID: 3478
+		LUA_GCSETPAUSE,
+		// Token: 0x04000D97 RID: 3479
+		LUA_GCSETSTEPMUL
+	}
+}

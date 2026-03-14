@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D304588-F1CA-4A2A-BB9F-52BFE7A14D37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Witch</RootNamespace>
+    <AssemblyName>Witch</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="FizzySteamworks">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\FizzySteamworks.dll</HintPath>
+    </Reference>
+    <Reference Include="Loxodon.Framework.Obfuscation">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Loxodon.Framework.Obfuscation.dll</HintPath>
+    </Reference>
+    <Reference Include="MemoryPack.Core">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\MemoryPack.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Scripting">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Microsoft.CodeAnalysis.CSharp.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Scripting">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Microsoft.CodeAnalysis.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Transports">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Mirror.Transports.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugins">
+      <HintPath>..\..\..\..\steam\steamapps\common\Witch's Apocalyptic Journey Demo\Witch's Apocalyptic Journey_Data\Managed\Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyChanged">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\PropertyChanged.dll</HintPath>
+    </Reference>
+    <Reference Include="Rougamo">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Rougamo.dll</HintPath>
+    </Reference>
+    <Reference Include="Supabase">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Supabase.dll</HintPath>
+    </Reference>
+    <Reference Include="Supabase.Gotrue">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Supabase.Gotrue.dll</HintPath>
+    </Reference>
+    <Reference Include="Supabase.Postgrest">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Supabase.Postgrest.dll</HintPath>
+    </Reference>
+    <Reference Include="Supabase.Realtime">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Supabase.Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Supabase.Storage">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Supabase.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule" />
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\..\steam\steamapps\common\Witch's Apocalyptic Journey Demo\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\..\..\steam\steamapps\common\Witch's Apocalyptic Journey Demo\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Witch.Core">
+      <HintPath>..\..\..\..\UnityProjects\Apocalypse Journey\Library\ScriptAssemblies\Witch.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLinq">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\ZLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="ZString">
+      <HintPath>..\..\..\..\Witch's Apocalyptic Journey\Witch's Apocalyptic Journey_Data\Managed\ZString.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchievementBase.cs" />
+    <Compile Include="AchivementTable.cs" />
+    <Compile Include="AffectionItem.cs" />
+    <Compile Include="AnimatedHorizontalLayout.cs" />
+    <Compile Include="AnimatedLayout.cs" />
+    <Compile Include="AnimationManager.cs" />
+    <Compile Include="AnimatorRole.cs" />
+    <Compile Include="AttackCardItem.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="BlessingRelic.cs" />
+    <Compile Include="BuffItem.cs" />
+    <Compile Include="BuffItemConfig.cs" />
+    <Compile Include="BugReporter\BugReporter.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="BulletEffectInfo.cs" />
+    <Compile Include="CardAnimationController.cs" />
+    <Compile Include="CardContainer.cs" />
+    <Compile Include="CardEffectInfo.cs" />
+    <Compile Include="CardItem.cs" />
+    <Compile Include="CoinItem.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="CommonCardItem.cs" />
+    <Compile Include="Component\UI\Animation\ClockAnimator.cs" />
+    <Compile Include="ConditionalShowAttribute.cs" />
+    <Compile Include="ConsoleLogic.cs" />
+    <Compile Include="CustomDamageType.cs" />
+    <Compile Include="CustomRoleTableReaderWriter.cs" />
+    <Compile Include="DataConfig.cs" />
+    <Compile Include="DataConfigException.cs" />
+    <Compile Include="DataConfigFormatter.cs" />
+    <Compile Include="DataConfigFormatterInitializer.cs" />
+    <Compile Include="DataConfigIdNotFoundException.cs" />
+    <Compile Include="DataConfigSerializer.cs" />
+    <Compile Include="DataEditor\CardEditor\AddDesVal.cs" />
+    <Compile Include="DataEditor\CardEditor\BuffData.cs" />
+    <Compile Include="DataEditor\CardEditor\CardEditorBase.cs" />
+    <Compile Include="DataEditor\CardEditor\EffectCardDes.cs" />
+    <Compile Include="DataEditor\CardEditor\EffectDes.cs" />
+    <Compile Include="DataEditor\CardEditor\EffectLimit.cs" />
+    <Compile Include="DataEditor\CardEditor\EffectName.cs" />
+    <Compile Include="DataEditor\CardEditor\EffectTarget.cs" />
+    <Compile Include="DataEditor\CardEditor\ScriptData.cs" />
+    <Compile Include="DataId.cs" />
+    <Compile Include="DataIds.cs" />
+    <Compile Include="Data\Save\GameOperInfo.cs" />
+    <Compile Include="Data\Save\GameSaveAnalyser.cs" />
+    <Compile Include="Data\Save\GameSaveManager.cs" />
+    <Compile Include="Data\Save\GameVar.cs" />
+    <Compile Include="Data\Save\OperObj.cs" />
+    <Compile Include="Data\Save\OperType.cs" />
+    <Compile Include="Data\Save\SaveInfo.cs" />
+    <Compile Include="DialogueBox.cs" />
+    <Compile Include="DialogueBoxIdentity.cs" />
+    <Compile Include="DialogueManager.cs" />
+    <Compile Include="Dice.cs" />
+    <Compile Include="DiceIcon.cs" />
+    <Compile Include="DollItem.cs" />
+    <Compile Include="DOTweenCurvedTracker.cs" />
+    <Compile Include="DOTweenCurvedTrackerEditor.cs" />
+    <Compile Include="EffectBase.cs" />
+    <Compile Include="EffectData.cs" />
+    <Compile Include="EffectInfo.cs" />
+    <Compile Include="EffectManager.cs" />
+    <Compile Include="EffectSound.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="EnemyEffectInfo.cs" />
+    <Compile Include="EnemyManager.cs" />
+    <Compile Include="ExampleGenConfig.cs" />
+    <Compile Include="FightCardManager.cs" />
+    <Compile Include="FightInit.cs" />
+    <Compile Include="FightLine.cs" />
+    <Compile Include="FightManager.cs" />
+    <Compile Include="FightPlayer.cs" />
+    <Compile Include="FightUnit.cs" />
+    <Compile Include="Fight\ActionCommand\ActionAnimation.cs" />
+    <Compile Include="Fight\ActionCommand\ActionCommandBase.cs" />
+    <Compile Include="Fight\ActionCommand\ActionCommandBaseReaderWriter.cs" />
+    <Compile Include="Fight\ActionCommand\DamageText.cs" />
+    <Compile Include="Fight\ActionCommand\Effect.cs" />
+    <Compile Include="Fight\ActionCommand\RemoveBuff.cs" />
+    <Compile Include="Fight\ActionCommand\State.cs" />
+    <Compile Include="Fight\ActionCommand\UpdateBuff.cs" />
+    <Compile Include="Fight\ActionCommand\UseCard.cs" />
+    <Compile Include="Fight\ActionCommand\Vocal.cs" />
+    <Compile Include="Fight\ObjTarget\ObjTargetAction.cs" />
+    <Compile Include="Fight\ObjTarget\ObjTargetBase.cs" />
+    <Compile Include="Fight\ObjTarget\ObjTargetBaseReaderWriter.cs" />
+    <Compile Include="Fight\StatusCommand\ClientCommandBase.cs" />
+    <Compile Include="Fight\StatusCommand\ClientCommandBaseReaderWriter.cs" />
+    <Compile Include="Fight\StatusCommand\CurHp.cs" />
+    <Compile Include="Fight\StatusCommand\Defend.cs" />
+    <Compile Include="Fight\StatusCommand\MaxHp.cs" />
+    <Compile Include="Fight\StatusCommand\ToughCount.cs" />
+    <Compile Include="Fight_EnemyTurn.cs" />
+    <Compile Include="Fight_Loss.cs" />
+    <Compile Include="Fight_OtherTurn.cs" />
+    <Compile Include="Fight_Partner.cs" />
+    <Compile Include="Fight_PlayerTurn.cs" />
+    <Compile Include="Fight_Start.cs" />
+    <Compile Include="Fight_Win.cs" />
+    <Compile Include="FloatingWindow.cs" />
+    <Compile Include="FoodItem.cs" />
+    <Compile Include="GameApp.cs" />
+    <Compile Include="GameConfigManager.cs" />
+    <Compile Include="GameRuntimeData.cs" />
+    <Compile Include="GameServer.cs" />
+    <Compile Include="HardTagEntry.cs" />
+    <Compile Include="HelpText.cs" />
+    <Compile Include="HouseItem.cs" />
+    <Compile Include="ICard.cs" />
+    <Compile Include="ImageSelectorWindow.cs" />
+    <Compile Include="IModeManager.cs" />
+    <Compile Include="KeyItem.cs" />
+    <Compile Include="LatencyRecorder.cs" />
+    <Compile Include="LobbyInfo.cs" />
+    <Compile Include="LobbyManager.cs" />
+    <Compile Include="LuaCallCs.cs" />
+    <Compile Include="MapFrame.cs" />
+    <Compile Include="MapItem.cs" />
+    <Compile Include="MapManager.cs" />
+    <Compile Include="MapRole.cs" />
+    <Compile Include="MapTree.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\Scripting\LockedMetadataResolver.cs" />
+    <Compile Include="Mirror\GeneratedNetworkCode.cs" />
+    <Compile Include="ModConfig.cs" />
+    <Compile Include="ModeManager.cs" />
+    <Compile Include="ModeUseButton.cs" />
+    <Compile Include="ModItem.cs" />
+    <Compile Include="Mod\LuaModHookAdapter.cs" />
+    <Compile Include="MusicEffect.cs" />
+    <Compile Include="Network\Command\RpcCommandBase.cs" />
+    <Compile Include="Network\Command\RpcCommandBaseSerializer.cs" />
+    <Compile Include="Network\Command\RpcEatFood.cs" />
+    <Compile Include="Network\Command\RpcGetItem.cs" />
+    <Compile Include="Network\Command\RpcSendChat.cs" />
+    <Compile Include="Network\Command\RpcSendEmoji.cs" />
+    <Compile Include="Network\Command\RpcSendItem.cs" />
+    <Compile Include="Network\Command\RpcUpdateWareShow.cs" />
+    <Compile Include="Network\Query\QueryBase.2.cs" />
+    <Compile Include="Network\Query\QueryBase.cs" />
+    <Compile Include="Network\Query\QueryBaseSerializer.cs" />
+    <Compile Include="Network\Query\QueryCareers.cs" />
+    <Compile Include="Network\Query\QueryDeck.cs" />
+    <Compile Include="Network\Query\QueryFood.cs" />
+    <Compile Include="Network\Query\QueryStatus.cs" />
+    <Compile Include="NormalMapManager.cs" />
+    <Compile Include="ObfuscateIntConverter.cs" />
+    <Compile Include="ObjectAction.cs" />
+    <Compile Include="ObjectCard.cs" />
+    <Compile Include="ObjectGroup.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="OtherObj.cs" />
+    <Compile Include="OtherPlayer.cs" />
+    <Compile Include="OuterGlowController.cs" />
+    <Compile Include="Partner.cs" />
+    <Compile Include="PatternManager.cs" />
+    <Compile Include="PingSelection.cs" />
+    <Compile Include="PlayerManager.cs" />
+    <Compile Include="PointUse.cs" />
+    <Compile Include="ProgressButton.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyWatcher.cs" />
+    <Compile Include="QueryCareer.cs" />
+    <Compile Include="RandomMove.cs" />
+    <Compile Include="RandomPool.cs" />
+    <Compile Include="RoleTable.cs" />
+    <Compile Include="RorationFix.cs" />
+    <Compile Include="SceneInfo.cs" />
+    <Compile Include="SceneItem.cs" />
+    <Compile Include="SceneRole.cs" />
+    <Compile Include="ScriptExecutor.cs" />
+    <Compile Include="SelectGroup.cs" />
+    <Compile Include="SelectMessage.cs" />
+    <Compile Include="SelectOutline.cs" />
+    <Compile Include="SettingMapper.cs" />
+    <Compile Include="SettingTable.cs" />
+    <Compile Include="SkillItem.cs" />
+    <Compile Include="SlotMachineManager.cs" />
+    <Compile Include="SlotMachUI.cs" />
+    <Compile Include="SlotRod.cs" />
+    <Compile Include="StatusDataTransfer.cs" />
+    <Compile Include="StatusManager.cs" />
+    <Compile Include="StatusManagerConverter.cs" />
+    <Compile Include="StoryDetailPanel.cs" />
+    <Compile Include="StoryEditorManager.cs" />
+    <Compile Include="StoryEditorUI.cs" />
+    <Compile Include="StoryLine.cs" />
+    <Compile Include="StoryRowUI.cs" />
+    <Compile Include="SublimationManager.cs" />
+    <Compile Include="SwapContentIdentity.cs" />
+    <Compile Include="SwitchButton.cs" />
+    <Compile Include="SwitchButtonGroup.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="TaskItem.cs" />
+    <Compile Include="TaskUI.cs" />
+    <Compile Include="TeachMapManager.cs" />
+    <Compile Include="TempDataManager.cs" />
+    <Compile Include="TextWithKeyword.cs" />
+    <Compile Include="Tooltip.cs" />
+    <Compile Include="TopStatusItem.cs" />
+    <Compile Include="TriggerFixed.cs" />
+    <Compile Include="TutorialManager.cs" />
+    <Compile Include="Tutorial\BaseClass.cs" />
+    <Compile Include="Tutorial\ByFile.cs" />
+    <Compile Include="Tutorial\ByString.cs" />
+    <Compile Include="Tutorial\CSCallLua.cs" />
+    <Compile Include="Tutorial\CustomLoader.cs" />
+    <Compile Include="Tutorial\DerivedClass.cs" />
+    <Compile Include="Tutorial\DerivedClassExtensions.cs" />
+    <Compile Include="Tutorial\ICalc.cs" />
+    <Compile Include="Tutorial\Param1.cs" />
+    <Compile Include="Tutorial\TestEnum.cs" />
+    <Compile Include="TypeItem.cs" />
+    <Compile Include="UIAnimation.cs" />
+    <Compile Include="UIParallax.cs" />
+    <Compile Include="UI\ButtonSound.cs" />
+    <Compile Include="UI\Component\TMPNumberToSprite.cs" />
+    <Compile Include="UI\ConsoleUI.cs" />
+    <Compile Include="UI\ExitButton.cs" />
+    <Compile Include="UI\KeywordDisplay.cs" />
+    <Compile Include="UI\SceneType.cs" />
+    <Compile Include="UI\ScreenEffect\ScreenEffectBase.cs" />
+    <Compile Include="UI\ScreenEffect\ShakeScreenEffect.cs" />
+    <Compile Include="UI\UIBase.cs" />
+    <Compile Include="UI\UIEventTrigger.cs" />
+    <Compile Include="UI\UIManager.cs" />
+    <Compile Include="UI\UpperCanvasController.cs" />
+    <Compile Include="UI\Window\AchievementUI.cs" />
+    <Compile Include="UI\Window\AcknowledgmentsUI.cs" />
+    <Compile Include="UI\Window\AffectionUI.cs" />
+    <Compile Include="UI\Window\AnnouncementUI.cs" />
+    <Compile Include="UI\Window\BackpackUI.cs" />
+    <Compile Include="UI\Window\BattleRewardsUI.cs" />
+    <Compile Include="UI\Window\BlessItem.cs" />
+    <Compile Include="UI\Window\BreaksUI.cs" />
+    <Compile Include="UI\Window\BuffBarUI.cs" />
+    <Compile Include="UI\Window\BuffShowItem.cs" />
+    <Compile Include="UI\Window\ButtonUse.cs" />
+    <Compile Include="UI\Window\CaptionStyle.cs" />
+    <Compile Include="UI\Window\CaptionUI.cs" />
+    <Compile Include="UI\Window\CardChoiceItem.cs" />
+    <Compile Include="UI\Window\CardChoiceUI.cs" />
+    <Compile Include="UI\Window\CardEditorUI.cs" />
+    <Compile Include="UI\Window\CardEffectBuff.cs" />
+    <Compile Include="UI\Window\CardEffectItem.cs" />
+    <Compile Include="UI\Window\CardEnchUI.cs" />
+    <Compile Include="UI\Window\CareerChoiceUI.cs" />
+    <Compile Include="UI\Window\CareerData.cs" />
+    <Compile Include="UI\Window\ChangeFloatWindow.cs" />
+    <Compile Include="UI\Window\ChatUI.cs" />
+    <Compile Include="UI\Window\CurtainTurnUI.cs" />
+    <Compile Include="UI\Window\DeckUI.cs" />
+    <Compile Include="UI\Window\DesItem.cs" />
+    <Compile Include="UI\Window\DestinyTreeUI.cs" />
+    <Compile Include="UI\Window\DialogueUI.cs" />
+    <Compile Include="UI\Window\DictionaryItem.cs" />
+    <Compile Include="UI\Window\DictionaryShowItem.cs" />
+    <Compile Include="UI\Window\DictionaryUI.cs" />
+    <Compile Include="UI\Window\DictItem.cs" />
+    <Compile Include="UI\Window\DictTagItem.cs" />
+    <Compile Include="UI\Window\DisplayCard.cs" />
+    <Compile Include="UI\Window\EmojiPanelUI.cs" />
+    <Compile Include="UI\Window\EnchCardItem.cs" />
+    <Compile Include="UI\Window\EnchItem.cs" />
+    <Compile Include="UI\Window\EnemyItem.cs" />
+    <Compile Include="UI\Window\EventUI.cs" />
+    <Compile Include="UI\Window\FightUI.cs" />
+    <Compile Include="UI\Window\GameEntryUI.cs" />
+    <Compile Include="UI\Window\GameExitUI.cs" />
+    <Compile Include="UI\Window\HardItem.cs" />
+    <Compile Include="UI\Window\HouseUI.cs" />
+    <Compile Include="UI\Window\IllustratedBookUI.cs" />
+    <Compile Include="UI\Window\InkTurnUI.cs" />
+    <Compile Include="UI\Window\Item.cs" />
+    <Compile Include="UI\Window\ItemNonDrag.cs" />
+    <Compile Include="UI\Window\ItemShowUI.cs" />
+    <Compile Include="UI\Window\LineUI.cs" />
+    <Compile Include="UI\Window\LoadingUI.cs" />
+    <Compile Include="UI\Window\MainMenuUI.cs" />
+    <Compile Include="UI\Window\MapDrawInputLayer.cs" />
+    <Compile Include="UI\Window\MapSelectUI.cs" />
+    <Compile Include="UI\Window\ModeChoiceUI.cs" />
+    <Compile Include="UI\Window\ModManagerUI.cs" />
+    <Compile Include="UI\Window\OptionsUI.cs" />
+    <Compile Include="UI\Window\OutDeckUI.cs" />
+    <Compile Include="UI\Window\OutDeckUIData.cs" />
+    <Compile Include="UI\Window\OutSideItem.cs" />
+    <Compile Include="UI\Window\OutsiderShopUI.cs" />
+    <Compile Include="UI\Window\OutsideShopItem.cs" />
+    <Compile Include="UI\Window\PageItem.cs" />
+    <Compile Include="UI\Window\PopUpTextUI.cs" />
+    <Compile Include="UI\Window\RelicItemConfig.cs" />
+    <Compile Include="UI\Window\RelicSelectUI.cs" />
+    <Compile Include="UI\Window\ResultItem.cs" />
+    <Compile Include="UI\Window\ResultUI.cs" />
+    <Compile Include="UI\Window\SafeBoxItem.cs" />
+    <Compile Include="UI\Window\SafeBoxUI.cs" />
+    <Compile Include="UI\Window\SceneTurnUI.cs" />
+    <Compile Include="UI\Window\SelectHardUI.cs" />
+    <Compile Include="UI\Window\SellItem.cs" />
+    <Compile Include="UI\Window\SettingUI.cs" />
+    <Compile Include="UI\Window\ShopItem.cs" />
+    <Compile Include="UI\Window\ShopUI.cs" />
+    <Compile Include="UI\Window\ShowCard.cs" />
+    <Compile Include="UI\Window\ShowCareer.cs" />
+    <Compile Include="UI\Window\ShowVarItem.cs" />
+    <Compile Include="UI\Window\StatusBarUI.cs" />
+    <Compile Include="UI\Window\StatusUI.cs" />
+    <Compile Include="UI\Window\StatusUIData.cs" />
+    <Compile Include="UI\Window\SteamWorkshopBrowser.cs" />
+    <Compile Include="UI\Window\SteamWorkshopDownloadProgress.cs" />
+    <Compile Include="UI\Window\SteamWorkshopDownloadService.cs" />
+    <Compile Include="UI\Window\SteamWorkshopDownloadState.cs" />
+    <Compile Include="UI\Window\SteamWorkshopModInfo.cs" />
+    <Compile Include="UI\Window\SteamWorkshopQueryPage.cs" />
+    <Compile Include="UI\Window\SteamWorkshopQueryResult.cs" />
+    <Compile Include="UI\Window\StorehouseItem.cs" />
+    <Compile Include="UI\Window\StorehouseUI.cs" />
+    <Compile Include="UI\Window\TitleUI.cs" />
+    <Compile Include="UI\Window\TopBarUI.cs" />
+    <Compile Include="UI\Window\TutorialUI.cs" />
+    <Compile Include="UI\Window\WarehouseItem.cs" />
+    <Compile Include="UI\Window\WarehouseUI.cs" />
+    <Compile Include="UI\Window\WorkshopLocalModConfig.cs" />
+    <Compile Include="UnityEngine\UI\ScrollRectNonDrag.cs" />
+    <Compile Include="UnityInjectAttribute.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="WarningFilter.cs" />
+    <Compile Include="Witch_ProcessedByFody.cs" />
+    <Compile Include="XluaEventVarUse.cs" />
+    <Compile Include="XLua\AdditionalPropertiesAttribute.cs" />
+    <Compile Include="XLua\BlackListAttribute.cs" />
+    <Compile Include="XLua\Cast\Any.cs" />
+    <Compile Include="XLua\Cast\Byte.cs" />
+    <Compile Include="XLua\Cast\Char.cs" />
+    <Compile Include="XLua\Cast\Float.cs" />
+    <Compile Include="XLua\Cast\Int16.cs" />
+    <Compile Include="XLua\Cast\Int32.cs" />
+    <Compile Include="XLua\Cast\Int64.cs" />
+    <Compile Include="XLua\Cast\SByte.cs" />
+    <Compile Include="XLua\Cast\UInt16.cs" />
+    <Compile Include="XLua\Cast\UInt32.cs" />
+    <Compile Include="XLua\Cast\UInt64.cs" />
+    <Compile Include="XLua\CodeEmit.cs" />
+    <Compile Include="XLua\CopyByValue.cs" />
+    <Compile Include="XLua\CSharpCallLuaAttribute.cs" />
+    <Compile Include="XLua\CSObjectWrap\ModConfigWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\ScriptExecutorWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\StatusManagerWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\StringValueWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\SystemCollectionsGenericDictionary_2_SystemStringSystemStrin.cs" />
+    <Compile Include="XLua\CSObjectWrap\SystemCollectionsGenericList_1_SystemInt32_Wrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\SystemCollectionsIEnumeratorBridge.cs" />
+    <Compile Include="XLua\CSObjectWrap\SystemObjectWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\TutorialBaseClassWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\TutorialCSCallLuaItfDBridge.cs" />
+    <Compile Include="XLua\CSObjectWrap\TutorialDerivedClassExtensionsWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\TutorialDerivedClassTestEnumInnerWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\TutorialDerivedClassWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\TutorialICalcWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\TutorialTestEnumWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineBehaviourWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineColorWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineComponentWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineDebugWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineGameObjectWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineMathfWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineMonoBehaviourWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineObjectWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineQuaternionWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineTransformWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineVector2Wrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineVector3Wrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\UnityEngineVector4Wrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\WitchModLuaModHookAdapterWrap.cs" />
+    <Compile Include="XLua\CSObjectWrap\XLua_Gen_Initer_Register__.cs" />
+    <Compile Include="XLua\DelegateBridge.cs" />
+    <Compile Include="XLua\DelegateBridgeBase.cs" />
+    <Compile Include="XLua\DoNotGenAttribute.cs" />
+    <Compile Include="XLua\GCOptimizeAttribute.cs" />
+    <Compile Include="XLua\GenFlag.cs" />
+    <Compile Include="XLua\HotfixAttribute.cs" />
+    <Compile Include="XLua\HotfixDelegateAttribute.cs" />
+    <Compile Include="XLua\HotfixDelegateBridge.cs" />
+    <Compile Include="XLua\HotfixFlag.cs" />
+    <Compile Include="XLua\InternalGlobals.cs" />
+    <Compile Include="XLua\LazyMemberTypes.cs" />
+    <Compile Include="XLua\LuaBase.cs" />
+    <Compile Include="XLua\LuaCallCSharpAttribute.cs" />
+    <Compile Include="XLua\LuaDLL\Lua.cs" />
+    <Compile Include="XLua\LuaDLL\lua_CSFunction.cs" />
+    <Compile Include="XLua\LuaEnv.cs" />
+    <Compile Include="XLua\LuaException.cs" />
+    <Compile Include="XLua\LuaFunction.cs" />
+    <Compile Include="XLua\LuaGCOptions.cs" />
+    <Compile Include="XLua\LuaIndexes.cs" />
+    <Compile Include="XLua\LuaTable.cs" />
+    <Compile Include="XLua\LuaThreadStatus.cs" />
+    <Compile Include="XLua\LuaTypes.cs" />
+    <Compile Include="XLua\MethodWrap.cs" />
+    <Compile Include="XLua\MethodWrapsCache.cs" />
+    <Compile Include="XLua\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="XLua\ObjectCast.cs" />
+    <Compile Include="XLua\ObjectCasters.cs" />
+    <Compile Include="XLua\ObjectCheck.cs" />
+    <Compile Include="XLua\ObjectCheckers.cs" />
+    <Compile Include="XLua\ObjectPool.cs" />
+    <Compile Include="XLua\ObjectTranslator.cs" />
+    <Compile Include="XLua\ObjectTranslatorPool.cs" />
+    <Compile Include="XLua\OptimizeFlag.cs" />
+    <Compile Include="XLua\OverloadMethodWrap.cs" />
+    <Compile Include="XLua\RawObject.cs" />
+    <Compile Include="XLua\ReferenceEqualsComparer.cs" />
+    <Compile Include="XLua\ReflectionUseAttribute.cs" />
+    <Compile Include="XLua\SignatureLoader.cs" />
+    <Compile Include="XLua\StaticLuaCallbacks.cs" />
+    <Compile Include="XLua\SysGenConfig.cs" />
+    <Compile Include="XLua\TemplateEngine\Chunk.cs" />
+    <Compile Include="XLua\TemplateEngine\LuaTemplate.cs" />
+    <Compile Include="XLua\TemplateEngine\Parser.cs" />
+    <Compile Include="XLua\TemplateEngine\TemplateFormatException.cs" />
+    <Compile Include="XLua\TemplateEngine\TokenType.cs" />
+    <Compile Include="XLua\TypeExtensions.cs" />
+    <Compile Include="XLua\Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
