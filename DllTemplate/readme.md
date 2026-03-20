@@ -30,4 +30,8 @@
 
 - 在你想要作为Hook的方法上加上属性**HookBefore**或**HookAfter**
 
+- Patch的方法必须为静态，若要Patch实例方法，第一个参数默认为其实例。
+
+- Patch的方法参数可以不全，但必须保证顺序
+
 - 使用方式：**dotnet build**后将编译出的dll改名为Entry.dll拖入Scripts文件夹下
