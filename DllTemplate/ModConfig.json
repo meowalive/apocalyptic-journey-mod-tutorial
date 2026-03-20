@@ -1,0 +1,9 @@
+{
+  "ModName": "DllTemplate",
+  "ModVersion": "0.1",
+  "ModAuthor": "YOURNAME",
+  "ModDescription": "DLL Template",
+  "IconPath": "Icon.png",
+  "Enabled": true,
+  "Dependencies": null
+}
